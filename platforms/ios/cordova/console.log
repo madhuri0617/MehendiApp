@@ -1,0 +1,1540 @@
+2015-06-10 12:17:37.645 RateMyMehendi[3390:27609] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/4EBABF85-F3CF-43A3-A635-A6B0136BCE40/Library/Cookies/Cookies.binarycookies
+2015-06-10 12:17:37.919 RateMyMehendi[3390:27609] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-10 12:17:37.919 RateMyMehendi[3390:27609] Multi-tasking -> Device: YES, App: YES
+2015-06-10 12:17:37.937 RateMyMehendi[3390:27609] Unlimited access to network resources
+2015-06-10 12:17:38.299 RateMyMehendi[3390:27609] [CDVTimer][keyboard] 0.073016ms
+2015-06-10 12:17:38.357 RateMyMehendi[3390:27609] [CDVTimer][socialsharing] 57.344019ms
+2015-06-10 12:17:38.478 RateMyMehendi[3390:27609] [CDVTimer][splashscreen] 121.269047ms
+2015-06-10 12:17:38.478 RateMyMehendi[3390:27609] [CDVTimer][TotalPluginStartup] 179.144025ms
+2015-06-10 12:17:38.751 RateMyMehendi[3390:27609] Resetting plugins due to page load.
+2015-06-10 12:17:39.423 RateMyMehendi[3390:27609] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/C106FE0B-7E10-419F-8B0F-96515EC88D29/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-10 12:17:41.339 RateMyMehendi[3390:27609] $scope.loadingfalse
+2015-06-10 12:24:01.878 RateMyMehendi[3390:27609] 557596e9bea934a08f71fc19
+2015-06-10 12:24:01.879 RateMyMehendi[3390:27609] transfered imgid: 557596e9bea934a08f71fc19
+2015-06-10 12:24:01.879 RateMyMehendi[3390:27609] myid: 
+2015-06-10 12:24:01.879 RateMyMehendi[3390:27609] I recieve POST ID : 557596e9bea934a08f71fc19
+2015-06-10 12:24:01.879 RateMyMehendi[3390:27609] I recieve USER ID : 
+2015-06-10 12:24:01.879 RateMyMehendi[3390:27609]  deatils PostData [object Object]
+2015-06-10 12:24:02.709 RateMyMehendi[3390:27609] fsc.ImgDetails [object Object]
+2015-06-10 12:24:02.710 RateMyMehendi[3390:27609] isliked:  false
+2015-06-10 12:24:05.024 RateMyMehendi[3390:27609] fsc.ImgDetails.cntLikes0
+2015-06-10 12:24:05.025 RateMyMehendi[3390:27609] inside else of ClickedLiked())
+2015-06-10 12:24:11.791 RateMyMehendi[3390:27609] You are sure
+2015-06-10 13:40:30.201 RateMyMehendi[3390:27609] called 1
+2015-06-10 13:40:30.201 RateMyMehendi[3390:27609] $scope.loadingtrue
+2015-06-10 13:40:30.201 RateMyMehendi[3390:27609] tag from url Common
+2015-06-10 13:40:30.202 RateMyMehendi[3390:27609] called getpopular
+2015-06-10 13:40:30.202 RateMyMehendi[3390:27609]  popular PostData [object Object]
+2015-06-10 13:40:31.000 RateMyMehendi[3390:27609] $scope.loadingfalse
+2015-06-10 13:41:01.900 RateMyMehendi[3390:27609] 5575972d258e86b7c4075049
+2015-06-10 13:41:01.901 RateMyMehendi[3390:27609] transfered imgid: 5575972d258e86b7c4075049
+2015-06-10 13:41:01.901 RateMyMehendi[3390:27609] myid: 
+2015-06-10 13:41:01.901 RateMyMehendi[3390:27609] I recieve POST ID : 5575972d258e86b7c4075049
+2015-06-10 13:41:01.901 RateMyMehendi[3390:27609] I recieve USER ID : 
+2015-06-10 13:41:01.901 RateMyMehendi[3390:27609]  deatils PostData [object Object]
+2015-06-10 13:41:02.628 RateMyMehendi[3390:27609] fsc.ImgDetails [object Object]
+2015-06-10 13:41:02.628 RateMyMehendi[3390:27609] isliked:  false
+2015-06-10 14:38:41.165 RateMyMehendi[3390:27609] fsc.ImgDetails.cntLikes0
+2015-06-10 14:38:41.166 RateMyMehendi[3390:27609] inside else of ClickedLiked())
+2015-06-10 14:38:42.600 RateMyMehendi[3390:27609] You are sure
+2015-06-10 14:39:14.711 RateMyMehendi[3390:27609] called 1
+2015-06-10 14:39:14.712 RateMyMehendi[3390:27609] $scope.loadingtrue
+2015-06-10 14:39:14.712 RateMyMehendi[3390:27609] tag from url Common
+2015-06-10 14:39:14.712 RateMyMehendi[3390:27609] called getpopular
+2015-06-10 14:39:14.712 RateMyMehendi[3390:27609]  popular PostData [object Object]
+2015-06-10 14:39:15.480 RateMyMehendi[3390:27609] $scope.loadingfalse
+2015-06-10 14:39:57.118 RateMyMehendi[4246:70093] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/23EC2AF5-CAC3-44AA-96A4-BE77EBD458A5/Library/Cookies/Cookies.binarycookies
+2015-06-10 14:39:57.183 RateMyMehendi[4246:70093] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-10 14:39:57.183 RateMyMehendi[4246:70093] Multi-tasking -> Device: YES, App: YES
+2015-06-10 14:39:57.184 RateMyMehendi[4246:70093] Unlimited access to network resources
+2015-06-10 14:39:57.276 RateMyMehendi[4246:70093] [CDVTimer][keyboard] 0.059962ms
+2015-06-10 14:39:57.310 RateMyMehendi[4246:70093] [CDVTimer][socialsharing] 34.120977ms
+2015-06-10 14:39:57.348 RateMyMehendi[4246:70093] [CDVTimer][splashscreen] 38.259983ms
+2015-06-10 14:39:57.349 RateMyMehendi[4246:70093] [CDVTimer][TotalPluginStartup] 73.015988ms
+2015-06-10 14:39:57.383 RateMyMehendi[4246:70093] Resetting plugins due to page load.
+2015-06-10 14:39:57.763 RateMyMehendi[4246:70093] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/5B2EB1AF-4B5C-4DB4-905A-820AD385FDCE/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-10 14:39:58.436 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093] 55758f5bc7185668e6e3d860
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093] myid: 556eef2d2849ea7379182f2a
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-10 14:40:02.435 RateMyMehendi[4246:70093]  deatils PostData [object Object]
+2015-06-10 14:40:02.842 RateMyMehendi[4246:70093] fsc.ImgDetails [object Object]
+2015-06-10 14:40:02.843 RateMyMehendi[4246:70093] isliked:  false
+2015-06-10 14:40:04.560 RateMyMehendi[4246:70093] fsc.ImgDetails.cntLikes1
+2015-06-10 14:40:04.561 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:40:08.372 RateMyMehendi[4246:70093] IsLoggedIn: 
+2015-06-10 14:40:08.373 RateMyMehendi[4246:70093] Comment clicked image id: 55758f5bc7185668e6e3d860
+2015-06-10 14:40:08.373 RateMyMehendi[4246:70093] post you commented on: 55758f5bc7185668e6e3d860
+2015-06-10 14:40:08.373 RateMyMehendi[4246:70093] called
+2015-06-10 14:40:08.373 RateMyMehendi[4246:70093]  comments PostData [object Object]
+2015-06-10 14:40:08.784 RateMyMehendi[4246:70093] comments [object Object]
+2015-06-10 14:40:16.850 RateMyMehendi[4246:70093] POST ID : 55758f5bc7185668e6e3d860
+2015-06-10 14:40:16.850 RateMyMehendi[4246:70093] USER ID : 556eef2d2849ea7379182f2a
+2015-06-10 14:40:16.850 RateMyMehendi[4246:70093] Comments : yes its nice
+2015-06-10 14:40:16.850 RateMyMehendi[4246:70093]  Postcomment PostData [object Object]
+2015-06-10 14:40:17.233 RateMyMehendi[4246:70093] comments Comment posted successfully....
+2015-06-10 14:40:17.233 RateMyMehendi[4246:70093] inside comments page : 55758f5bc7185668e6e3d860
+2015-06-10 14:40:17.234 RateMyMehendi[4246:70093] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-10 14:40:17.234 RateMyMehendi[4246:70093]  comments PostData [object Object]
+2015-06-10 14:40:17.592 RateMyMehendi[4246:70093] comments [object Object],[object Object]
+2015-06-10 14:40:23.772 RateMyMehendi[4246:70093] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-10 14:40:23.772 RateMyMehendi[4246:70093] myid: 556eef2d2849ea7379182f2a
+2015-06-10 14:40:23.772 RateMyMehendi[4246:70093] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-10 14:40:23.772 RateMyMehendi[4246:70093] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-10 14:40:23.773 RateMyMehendi[4246:70093]  deatils PostData [object Object]
+2015-06-10 14:40:24.099 RateMyMehendi[4246:70093] fsc.ImgDetails [object Object]
+2015-06-10 14:40:24.100 RateMyMehendi[4246:70093] isliked:  true
+2015-06-10 14:40:26.080 RateMyMehendi[4246:70093] called 5
+2015-06-10 14:40:26.080 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:40:26.080 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:40:26.081 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:40:26.081 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:40:26.081 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:40:26.700 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:40:26.701 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:40:26.784 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:40:28.955 RateMyMehendi[4246:70093] Modal 1 is shown!
+2015-06-10 14:46:40.749 RateMyMehendi[4246:70093] Modal 1 is hidden!
+2015-06-10 14:46:59.775 RateMyMehendi[4246:70093] $scope.fileUpload 
+2015-06-10 14:47:02.999 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:47:02.999 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:02.999 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:47:02.999 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:47:02.999 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:03.650 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:47:03.650 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:47:03.712 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:47:05.518 RateMyMehendi[4246:70093] Modal 1 is shown!
+2015-06-10 14:47:06.504 RateMyMehendi[4246:70093] Modal 1 is hidden!
+2015-06-10 14:47:07.749 RateMyMehendi[4246:71907] Camera.getPicture: source type 1 not available.
+2015-06-10 14:47:12.831 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:47:12.831 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:12.831 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:47:12.831 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:47:12.831 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:13.200 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:47:13.200 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:47:13.424 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:47:15.378 RateMyMehendi[4246:70093]  PostData [object Object]
+2015-06-10 14:47:15.827 RateMyMehendi[4246:70093] mpc.Posts likes [object Object] 1
+2015-06-10 14:47:18.409 RateMyMehendi[4246:70093] myprofile page
+2015-06-10 14:47:18.409 RateMyMehendi[4246:70093] img id to be passed: 55758f5bc7185668e6e3d860
+2015-06-10 14:47:18.409 RateMyMehendi[4246:70093] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-10 14:47:18.409 RateMyMehendi[4246:70093] myid: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:18.409 RateMyMehendi[4246:70093] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-10 14:47:18.410 RateMyMehendi[4246:70093] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-10 14:47:18.410 RateMyMehendi[4246:70093]  deatils PostData [object Object]
+2015-06-10 14:47:18.767 RateMyMehendi[4246:70093] fsc.ImgDetails [object Object]
+2015-06-10 14:47:18.767 RateMyMehendi[4246:70093] isliked:  true
+2015-06-10 14:47:20.234 RateMyMehendi[4246:70093] fsc.ImgDetails.cntLikes2
+2015-06-10 14:47:20.234 RateMyMehendi[4246:70093]  deatils PostData [object Object]
+2015-06-10 14:47:21.721 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:47:21.721 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:47:21.721 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:47:21.721 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:47:22.355 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:47:23.036 RateMyMehendi[4246:70093]  recent PostData [object Object]
+2015-06-10 14:47:23.578 RateMyMehendi[4246:70093] $scope.Posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 16
+2015-06-10 14:47:24.850 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093] 5576b5ff97a9e9b17b7ae897
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:47:24.851 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:25.130 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:47:25.130 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:47:25.154 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:47:28.962 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:28.962 RateMyMehendi[4246:70093] 5576b5ff97a9e9b17b7ae897
+2015-06-10 14:47:34.025 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:34.025 RateMyMehendi[4246:70093] 5576b5ff97a9e9b17b7ae897
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:47:35.612 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:47:36.305 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:47:36.305 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:47:37.340 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:47:37.341 RateMyMehendi[4246:70093] 55758f5bc7185668e6e3d860
+2015-06-10 14:47:37.341 RateMyMehendi[4246:70093] User ID: 55388ab0606c800e93237bdd
+2015-06-10 14:47:37.341 RateMyMehendi[4246:70093] My ID: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:37.341 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:37.341 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:37.706 RateMyMehendi[4246:70093] response of getUserInfo [object Object]
+2015-06-10 14:47:37.707 RateMyMehendi[4246:70093] uc.Profile [object Object]
+2015-06-10 14:47:37.894 RateMyMehendi[4246:70093] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-10 14:47:39.526 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:47:39.526 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:47:39.527 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:47:39.527 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:47:40.181 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] 55767a3c274ecd58d2b248cf
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:47:44.163 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:44.426 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:47:44.426 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:47:44.442 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:47:50.035 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:47:50.035 RateMyMehendi[4246:70093] 55758f5bc7185668e6e3d860
+2015-06-10 14:47:50.035 RateMyMehendi[4246:70093] User ID: 55388ab0606c800e93237bdd
+2015-06-10 14:47:50.035 RateMyMehendi[4246:70093] My ID: 556eef2d2849ea7379182f2a
+2015-06-10 14:47:50.036 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:47:50.036 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:47:50.350 RateMyMehendi[4246:70093] response of getUserInfo [object Object]
+2015-06-10 14:47:50.350 RateMyMehendi[4246:70093] uc.Profile [object Object]
+2015-06-10 14:47:50.365 RateMyMehendi[4246:70093] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-10 14:47:52.177 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:47:52.178 RateMyMehendi[4246:70093] 55758f5bc7185668e6e3d860
+2015-06-10 14:47:58.136 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:47:58.136 RateMyMehendi[4246:70093] 55767f14a5c79b52a9942200
+2015-06-10 14:47:59.433 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:47:59.433 RateMyMehendi[4246:70093] 55767f14a5c79b52a9942200
+2015-06-10 14:48:00.233 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:48:00.233 RateMyMehendi[4246:70093] 55767f14a5c79b52a9942200
+2015-06-10 14:48:07.097 RateMyMehendi[4246:70093] called 1
+2015-06-10 14:48:07.098 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:48:07.098 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:48:07.098 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:48:07.098 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:48:07.837 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093] userid: 55388ab0606c800e93237bdd
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093] 55758f5bc7185668e6e3d860
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093] User ID: 55388ab0606c800e93237bdd
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093] My ID: 556eef2d2849ea7379182f2a
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:48:10.491 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:48:10.923 RateMyMehendi[4246:70093] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-10 14:48:10.923 RateMyMehendi[4246:70093] response of getUserInfo [object Object]
+2015-06-10 14:48:10.923 RateMyMehendi[4246:70093] uc.Profile [object Object]
+2015-06-10 14:48:23.774 RateMyMehendi[4246:70093] called 1
+2015-06-10 14:48:23.774 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:48:23.774 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:48:23.774 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:48:23.775 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:48:24.225 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:48:33.698 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093] 55767a3c274ecd58d2b248cf
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:48:33.699 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:48:34.067 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:48:34.067 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:48:34.067 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:48:38.884 RateMyMehendi[4246:70093] called 1
+2015-06-10 14:48:38.884 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:48:38.884 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:48:38.884 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:48:38.884 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:48:39.557 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 14:48:40.483 RateMyMehendi[4246:70093]  recent PostData [object Object]
+2015-06-10 14:48:41.000 RateMyMehendi[4246:70093] $scope.Posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 16
+2015-06-10 14:48:42.932 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 14:48:42.932 RateMyMehendi[4246:70093] 5576b5ff97a9e9b17b7ae897
+2015-06-10 14:48:42.932 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 14:48:42.932 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 14:48:42.933 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 14:48:42.933 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 14:48:42.933 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 14:48:43.291 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 14:48:43.291 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 14:48:43.474 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 14:48:47.316 RateMyMehendi[4246:70093] called 1
+2015-06-10 14:48:47.317 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 14:48:47.317 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 14:48:47.317 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 14:48:47.317 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 14:48:47.932 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 15:15:28.628 RateMyMehendi[4246:70093]  recent PostData [object Object]
+2015-06-10 15:15:30.412 RateMyMehendi[4246:70093] $scope.Posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 16
+2015-06-10 15:32:11.691 RateMyMehendi[4246:70093] userid: 556eef2d2849ea7379182f2a
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093] 5576b5ff97a9e9b17b7ae897
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093] inside getowninfo [object Object]
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093] getOwnInfo sendData [object Object]
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093] inside getPost
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093] mpc.user [object Object]
+2015-06-10 15:32:11.692 RateMyMehendi[4246:70093]  [object Object]
+2015-06-10 15:32:12.394 RateMyMehendi[4246:70093] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/design81433848418374.png","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-10 15:32:12.394 RateMyMehendi[4246:70093] mydetails: [object Object]
+2015-06-10 15:32:12.394 RateMyMehendi[4246:70093] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 6
+2015-06-10 19:05:09.712 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 19:05:09.712 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 19:05:09.712 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 19:05:09.712 RateMyMehendi[4246:70093] tag from url undefined
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093] $scope.loadingtrue
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093] tag from url Common
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093] called getpopular
+2015-06-10 19:05:09.713 RateMyMehendi[4246:70093]  popular PostData [object Object]
+2015-06-10 19:05:10.339 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 19:05:10.432 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 19:05:10.522 RateMyMehendi[4246:70093] $scope.loadingfalse
+2015-06-10 19:05:21.335 RateMyMehendi[4246:122672] Terminating since there is no system app.
+2015-06-11 10:58:05.476 RateMyMehendi[671:7748] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/0119AC83-6E69-4539-8029-26E1A4DA9180/Library/Cookies/Cookies.binarycookies
+2015-06-11 10:58:05.670 RateMyMehendi[671:7748] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 10:58:05.671 RateMyMehendi[671:7748] Multi-tasking -> Device: YES, App: YES
+2015-06-11 10:58:05.686 RateMyMehendi[671:7748] Unlimited access to network resources
+2015-06-11 10:58:05.992 RateMyMehendi[671:7748] [CDVTimer][keyboard] 0.056982ms
+2015-06-11 10:58:06.041 RateMyMehendi[671:7748] [CDVTimer][socialsharing] 49.290001ms
+2015-06-11 10:58:06.141 RateMyMehendi[671:7748] [CDVTimer][splashscreen] 99.893034ms
+2015-06-11 10:58:06.141 RateMyMehendi[671:7748] [CDVTimer][TotalPluginStartup] 149.680018ms
+2015-06-11 10:58:06.200 RateMyMehendi[671:7748] Resetting plugins due to page load.
+2015-06-11 10:58:06.739 RateMyMehendi[671:7748] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/1BB393E5-E108-4D92-865A-0F24A26DC738/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 10:58:09.973 RateMyMehendi[671:7748] $scope.loadingfalse
+2015-06-11 10:58:14.588 RateMyMehendi[671:7748] called 5
+2015-06-11 10:58:14.588 RateMyMehendi[671:7748] inside getowninfo [object Object]
+2015-06-11 10:58:14.589 RateMyMehendi[671:7748] getOwnInfo sendData [object Object]
+2015-06-11 10:58:14.589 RateMyMehendi[671:7748] inside getPost
+2015-06-11 10:58:14.589 RateMyMehendi[671:7748] mpc.user [object Object]
+2015-06-11 10:58:14.589 RateMyMehendi[671:7748]  [object Object]
+2015-06-11 10:58:15.180 RateMyMehendi[671:7748] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 10:58:15.180 RateMyMehendi[671:7748] mydetails: [object Object]
+2015-06-11 10:58:15.525 RateMyMehendi[671:7748] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 11:02:39.707 RateMyMehendi[671:7748] called 1
+2015-06-11 11:02:39.708 RateMyMehendi[671:7748] $scope.loadingtrue
+2015-06-11 11:02:39.709 RateMyMehendi[671:7748] tag from url Common
+2015-06-11 11:02:39.709 RateMyMehendi[671:7748] called getpopular
+2015-06-11 11:02:39.709 RateMyMehendi[671:7748]  popular PostData [object Object]
+2015-06-11 11:02:41.160 RateMyMehendi[671:7748] $scope.loadingfalse
+2015-06-11 11:02:43.011 RateMyMehendi[671:7748] userid: 55388ab0606c800e93237bdd
+2015-06-11 11:02:43.012 RateMyMehendi[671:7748] 55758f5bc7185668e6e3d860
+2015-06-11 11:02:43.012 RateMyMehendi[671:7748] User ID: 55388ab0606c800e93237bdd
+2015-06-11 11:02:43.012 RateMyMehendi[671:7748] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 11:02:43.012 RateMyMehendi[671:7748] getOwnInfo sendData [object Object]
+2015-06-11 11:02:43.013 RateMyMehendi[671:7748]  [object Object]
+2015-06-11 11:02:43.535 RateMyMehendi[671:7748] response of getUserInfo [object Object]
+2015-06-11 11:02:43.535 RateMyMehendi[671:7748] uc.Profile [object Object]
+2015-06-11 11:02:43.799 RateMyMehendi[671:7748] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 11:02:45.595 RateMyMehendi[671:7748] called 1
+2015-06-11 11:02:45.596 RateMyMehendi[671:7748] $scope.loadingtrue
+2015-06-11 11:02:45.596 RateMyMehendi[671:7748] tag from url Common
+2015-06-11 11:02:45.596 RateMyMehendi[671:7748] called getpopular
+2015-06-11 11:02:45.596 RateMyMehendi[671:7748]  popular PostData [object Object]
+2015-06-11 11:02:46.330 RateMyMehendi[671:7748] $scope.loadingfalse
+2015-06-11 11:02:47.699 RateMyMehendi[671:7748] 55758f5bc7185668e6e3d860
+2015-06-11 11:02:47.699 RateMyMehendi[671:7748] User ID: 55388ab0606c800e93237bdd
+2015-06-11 11:02:47.699 RateMyMehendi[671:7748] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 11:02:47.699 RateMyMehendi[671:7748] getOwnInfo sendData [object Object]
+2015-06-11 11:02:47.699 RateMyMehendi[671:7748]  [object Object]
+2015-06-11 11:02:48.013 RateMyMehendi[671:7748] response of getUserInfo [object Object]
+2015-06-11 11:02:48.013 RateMyMehendi[671:7748] uc.Profile [object Object]
+2015-06-11 11:02:48.108 RateMyMehendi[671:7748] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 11:23:05.479 RateMyMehendi[990:17977] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/07E2E349-8953-44D9-96B3-755DAB934D04/Library/Cookies/Cookies.binarycookies
+2015-06-11 11:23:05.552 RateMyMehendi[990:17977] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 11:23:05.552 RateMyMehendi[990:17977] Multi-tasking -> Device: YES, App: YES
+2015-06-11 11:23:05.554 RateMyMehendi[990:17977] Unlimited access to network resources
+2015-06-11 11:23:05.637 RateMyMehendi[990:17977] [CDVTimer][keyboard] 0.084996ms
+2015-06-11 11:23:05.671 RateMyMehendi[990:17977] [CDVTimer][socialsharing] 34.359992ms
+2015-06-11 11:23:05.681 RateMyMehendi[990:17977] [CDVTimer][splashscreen] 9.949982ms
+2015-06-11 11:23:05.681 RateMyMehendi[990:17977] [CDVTimer][TotalPluginStartup] 44.993043ms
+2015-06-11 11:23:05.732 RateMyMehendi[990:17977] Resetting plugins due to page load.
+2015-06-11 11:23:06.070 RateMyMehendi[990:17977] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/2031FFB5-976C-41A9-884C-3FAC25352F6F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 11:23:07.006 RateMyMehendi[990:17977] $scope.loadingfalse
+2015-06-11 11:23:11.795 RateMyMehendi[990:17977] userid: 55388ab0606c800e93237bdd
+2015-06-11 11:23:11.796 RateMyMehendi[990:17977] 55758f5bc7185668e6e3d860
+2015-06-11 11:23:11.796 RateMyMehendi[990:17977] User ID: 55388ab0606c800e93237bdd
+2015-06-11 11:23:11.796 RateMyMehendi[990:17977] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 11:23:11.796 RateMyMehendi[990:17977] getOwnInfo sendData [object Object]
+2015-06-11 11:23:11.796 RateMyMehendi[990:17977]  [object Object]
+2015-06-11 11:23:12.164 RateMyMehendi[990:17977] response of getUserInfo [object Object]
+2015-06-11 11:23:12.164 RateMyMehendi[990:17977] uc.Profile [object Object]
+2015-06-11 11:23:12.164 RateMyMehendi[990:17977] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 11:40:06.681 RateMyMehendi[1240:24587] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/BE46A7F9-60F2-44D4-BD47-C4FC24578731/Library/Cookies/Cookies.binarycookies
+2015-06-11 11:40:06.743 RateMyMehendi[1240:24587] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 11:40:06.743 RateMyMehendi[1240:24587] Multi-tasking -> Device: YES, App: YES
+2015-06-11 11:40:06.745 RateMyMehendi[1240:24587] Unlimited access to network resources
+2015-06-11 11:40:06.831 RateMyMehendi[1240:24587] [CDVTimer][keyboard] 0.054955ms
+2015-06-11 11:40:06.865 RateMyMehendi[1240:24587] [CDVTimer][socialsharing] 33.657968ms
+2015-06-11 11:40:06.876 RateMyMehendi[1240:24587] [CDVTimer][splashscreen] 11.565030ms
+2015-06-11 11:40:06.877 RateMyMehendi[1240:24587] [CDVTimer][TotalPluginStartup] 45.731962ms
+2015-06-11 11:40:06.926 RateMyMehendi[1240:24587] Resetting plugins due to page load.
+2015-06-11 11:40:07.263 RateMyMehendi[1240:24587] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/80160045-C3FB-445D-8C86-01C73BFD2B0A/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 11:40:08.298 RateMyMehendi[1240:24587] $scope.loadingfalse
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587] called 5
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587] inside getowninfo [object Object]
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587] getOwnInfo sendData [object Object]
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587] inside getPost
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587] mpc.user [object Object]
+2015-06-11 11:40:10.554 RateMyMehendi[1240:24587]  [object Object]
+2015-06-11 11:40:11.211 RateMyMehendi[1240:24587] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 11:40:11.211 RateMyMehendi[1240:24587] mydetails: [object Object]
+2015-06-11 11:40:11.211 RateMyMehendi[1240:24587] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 11:41:29.919 RateMyMehendi[1412:25679] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/6051927D-18F3-4494-B69C-A5D4C736AFDB/Library/Cookies/Cookies.binarycookies
+2015-06-11 11:41:29.999 RateMyMehendi[1412:25679] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 11:41:30.000 RateMyMehendi[1412:25679] Multi-tasking -> Device: YES, App: YES
+2015-06-11 11:41:30.001 RateMyMehendi[1412:25679] Unlimited access to network resources
+2015-06-11 11:41:30.082 RateMyMehendi[1412:25679] [CDVTimer][keyboard] 0.048995ms
+2015-06-11 11:41:30.117 RateMyMehendi[1412:25679] [CDVTimer][socialsharing] 34.768999ms
+2015-06-11 11:41:30.128 RateMyMehendi[1412:25679] [CDVTimer][splashscreen] 10.667980ms
+2015-06-11 11:41:30.128 RateMyMehendi[1412:25679] [CDVTimer][TotalPluginStartup] 46.063006ms
+2015-06-11 11:41:30.176 RateMyMehendi[1412:25679] Resetting plugins due to page load.
+2015-06-11 11:41:30.511 RateMyMehendi[1412:25679] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/740B376A-9B82-4D90-9CB2-04377F22F7DE/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 11:41:31.526 RateMyMehendi[1412:25679] $scope.loadingfalse
+2015-06-11 11:41:34.450 RateMyMehendi[1412:25679] called 5
+2015-06-11 11:41:34.450 RateMyMehendi[1412:25679] inside getowninfo [object Object]
+2015-06-11 11:41:34.451 RateMyMehendi[1412:25679] getOwnInfo sendData [object Object]
+2015-06-11 11:41:34.451 RateMyMehendi[1412:25679] inside getPost
+2015-06-11 11:41:34.451 RateMyMehendi[1412:25679] mpc.user [object Object]
+2015-06-11 11:41:34.451 RateMyMehendi[1412:25679]  [object Object]
+2015-06-11 11:41:35.052 RateMyMehendi[1412:25679] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 11:41:35.052 RateMyMehendi[1412:25679] mydetails: [object Object]
+2015-06-11 11:41:35.052 RateMyMehendi[1412:25679] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 11:58:53.109 RateMyMehendi[1589:31492] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/2621E809-1464-413F-BBEA-E3AAB6133470/Library/Cookies/Cookies.binarycookies
+2015-06-11 11:58:53.204 RateMyMehendi[1589:31492] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 11:58:53.204 RateMyMehendi[1589:31492] Multi-tasking -> Device: YES, App: YES
+2015-06-11 11:58:53.206 RateMyMehendi[1589:31492] Unlimited access to network resources
+2015-06-11 11:58:53.288 RateMyMehendi[1589:31492] [CDVTimer][keyboard] 0.051975ms
+2015-06-11 11:58:53.322 RateMyMehendi[1589:31492] [CDVTimer][socialsharing] 33.672988ms
+2015-06-11 11:58:53.333 RateMyMehendi[1589:31492] [CDVTimer][splashscreen] 11.224985ms
+2015-06-11 11:58:53.334 RateMyMehendi[1589:31492] [CDVTimer][TotalPluginStartup] 45.449018ms
+2015-06-11 11:58:53.381 RateMyMehendi[1589:31492] Resetting plugins due to page load.
+2015-06-11 11:58:53.728 RateMyMehendi[1589:31492] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/490F2084-2D0D-43FD-9827-072E4E79CC3E/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 11:58:54.407 RateMyMehendi[1589:31492] $scope.loadingfalse
+2015-06-11 11:59:48.040 RateMyMehendi[1589:31492] called 5
+2015-06-11 11:59:48.040 RateMyMehendi[1589:31492] inside getowninfo [object Object]
+2015-06-11 11:59:48.040 RateMyMehendi[1589:31492] getOwnInfo sendData [object Object]
+2015-06-11 11:59:48.041 RateMyMehendi[1589:31492] inside getPost
+2015-06-11 11:59:48.041 RateMyMehendi[1589:31492] mpc.user [object Object]
+2015-06-11 11:59:48.041 RateMyMehendi[1589:31492]  [object Object]
+2015-06-11 11:59:48.656 RateMyMehendi[1589:31492] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 11:59:48.784 RateMyMehendi[1589:31492] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 11:59:48.784 RateMyMehendi[1589:31492] mydetails: [object Object]
+2015-06-11 12:01:43.714 RateMyMehendi[1756:33108] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/9DD12DC5-1E35-4E02-9DD8-7B7147B88667/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:01:43.784 RateMyMehendi[1756:33108] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:01:43.785 RateMyMehendi[1756:33108] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:01:43.786 RateMyMehendi[1756:33108] Unlimited access to network resources
+2015-06-11 12:01:43.869 RateMyMehendi[1756:33108] [CDVTimer][keyboard] 0.048995ms
+2015-06-11 12:01:43.904 RateMyMehendi[1756:33108] [CDVTimer][socialsharing] 35.073996ms
+2015-06-11 12:01:43.915 RateMyMehendi[1756:33108] [CDVTimer][splashscreen] 10.049999ms
+2015-06-11 12:01:43.915 RateMyMehendi[1756:33108] [CDVTimer][TotalPluginStartup] 45.581996ms
+2015-06-11 12:01:43.963 RateMyMehendi[1756:33108] Resetting plugins due to page load.
+2015-06-11 12:01:44.311 RateMyMehendi[1756:33108] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/1B7BECDF-4768-483D-A3E7-A4A574817C9F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:01:45.059 RateMyMehendi[1756:33108] $scope.loadingfalse
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108] called 5
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108] inside getowninfo [object Object]
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108] getOwnInfo sendData [object Object]
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108] inside getPost
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108] mpc.user [object Object]
+2015-06-11 12:01:46.536 RateMyMehendi[1756:33108]  [object Object]
+2015-06-11 12:01:47.089 RateMyMehendi[1756:33108] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:01:47.089 RateMyMehendi[1756:33108] mydetails: [object Object]
+2015-06-11 12:01:47.089 RateMyMehendi[1756:33108] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:02:21.181 RateMyMehendi[1922:33796] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/61FA243E-95D7-4B33-BF63-B29E0C626BF8/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:02:21.251 RateMyMehendi[1922:33796] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:02:21.251 RateMyMehendi[1922:33796] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:02:21.252 RateMyMehendi[1922:33796] Unlimited access to network resources
+2015-06-11 12:02:21.333 RateMyMehendi[1922:33796] [CDVTimer][keyboard] 0.050962ms
+2015-06-11 12:02:21.366 RateMyMehendi[1922:33796] [CDVTimer][socialsharing] 32.745957ms
+2015-06-11 12:02:21.378 RateMyMehendi[1922:33796] [CDVTimer][splashscreen] 11.624992ms
+2015-06-11 12:02:21.378 RateMyMehendi[1922:33796] [CDVTimer][TotalPluginStartup] 44.866025ms
+2015-06-11 12:02:21.425 RateMyMehendi[1922:33796] Resetting plugins due to page load.
+2015-06-11 12:02:21.768 RateMyMehendi[1922:33796] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/4EAC79BA-7932-4A7F-B504-4B3D681A7371/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:02:22.490 RateMyMehendi[1922:33796] $scope.loadingfalse
+2015-06-11 12:02:26.480 RateMyMehendi[1922:33796] called 5
+2015-06-11 12:02:26.480 RateMyMehendi[1922:33796] inside getowninfo [object Object]
+2015-06-11 12:02:26.480 RateMyMehendi[1922:33796] getOwnInfo sendData [object Object]
+2015-06-11 12:02:26.481 RateMyMehendi[1922:33796] inside getPost
+2015-06-11 12:02:26.481 RateMyMehendi[1922:33796] mpc.user [object Object]
+2015-06-11 12:02:26.481 RateMyMehendi[1922:33796]  [object Object]
+2015-06-11 12:02:26.966 RateMyMehendi[1922:33796] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:02:27.775 RateMyMehendi[1922:33796] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:02:27.775 RateMyMehendi[1922:33796] mydetails: [object Object]
+2015-06-11 12:03:51.904 RateMyMehendi[2088:34716] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/A0982FFB-3176-48A0-94CF-50CE77512E3A/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:03:51.972 RateMyMehendi[2088:34716] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:03:51.973 RateMyMehendi[2088:34716] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:03:51.974 RateMyMehendi[2088:34716] Unlimited access to network resources
+2015-06-11 12:03:52.056 RateMyMehendi[2088:34716] [CDVTimer][keyboard] 0.051022ms
+2015-06-11 12:03:52.090 RateMyMehendi[2088:34716] [CDVTimer][socialsharing] 33.647001ms
+2015-06-11 12:03:52.101 RateMyMehendi[2088:34716] [CDVTimer][splashscreen] 10.592997ms
+2015-06-11 12:03:52.101 RateMyMehendi[2088:34716] [CDVTimer][TotalPluginStartup] 44.696033ms
+2015-06-11 12:03:52.147 RateMyMehendi[2088:34716] Resetting plugins due to page load.
+2015-06-11 12:03:52.473 RateMyMehendi[2088:34716] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/8DA4C1A7-07FF-4F51-97B6-7B6F05C938D1/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:03:53.203 RateMyMehendi[2088:34716] $scope.loadingfalse
+2015-06-11 12:03:54.942 RateMyMehendi[2088:34716] called 5
+2015-06-11 12:03:54.942 RateMyMehendi[2088:34716] inside getowninfo [object Object]
+2015-06-11 12:03:54.942 RateMyMehendi[2088:34716] getOwnInfo sendData [object Object]
+2015-06-11 12:03:54.942 RateMyMehendi[2088:34716] inside getPost
+2015-06-11 12:03:54.943 RateMyMehendi[2088:34716] mpc.user [object Object]
+2015-06-11 12:03:54.943 RateMyMehendi[2088:34716]  [object Object]
+2015-06-11 12:03:55.594 RateMyMehendi[2088:34716] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:03:55.594 RateMyMehendi[2088:34716] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:03:55.594 RateMyMehendi[2088:34716] mydetails: [object Object]
+2015-06-11 12:04:48.578 RateMyMehendi[2255:35498] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/DFD671E2-68F2-479B-B140-1B4910288221/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:04:48.639 RateMyMehendi[2255:35498] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:04:48.639 RateMyMehendi[2255:35498] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:04:48.641 RateMyMehendi[2255:35498] Unlimited access to network resources
+2015-06-11 12:04:48.722 RateMyMehendi[2255:35498] [CDVTimer][keyboard] 0.077009ms
+2015-06-11 12:04:48.756 RateMyMehendi[2255:35498] [CDVTimer][socialsharing] 34.049034ms
+2015-06-11 12:04:48.767 RateMyMehendi[2255:35498] [CDVTimer][splashscreen] 10.560989ms
+2015-06-11 12:04:48.767 RateMyMehendi[2255:35498] [CDVTimer][TotalPluginStartup] 45.294046ms
+2015-06-11 12:04:48.818 RateMyMehendi[2255:35498] Resetting plugins due to page load.
+2015-06-11 12:04:49.160 RateMyMehendi[2255:35498] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/EDB529D5-4AC4-4439-91C0-8BC233BDD64B/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:04:50.094 RateMyMehendi[2255:35498] $scope.loadingfalse
+2015-06-11 12:04:50.780 RateMyMehendi[2255:35498] called 5
+2015-06-11 12:04:50.781 RateMyMehendi[2255:35498] inside getowninfo [object Object]
+2015-06-11 12:04:50.781 RateMyMehendi[2255:35498] getOwnInfo sendData [object Object]
+2015-06-11 12:04:50.781 RateMyMehendi[2255:35498] inside getPost
+2015-06-11 12:04:50.781 RateMyMehendi[2255:35498] mpc.user [object Object]
+2015-06-11 12:04:50.781 RateMyMehendi[2255:35498]  [object Object]
+2015-06-11 12:04:51.280 RateMyMehendi[2255:35498] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:04:51.280 RateMyMehendi[2255:35498] mydetails: [object Object]
+2015-06-11 12:04:51.518 RateMyMehendi[2255:35498] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:06:26.409 RateMyMehendi[2421:36342] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/227D0E07-1367-4D5F-A65A-A5AA9E56E6DC/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:06:26.477 RateMyMehendi[2421:36342] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:06:26.477 RateMyMehendi[2421:36342] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:06:26.478 RateMyMehendi[2421:36342] Unlimited access to network resources
+2015-06-11 12:06:26.558 RateMyMehendi[2421:36342] [CDVTimer][keyboard] 0.059009ms
+2015-06-11 12:06:26.592 RateMyMehendi[2421:36342] [CDVTimer][socialsharing] 33.356011ms
+2015-06-11 12:06:26.601 RateMyMehendi[2421:36342] [CDVTimer][splashscreen] 9.620011ms
+2015-06-11 12:06:26.602 RateMyMehendi[2421:36342] [CDVTimer][TotalPluginStartup] 43.533981ms
+2015-06-11 12:06:26.647 RateMyMehendi[2421:36342] Resetting plugins due to page load.
+2015-06-11 12:06:26.977 RateMyMehendi[2421:36342] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/DE1C7DD4-31D3-4C12-B329-3C8A03DDFCF2/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:06:28.609 RateMyMehendi[2421:36342] $scope.loadingfalse
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342] called 5
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342] inside getowninfo [object Object]
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342] getOwnInfo sendData [object Object]
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342] inside getPost
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342] mpc.user [object Object]
+2015-06-11 12:06:40.581 RateMyMehendi[2421:36342]  [object Object]
+2015-06-11 12:06:41.197 RateMyMehendi[2421:36342] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:06:41.197 RateMyMehendi[2421:36342] mydetails: [object Object]
+2015-06-11 12:06:41.197 RateMyMehendi[2421:36342] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:07:47.250 RateMyMehendi[2587:37144] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/EFBA7096-37DE-4C83-81E5-8CD84F32D3FB/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:07:47.318 RateMyMehendi[2587:37144] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:07:47.319 RateMyMehendi[2587:37144] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:07:47.320 RateMyMehendi[2587:37144] Unlimited access to network resources
+2015-06-11 12:07:47.403 RateMyMehendi[2587:37144] [CDVTimer][keyboard] 0.065982ms
+2015-06-11 12:07:47.437 RateMyMehendi[2587:37144] [CDVTimer][socialsharing] 34.475982ms
+2015-06-11 12:07:47.448 RateMyMehendi[2587:37144] [CDVTimer][splashscreen] 10.661006ms
+2015-06-11 12:07:47.448 RateMyMehendi[2587:37144] [CDVTimer][TotalPluginStartup] 45.701981ms
+2015-06-11 12:07:47.496 RateMyMehendi[2587:37144] Resetting plugins due to page load.
+2015-06-11 12:07:47.833 RateMyMehendi[2587:37144] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/EF0797DC-FA76-4A45-A833-DCF33E0428C2/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:07:48.596 RateMyMehendi[2587:37144] $scope.loadingfalse
+2015-06-11 12:07:51.092 RateMyMehendi[2587:37144] called 5
+2015-06-11 12:07:51.092 RateMyMehendi[2587:37144] inside getowninfo [object Object]
+2015-06-11 12:07:51.092 RateMyMehendi[2587:37144] getOwnInfo sendData [object Object]
+2015-06-11 12:07:51.092 RateMyMehendi[2587:37144] inside getPost
+2015-06-11 12:07:51.093 RateMyMehendi[2587:37144] mpc.user [object Object]
+2015-06-11 12:07:51.093 RateMyMehendi[2587:37144]  [object Object]
+2015-06-11 12:07:51.780 RateMyMehendi[2587:37144] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:07:51.780 RateMyMehendi[2587:37144] mydetails: [object Object]
+2015-06-11 12:07:51.780 RateMyMehendi[2587:37144] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:08:36.781 RateMyMehendi[2753:37840] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/3CB8B347-9D8D-4D22-A615-F0EFF1CB35FC/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:08:36.852 RateMyMehendi[2753:37840] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:08:36.852 RateMyMehendi[2753:37840] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:08:36.854 RateMyMehendi[2753:37840] Unlimited access to network resources
+2015-06-11 12:08:36.937 RateMyMehendi[2753:37840] [CDVTimer][keyboard] 0.085950ms
+2015-06-11 12:08:36.970 RateMyMehendi[2753:37840] [CDVTimer][socialsharing] 33.177018ms
+2015-06-11 12:08:36.980 RateMyMehendi[2753:37840] [CDVTimer][splashscreen] 9.513021ms
+2015-06-11 12:08:36.980 RateMyMehendi[2753:37840] [CDVTimer][TotalPluginStartup] 43.245018ms
+2015-06-11 12:08:37.026 RateMyMehendi[2753:37840] Resetting plugins due to page load.
+2015-06-11 12:08:37.371 RateMyMehendi[2753:37840] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/42FDF0F3-6345-4E62-8A03-98F307844C05/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:08:38.079 RateMyMehendi[2753:37840] $scope.loadingfalse
+2015-06-11 12:08:40.075 RateMyMehendi[2753:37840] called 5
+2015-06-11 12:08:40.076 RateMyMehendi[2753:37840] inside getowninfo [object Object]
+2015-06-11 12:08:40.076 RateMyMehendi[2753:37840] getOwnInfo sendData [object Object]
+2015-06-11 12:08:40.076 RateMyMehendi[2753:37840] inside getPost
+2015-06-11 12:08:40.076 RateMyMehendi[2753:37840] mpc.user [object Object]
+2015-06-11 12:08:40.076 RateMyMehendi[2753:37840]  [object Object]
+2015-06-11 12:08:40.537 RateMyMehendi[2753:37840] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:08:40.537 RateMyMehendi[2753:37840] mydetails: [object Object]
+2015-06-11 12:08:41.704 RateMyMehendi[2753:37840] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:09:19.889 RateMyMehendi[2919:38499] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/D4222586-8F05-4489-9389-66B6BB12E32C/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:09:19.977 RateMyMehendi[2919:38499] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:09:19.978 RateMyMehendi[2919:38499] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:09:19.979 RateMyMehendi[2919:38499] Unlimited access to network resources
+2015-06-11 12:09:20.071 RateMyMehendi[2919:38499] [CDVTimer][keyboard] 0.082016ms
+2015-06-11 12:09:20.106 RateMyMehendi[2919:38499] [CDVTimer][socialsharing] 34.641981ms
+2015-06-11 12:09:20.119 RateMyMehendi[2919:38499] [CDVTimer][splashscreen] 13.198018ms
+2015-06-11 12:09:20.119 RateMyMehendi[2919:38499] [CDVTimer][TotalPluginStartup] 48.536003ms
+2015-06-11 12:09:20.165 RateMyMehendi[2919:38499] Resetting plugins due to page load.
+2015-06-11 12:09:20.556 RateMyMehendi[2919:38499] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/EB74FE87-BE2E-46E5-B136-A7B01431398A/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:09:21.875 RateMyMehendi[2919:38499] $scope.loadingfalse
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499] called 5
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499] inside getowninfo [object Object]
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499] getOwnInfo sendData [object Object]
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499] inside getPost
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499] mpc.user [object Object]
+2015-06-11 12:09:22.875 RateMyMehendi[2919:38499]  [object Object]
+2015-06-11 12:09:23.321 RateMyMehendi[2919:38499] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:09:23.321 RateMyMehendi[2919:38499] mydetails: [object Object]
+2015-06-11 12:09:23.832 RateMyMehendi[2919:38499] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:49:12.255 RateMyMehendi[3103:47739] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/6B797BD4-D581-403F-917D-F0B9E6FF4C86/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:49:12.329 RateMyMehendi[3103:47739] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:49:12.329 RateMyMehendi[3103:47739] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:49:12.330 RateMyMehendi[3103:47739] Unlimited access to network resources
+2015-06-11 12:49:12.414 RateMyMehendi[3103:47739] [CDVTimer][keyboard] 0.054002ms
+2015-06-11 12:49:12.448 RateMyMehendi[3103:47739] [CDVTimer][socialsharing] 33.711016ms
+2015-06-11 12:49:12.459 RateMyMehendi[3103:47739] [CDVTimer][splashscreen] 11.565983ms
+2015-06-11 12:49:12.460 RateMyMehendi[3103:47739] [CDVTimer][TotalPluginStartup] 45.780003ms
+2015-06-11 12:49:12.505 RateMyMehendi[3103:47739] Resetting plugins due to page load.
+2015-06-11 12:49:12.998 RateMyMehendi[3103:47739] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/411AB7D6-2F13-4B55-820B-0AD3899F9F5F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:49:13.977 RateMyMehendi[3103:47739] $scope.loadingfalse
+2015-06-11 12:50:19.628 RateMyMehendi[3103:47739] called 5
+2015-06-11 12:50:19.629 RateMyMehendi[3103:47739] inside getowninfo [object Object]
+2015-06-11 12:50:19.629 RateMyMehendi[3103:47739] getOwnInfo sendData [object Object]
+2015-06-11 12:50:19.629 RateMyMehendi[3103:47739] inside getPost
+2015-06-11 12:50:19.629 RateMyMehendi[3103:47739] mpc.user [object Object]
+2015-06-11 12:50:19.629 RateMyMehendi[3103:47739]  [object Object]
+2015-06-11 12:50:20.321 RateMyMehendi[3103:47739] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:50:20.410 RateMyMehendi[3103:47739] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:50:20.410 RateMyMehendi[3103:47739] mydetails: [object Object]
+2015-06-11 12:51:13.755 RateMyMehendi[3270:48714] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/99183DD1-542C-4301-9B90-E1C909429893/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:51:13.826 RateMyMehendi[3270:48714] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:51:13.826 RateMyMehendi[3270:48714] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:51:13.828 RateMyMehendi[3270:48714] Unlimited access to network resources
+2015-06-11 12:51:13.910 RateMyMehendi[3270:48714] [CDVTimer][keyboard] 0.119984ms
+2015-06-11 12:51:13.945 RateMyMehendi[3270:48714] [CDVTimer][socialsharing] 35.095036ms
+2015-06-11 12:51:13.955 RateMyMehendi[3270:48714] [CDVTimer][splashscreen] 9.872973ms
+2015-06-11 12:51:13.956 RateMyMehendi[3270:48714] [CDVTimer][TotalPluginStartup] 45.849979ms
+2015-06-11 12:51:14.004 RateMyMehendi[3270:48714] Resetting plugins due to page load.
+2015-06-11 12:51:14.347 RateMyMehendi[3270:48714] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/9DDCA30D-AD75-492F-9FAE-134E8EC370B7/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:51:15.140 RateMyMehendi[3270:48714] $scope.loadingfalse
+2015-06-11 12:52:26.634 RateMyMehendi[3436:49557] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/46898ACD-C938-44A7-9953-DD48F3EC2520/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:52:26.706 RateMyMehendi[3436:49557] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:52:26.707 RateMyMehendi[3436:49557] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:52:26.708 RateMyMehendi[3436:49557] Unlimited access to network resources
+2015-06-11 12:52:26.791 RateMyMehendi[3436:49557] [CDVTimer][keyboard] 0.051022ms
+2015-06-11 12:52:26.825 RateMyMehendi[3436:49557] [CDVTimer][socialsharing] 34.044981ms
+2015-06-11 12:52:26.836 RateMyMehendi[3436:49557] [CDVTimer][splashscreen] 10.270000ms
+2015-06-11 12:52:26.836 RateMyMehendi[3436:49557] [CDVTimer][TotalPluginStartup] 44.797957ms
+2015-06-11 12:52:26.882 RateMyMehendi[3436:49557] Resetting plugins due to page load.
+2015-06-11 12:52:27.210 RateMyMehendi[3436:49557] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/6DC6E321-5145-4F94-9EF4-9FFB8B03CAE7/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:52:27.951 RateMyMehendi[3436:49557] $scope.loadingfalse
+2015-06-11 12:52:29.395 RateMyMehendi[3436:49557] called 5
+2015-06-11 12:52:29.395 RateMyMehendi[3436:49557] inside getowninfo [object Object]
+2015-06-11 12:52:29.395 RateMyMehendi[3436:49557] getOwnInfo sendData [object Object]
+2015-06-11 12:52:29.396 RateMyMehendi[3436:49557] inside getPost
+2015-06-11 12:52:29.396 RateMyMehendi[3436:49557] mpc.user [object Object]
+2015-06-11 12:52:29.396 RateMyMehendi[3436:49557]  [object Object]
+2015-06-11 12:52:30.084 RateMyMehendi[3436:49557] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:52:30.084 RateMyMehendi[3436:49557] mydetails: [object Object]
+2015-06-11 12:52:30.084 RateMyMehendi[3436:49557] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:56:07.002 RateMyMehendi[3603:51149] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/2AE3D314-8065-404F-80FA-30D972EA10D8/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:56:07.073 RateMyMehendi[3603:51149] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:56:07.074 RateMyMehendi[3603:51149] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:56:07.075 RateMyMehendi[3603:51149] Unlimited access to network resources
+2015-06-11 12:56:07.160 RateMyMehendi[3603:51149] [CDVTimer][keyboard] 0.051022ms
+2015-06-11 12:56:07.195 RateMyMehendi[3603:51149] [CDVTimer][socialsharing] 35.085976ms
+2015-06-11 12:56:07.206 RateMyMehendi[3603:51149] [CDVTimer][splashscreen] 10.786951ms
+2015-06-11 12:56:07.206 RateMyMehendi[3603:51149] [CDVTimer][TotalPluginStartup] 46.339989ms
+2015-06-11 12:56:07.252 RateMyMehendi[3603:51149] Resetting plugins due to page load.
+2015-06-11 12:56:07.604 RateMyMehendi[3603:51149] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/990DAC60-C0B4-416A-84DD-19F356667112/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:56:13.992 RateMyMehendi[3603:51149] $scope.loadingfalse
+2015-06-11 12:56:15.035 RateMyMehendi[3603:51149] called 5
+2015-06-11 12:56:15.035 RateMyMehendi[3603:51149] inside getowninfo [object Object]
+2015-06-11 12:56:15.035 RateMyMehendi[3603:51149] getOwnInfo sendData [object Object]
+2015-06-11 12:56:15.035 RateMyMehendi[3603:51149] inside getPost
+2015-06-11 12:56:15.035 RateMyMehendi[3603:51149] mpc.user [object Object]
+2015-06-11 12:56:15.036 RateMyMehendi[3603:51149]  [object Object]
+2015-06-11 12:56:15.412 RateMyMehendi[3603:51149] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 12:56:15.412 RateMyMehendi[3603:51149] mydetails: [object Object]
+2015-06-11 12:56:15.412 RateMyMehendi[3603:51149] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 12:57:52.175 RateMyMehendi[3769:52154] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/D27F6950-56A5-45C0-B220-6EB3039207BB/Library/Cookies/Cookies.binarycookies
+2015-06-11 12:57:52.254 RateMyMehendi[3769:52154] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 12:57:52.254 RateMyMehendi[3769:52154] Multi-tasking -> Device: YES, App: YES
+2015-06-11 12:57:52.256 RateMyMehendi[3769:52154] Unlimited access to network resources
+2015-06-11 12:57:52.337 RateMyMehendi[3769:52154] [CDVTimer][keyboard] 0.062048ms
+2015-06-11 12:57:52.371 RateMyMehendi[3769:52154] [CDVTimer][socialsharing] 34.098983ms
+2015-06-11 12:57:52.382 RateMyMehendi[3769:52154] [CDVTimer][splashscreen] 11.514008ms
+2015-06-11 12:57:52.383 RateMyMehendi[3769:52154] [CDVTimer][TotalPluginStartup] 46.180964ms
+2015-06-11 12:57:52.431 RateMyMehendi[3769:52154] Resetting plugins due to page load.
+2015-06-11 12:57:52.781 RateMyMehendi[3769:52154] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/E3E382B7-654E-4A8D-890A-4B25C7EBADA3/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 12:57:53.587 RateMyMehendi[3769:52154] $scope.loadingfalse
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154] called 5
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154] inside getowninfo [object Object]
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154] getOwnInfo sendData [object Object]
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154] inside getPost
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154] mpc.user [object Object]
+2015-06-11 13:00:14.734 RateMyMehendi[3769:52154]  [object Object]
+2015-06-11 13:00:15.372 RateMyMehendi[3769:52154] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:00:16.449 RateMyMehendi[3769:52154] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:00:16.450 RateMyMehendi[3769:52154] mydetails: [object Object]
+2015-06-11 13:01:11.053 RateMyMehendi[3938:53649] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/275746B9-A89E-4D01-B6F4-A097B42EAD56/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:01:11.121 RateMyMehendi[3938:53649] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:01:11.121 RateMyMehendi[3938:53649] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:01:11.123 RateMyMehendi[3938:53649] Unlimited access to network resources
+2015-06-11 13:01:11.204 RateMyMehendi[3938:53649] [CDVTimer][keyboard] 0.087976ms
+2015-06-11 13:01:11.238 RateMyMehendi[3938:53649] [CDVTimer][socialsharing] 33.841014ms
+2015-06-11 13:01:11.249 RateMyMehendi[3938:53649] [CDVTimer][splashscreen] 10.223031ms
+2015-06-11 13:01:11.249 RateMyMehendi[3938:53649] [CDVTimer][TotalPluginStartup] 44.723034ms
+2015-06-11 13:01:11.294 RateMyMehendi[3938:53649] Resetting plugins due to page load.
+2015-06-11 13:01:11.631 RateMyMehendi[3938:53649] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/E226979D-9809-44B6-A578-66F424EF7B79/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:01:12.314 RateMyMehendi[3938:53649] $scope.loadingfalse
+2015-06-11 13:01:15.220 RateMyMehendi[3938:53649] userid: 55388ab0606c800e93237bdd
+2015-06-11 13:01:15.221 RateMyMehendi[3938:53649] 55758f5bc7185668e6e3d860
+2015-06-11 13:01:15.221 RateMyMehendi[3938:53649] User ID: 55388ab0606c800e93237bdd
+2015-06-11 13:01:15.221 RateMyMehendi[3938:53649] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 13:01:15.221 RateMyMehendi[3938:53649] getOwnInfo sendData [object Object]
+2015-06-11 13:01:15.221 RateMyMehendi[3938:53649]  [object Object]
+2015-06-11 13:01:15.498 RateMyMehendi[3938:53649] response of getUserInfo [object Object]
+2015-06-11 13:01:15.499 RateMyMehendi[3938:53649] uc.Profile [object Object]
+2015-06-11 13:01:15.609 RateMyMehendi[3938:53649] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 13:01:17.530 RateMyMehendi[3938:53649] $scope.loadingtrue
+2015-06-11 13:01:17.530 RateMyMehendi[3938:53649] tag from url Common
+2015-06-11 13:01:17.530 RateMyMehendi[3938:53649] called getpopular
+2015-06-11 13:01:17.530 RateMyMehendi[3938:53649]  popular PostData [object Object]
+2015-06-11 13:01:18.178 RateMyMehendi[3938:53649] $scope.loadingfalse
+2015-06-11 13:01:19.177 RateMyMehendi[3938:53649] called 5
+2015-06-11 13:01:19.177 RateMyMehendi[3938:53649] inside getowninfo [object Object]
+2015-06-11 13:01:19.177 RateMyMehendi[3938:53649] getOwnInfo sendData [object Object]
+2015-06-11 13:01:19.178 RateMyMehendi[3938:53649] inside getPost
+2015-06-11 13:01:19.178 RateMyMehendi[3938:53649] mpc.user [object Object]
+2015-06-11 13:01:19.178 RateMyMehendi[3938:53649]  [object Object]
+2015-06-11 13:01:19.761 RateMyMehendi[3938:53649] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:01:19.761 RateMyMehendi[3938:53649] mydetails: [object Object]
+2015-06-11 13:01:19.761 RateMyMehendi[3938:53649] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:05:18.440 RateMyMehendi[4104:55192] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/45504E65-DEF4-48F0-96FC-7F1EAA512ECC/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:05:18.518 RateMyMehendi[4104:55192] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:05:18.518 RateMyMehendi[4104:55192] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:05:18.519 RateMyMehendi[4104:55192] Unlimited access to network resources
+2015-06-11 13:05:18.602 RateMyMehendi[4104:55192] [CDVTimer][keyboard] 0.053048ms
+2015-06-11 13:05:18.637 RateMyMehendi[4104:55192] [CDVTimer][socialsharing] 34.997046ms
+2015-06-11 13:05:18.649 RateMyMehendi[4104:55192] [CDVTimer][splashscreen] 11.672020ms
+2015-06-11 13:05:18.649 RateMyMehendi[4104:55192] [CDVTimer][TotalPluginStartup] 47.186017ms
+2015-06-11 13:05:18.695 RateMyMehendi[4104:55192] Resetting plugins due to page load.
+2015-06-11 13:05:19.039 RateMyMehendi[4104:55192] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/C9118137-35DF-4EAF-871D-DAB5A3A79EF7/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:05:19.773 RateMyMehendi[4104:55192] $scope.loadingfalse
+2015-06-11 13:05:20.753 RateMyMehendi[4104:55192] called 5
+2015-06-11 13:05:20.753 RateMyMehendi[4104:55192] inside getowninfo [object Object]
+2015-06-11 13:05:20.754 RateMyMehendi[4104:55192] getOwnInfo sendData [object Object]
+2015-06-11 13:05:20.754 RateMyMehendi[4104:55192] inside getPost
+2015-06-11 13:05:20.754 RateMyMehendi[4104:55192] mpc.user [object Object]
+2015-06-11 13:05:20.754 RateMyMehendi[4104:55192]  [object Object]
+2015-06-11 13:05:21.391 RateMyMehendi[4104:55192] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:05:21.391 RateMyMehendi[4104:55192] mydetails: [object Object]
+2015-06-11 13:05:21.391 RateMyMehendi[4104:55192] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:08:25.160 RateMyMehendi[4271:56543] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/FC161D68-F2AD-4B38-B678-775216F7B460/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:08:25.234 RateMyMehendi[4271:56543] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:08:25.234 RateMyMehendi[4271:56543] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:08:25.235 RateMyMehendi[4271:56543] Unlimited access to network resources
+2015-06-11 13:08:25.318 RateMyMehendi[4271:56543] [CDVTimer][keyboard] 0.082970ms
+2015-06-11 13:08:25.351 RateMyMehendi[4271:56543] [CDVTimer][socialsharing] 32.908022ms
+2015-06-11 13:08:25.361 RateMyMehendi[4271:56543] [CDVTimer][splashscreen] 10.257006ms
+2015-06-11 13:08:25.361 RateMyMehendi[4271:56543] [CDVTimer][TotalPluginStartup] 43.817043ms
+2015-06-11 13:08:25.411 RateMyMehendi[4271:56543] Resetting plugins due to page load.
+2015-06-11 13:08:25.755 RateMyMehendi[4271:56543] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/3C203EB0-2A35-4FD8-9A51-08687D5C423C/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:08:28.583 RateMyMehendi[4271:56543] $scope.loadingfalse
+2015-06-11 13:08:29.513 RateMyMehendi[4271:56543] called 5
+2015-06-11 13:08:29.514 RateMyMehendi[4271:56543] inside getowninfo [object Object]
+2015-06-11 13:08:29.514 RateMyMehendi[4271:56543] getOwnInfo sendData [object Object]
+2015-06-11 13:08:29.514 RateMyMehendi[4271:56543] inside getPost
+2015-06-11 13:08:29.514 RateMyMehendi[4271:56543] mpc.user [object Object]
+2015-06-11 13:08:29.514 RateMyMehendi[4271:56543]  [object Object]
+2015-06-11 13:08:30.110 RateMyMehendi[4271:56543] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:08:30.110 RateMyMehendi[4271:56543] mydetails: [object Object]
+2015-06-11 13:08:30.110 RateMyMehendi[4271:56543] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:18:42.425 RateMyMehendi[4453:59841] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/7E50DAFE-D05B-4EC8-9073-6D3364F1E7D1/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:18:42.497 RateMyMehendi[4453:59841] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:18:42.497 RateMyMehendi[4453:59841] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:18:42.499 RateMyMehendi[4453:59841] Unlimited access to network resources
+2015-06-11 13:18:42.581 RateMyMehendi[4453:59841] [CDVTimer][keyboard] 0.050008ms
+2015-06-11 13:18:42.615 RateMyMehendi[4453:59841] [CDVTimer][socialsharing] 33.935010ms
+2015-06-11 13:18:42.625 RateMyMehendi[4453:59841] [CDVTimer][splashscreen] 10.203004ms
+2015-06-11 13:18:42.625 RateMyMehendi[4453:59841] [CDVTimer][TotalPluginStartup] 44.650972ms
+2015-06-11 13:18:42.674 RateMyMehendi[4453:59841] Resetting plugins due to page load.
+2015-06-11 13:18:43.013 RateMyMehendi[4453:59841] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/3C5FC5D6-3951-4641-8517-D68CEB246EEB/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:18:43.847 RateMyMehendi[4453:59841] $scope.loadingfalse
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841] called 5
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841] inside getowninfo [object Object]
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841] getOwnInfo sendData [object Object]
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841] inside getPost
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841] mpc.user [object Object]
+2015-06-11 13:18:44.676 RateMyMehendi[4453:59841]  [object Object]
+2015-06-11 13:18:45.320 RateMyMehendi[4453:59841] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:18:45.320 RateMyMehendi[4453:59841] mydetails: [object Object]
+2015-06-11 13:18:45.320 RateMyMehendi[4453:59841] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:19:08.455 RateMyMehendi[4620:60440] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/19D7D6EA-3C49-4195-B57B-98FF5E5AE68A/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:19:08.529 RateMyMehendi[4620:60440] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:19:08.529 RateMyMehendi[4620:60440] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:19:08.531 RateMyMehendi[4620:60440] Unlimited access to network resources
+2015-06-11 13:19:08.615 RateMyMehendi[4620:60440] [CDVTimer][keyboard] 0.073016ms
+2015-06-11 13:19:08.649 RateMyMehendi[4620:60440] [CDVTimer][socialsharing] 34.134030ms
+2015-06-11 13:19:08.660 RateMyMehendi[4620:60440] [CDVTimer][splashscreen] 10.370970ms
+2015-06-11 13:19:08.660 RateMyMehendi[4620:60440] [CDVTimer][TotalPluginStartup] 45.152009ms
+2015-06-11 13:19:08.710 RateMyMehendi[4620:60440] Resetting plugins due to page load.
+2015-06-11 13:19:09.042 RateMyMehendi[4620:60440] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/4EA4F7D7-2653-4CCC-B1D7-922166B8FD91/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:19:09.798 RateMyMehendi[4620:60440] $scope.loadingfalse
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440] called 5
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440] inside getowninfo [object Object]
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440] getOwnInfo sendData [object Object]
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440] inside getPost
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440] mpc.user [object Object]
+2015-06-11 13:19:11.765 RateMyMehendi[4620:60440]  [object Object]
+2015-06-11 13:19:12.377 RateMyMehendi[4620:60440] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:19:12.377 RateMyMehendi[4620:60440] mydetails: [object Object]
+2015-06-11 13:19:12.377 RateMyMehendi[4620:60440] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:19:28.931 RateMyMehendi[4787:61025] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/5C4AECFD-4676-4BA3-AF45-D983AB5707C9/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:19:28.996 RateMyMehendi[4787:61025] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:19:28.997 RateMyMehendi[4787:61025] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:19:28.998 RateMyMehendi[4787:61025] Unlimited access to network resources
+2015-06-11 13:19:29.079 RateMyMehendi[4787:61025] [CDVTimer][keyboard] 0.048995ms
+2015-06-11 13:19:29.114 RateMyMehendi[4787:61025] [CDVTimer][socialsharing] 34.514010ms
+2015-06-11 13:19:29.124 RateMyMehendi[4787:61025] [CDVTimer][splashscreen] 9.942949ms
+2015-06-11 13:19:29.124 RateMyMehendi[4787:61025] [CDVTimer][TotalPluginStartup] 44.926047ms
+2015-06-11 13:19:29.169 RateMyMehendi[4787:61025] Resetting plugins due to page load.
+2015-06-11 13:19:29.499 RateMyMehendi[4787:61025] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/04535BF7-B443-4255-B2B6-5B0AF06AF14B/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:19:30.214 RateMyMehendi[4787:61025] $scope.loadingfalse
+2015-06-11 13:19:31.742 RateMyMehendi[4787:61025] called 5
+2015-06-11 13:19:31.742 RateMyMehendi[4787:61025] inside getowninfo [object Object]
+2015-06-11 13:19:31.742 RateMyMehendi[4787:61025] getOwnInfo sendData [object Object]
+2015-06-11 13:19:31.743 RateMyMehendi[4787:61025] inside getPost
+2015-06-11 13:19:31.743 RateMyMehendi[4787:61025] mpc.user [object Object]
+2015-06-11 13:19:31.743 RateMyMehendi[4787:61025]  [object Object]
+2015-06-11 13:19:32.138 RateMyMehendi[4787:61025] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:19:32.138 RateMyMehendi[4787:61025] mydetails: [object Object]
+2015-06-11 13:19:32.138 RateMyMehendi[4787:61025] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:19:53.991 RateMyMehendi[4954:61606] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/2ACAA4F9-1157-462F-A4C4-BC41B3ED1601/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:19:54.057 RateMyMehendi[4954:61606] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:19:54.058 RateMyMehendi[4954:61606] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:19:54.059 RateMyMehendi[4954:61606] Unlimited access to network resources
+2015-06-11 13:19:54.141 RateMyMehendi[4954:61606] [CDVTimer][keyboard] 0.051975ms
+2015-06-11 13:19:54.175 RateMyMehendi[4954:61606] [CDVTimer][socialsharing] 33.252001ms
+2015-06-11 13:19:54.186 RateMyMehendi[4954:61606] [CDVTimer][splashscreen] 10.814011ms
+2015-06-11 13:19:54.186 RateMyMehendi[4954:61606] [CDVTimer][TotalPluginStartup] 44.556975ms
+2015-06-11 13:19:54.232 RateMyMehendi[4954:61606] Resetting plugins due to page load.
+2015-06-11 13:19:54.572 RateMyMehendi[4954:61606] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/B8D39256-EF07-4B31-A011-B154D1456885/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:19:55.297 RateMyMehendi[4954:61606] $scope.loadingfalse
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606] called 5
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606] inside getowninfo [object Object]
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606] getOwnInfo sendData [object Object]
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606] inside getPost
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606] mpc.user [object Object]
+2015-06-11 13:19:56.098 RateMyMehendi[4954:61606]  [object Object]
+2015-06-11 13:19:57.320 RateMyMehendi[4954:61606] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 13:19:57.320 RateMyMehendi[4954:61606] mydetails: [object Object]
+2015-06-11 13:19:57.468 RateMyMehendi[4954:61606] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 13:23:12.345 RateMyMehendi[5122:62813] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/63ACF169-4DEF-41C4-A9E3-AD4F61479970/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:23:12.418 RateMyMehendi[5122:62813] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:23:12.418 RateMyMehendi[5122:62813] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:23:12.420 RateMyMehendi[5122:62813] Unlimited access to network resources
+2015-06-11 13:23:12.502 RateMyMehendi[5122:62813] [CDVTimer][keyboard] 0.060022ms
+2015-06-11 13:23:12.536 RateMyMehendi[5122:62813] [CDVTimer][socialsharing] 33.547044ms
+2015-06-11 13:23:12.546 RateMyMehendi[5122:62813] [CDVTimer][splashscreen] 9.536982ms
+2015-06-11 13:23:12.546 RateMyMehendi[5122:62813] [CDVTimer][TotalPluginStartup] 43.619990ms
+2015-06-11 13:23:12.591 RateMyMehendi[5122:62813] Resetting plugins due to page load.
+2015-06-11 13:23:12.769 RateMyMehendi[5122:62813] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/6604EB9A-A2DC-4627-9069-2120943CCF5B/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:23:13.681 RateMyMehendi[5122:62813] $scope.loadingfalse
+2015-06-11 13:29:05.989 RateMyMehendi[5293:64638] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/A8D1A359-52E1-4787-9B26-CCB620155D7C/Library/Cookies/Cookies.binarycookies
+2015-06-11 13:29:06.050 RateMyMehendi[5293:64638] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 13:29:06.050 RateMyMehendi[5293:64638] Multi-tasking -> Device: YES, App: YES
+2015-06-11 13:29:06.052 RateMyMehendi[5293:64638] Unlimited access to network resources
+2015-06-11 13:29:06.136 RateMyMehendi[5293:64638] [CDVTimer][keyboard] 0.051975ms
+2015-06-11 13:29:06.170 RateMyMehendi[5293:64638] [CDVTimer][socialsharing] 34.375966ms
+2015-06-11 13:29:06.181 RateMyMehendi[5293:64638] [CDVTimer][splashscreen] 10.774970ms
+2015-06-11 13:29:06.181 RateMyMehendi[5293:64638] [CDVTimer][TotalPluginStartup] 45.614004ms
+2015-06-11 13:29:06.228 RateMyMehendi[5293:64638] Resetting plugins due to page load.
+2015-06-11 13:29:06.404 RateMyMehendi[5293:64638] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/B739ED81-711A-4481-A586-FB39D2AE1BF4/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 13:29:07.411 RateMyMehendi[5293:64638] $scope.loadingfalse
+2015-06-11 15:33:01.970 RateMyMehendi[5639:90775] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/F355957F-3324-4F51-BED9-9C2B4CAFD537/Library/Cookies/Cookies.binarycookies
+2015-06-11 15:33:02.039 RateMyMehendi[5639:90775] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 15:33:02.039 RateMyMehendi[5639:90775] Multi-tasking -> Device: YES, App: YES
+2015-06-11 15:33:02.041 RateMyMehendi[5639:90775] Unlimited access to network resources
+2015-06-11 15:33:02.136 RateMyMehendi[5639:90775] [CDVTimer][keyboard] 0.050008ms
+2015-06-11 15:33:02.171 RateMyMehendi[5639:90775] [CDVTimer][socialsharing] 34.008026ms
+2015-06-11 15:33:02.209 RateMyMehendi[5639:90775] [CDVTimer][splashscreen] 38.518012ms
+2015-06-11 15:33:02.209 RateMyMehendi[5639:90775] [CDVTimer][TotalPluginStartup] 72.984993ms
+2015-06-11 15:33:02.243 RateMyMehendi[5639:90775] Resetting plugins due to page load.
+2015-06-11 15:33:02.438 RateMyMehendi[5639:90775] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/370F4F7F-4682-47DB-93B3-DAC9E978CE0F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 15:33:03.434 RateMyMehendi[5639:90775] $scope.loadingfalse
+2015-06-11 15:34:05.245 RateMyMehendi[5807:91542] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/458D527B-1E9B-49DD-A185-A077CD1E2C62/Library/Cookies/Cookies.binarycookies
+2015-06-11 15:34:05.316 RateMyMehendi[5807:91542] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 15:34:05.316 RateMyMehendi[5807:91542] Multi-tasking -> Device: YES, App: YES
+2015-06-11 15:34:05.318 RateMyMehendi[5807:91542] Unlimited access to network resources
+2015-06-11 15:34:05.403 RateMyMehendi[5807:91542] [CDVTimer][keyboard] 0.052035ms
+2015-06-11 15:34:05.438 RateMyMehendi[5807:91542] [CDVTimer][socialsharing] 34.684002ms
+2015-06-11 15:34:05.449 RateMyMehendi[5807:91542] [CDVTimer][splashscreen] 10.398984ms
+2015-06-11 15:34:05.449 RateMyMehendi[5807:91542] [CDVTimer][TotalPluginStartup] 45.601964ms
+2015-06-11 15:34:05.502 RateMyMehendi[5807:91542] Resetting plugins due to page load.
+2015-06-11 15:34:05.690 RateMyMehendi[5807:91542] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/0F4AAF83-8339-4A2F-98DA-CE8CE25504F8/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 15:34:06.863 RateMyMehendi[5807:91542] $scope.loadingfalse
+2015-06-11 15:52:41.044 RateMyMehendi[5983:95777] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/BAF29F7A-2A27-4125-B933-864084D2DA07/Library/Cookies/Cookies.binarycookies
+2015-06-11 15:52:41.110 RateMyMehendi[5983:95777] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 15:52:41.111 RateMyMehendi[5983:95777] Multi-tasking -> Device: YES, App: YES
+2015-06-11 15:52:41.112 RateMyMehendi[5983:95777] Unlimited access to network resources
+2015-06-11 15:52:41.196 RateMyMehendi[5983:95777] [CDVTimer][keyboard] 0.055969ms
+2015-06-11 15:52:41.233 RateMyMehendi[5983:95777] [CDVTimer][socialsharing] 36.378980ms
+2015-06-11 15:52:41.243 RateMyMehendi[5983:95777] [CDVTimer][splashscreen] 10.239005ms
+2015-06-11 15:52:41.243 RateMyMehendi[5983:95777] [CDVTimer][TotalPluginStartup] 47.226012ms
+2015-06-11 15:52:41.294 RateMyMehendi[5983:95777] Resetting plugins due to page load.
+2015-06-11 15:52:41.633 RateMyMehendi[5983:95777] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/BB7770F7-37D3-4623-9972-BD7D5C53FAEE/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 15:52:42.472 RateMyMehendi[5983:95777] $scope.loadingfalse
+2015-06-11 15:52:47.472 RateMyMehendi[5983:95777] called 5
+2015-06-11 15:52:47.473 RateMyMehendi[5983:95777] inside getowninfo [object Object]
+2015-06-11 15:52:47.473 RateMyMehendi[5983:95777] getOwnInfo sendData [object Object]
+2015-06-11 15:52:47.473 RateMyMehendi[5983:95777] inside getPost
+2015-06-11 15:52:47.473 RateMyMehendi[5983:95777] mpc.user [object Object]
+2015-06-11 15:52:47.473 RateMyMehendi[5983:95777]  [object Object]
+2015-06-11 15:52:48.187 RateMyMehendi[5983:95777] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 15:52:48.187 RateMyMehendi[5983:95777] mydetails: [object Object]
+2015-06-11 15:52:48.187 RateMyMehendi[5983:95777] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 15:53:11.503 RateMyMehendi[6150:96494] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/FDEF8BF9-570D-4FD8-B7B5-199C7F0FAD78/Library/Cookies/Cookies.binarycookies
+2015-06-11 15:53:11.572 RateMyMehendi[6150:96494] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 15:53:11.572 RateMyMehendi[6150:96494] Multi-tasking -> Device: YES, App: YES
+2015-06-11 15:53:11.573 RateMyMehendi[6150:96494] Unlimited access to network resources
+2015-06-11 15:53:11.656 RateMyMehendi[6150:96494] [CDVTimer][keyboard] 0.052989ms
+2015-06-11 15:53:11.690 RateMyMehendi[6150:96494] [CDVTimer][socialsharing] 33.865988ms
+2015-06-11 15:53:11.701 RateMyMehendi[6150:96494] [CDVTimer][splashscreen] 11.428952ms
+2015-06-11 15:53:11.701 RateMyMehendi[6150:96494] [CDVTimer][TotalPluginStartup] 45.845985ms
+2015-06-11 15:53:11.750 RateMyMehendi[6150:96494] Resetting plugins due to page load.
+2015-06-11 15:53:12.088 RateMyMehendi[6150:96494] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/1A29A8D0-9484-49A3-91D1-EA76EDFBFB5F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 15:53:12.905 RateMyMehendi[6150:96494] $scope.loadingfalse
+2015-06-11 16:05:53.764 RateMyMehendi[6323:99980] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/213C54D6-7F7C-41E0-8647-ABB71161498C/Library/Cookies/Cookies.binarycookies
+2015-06-11 16:05:53.838 RateMyMehendi[6323:99980] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 16:05:53.839 RateMyMehendi[6323:99980] Multi-tasking -> Device: YES, App: YES
+2015-06-11 16:05:53.840 RateMyMehendi[6323:99980] Unlimited access to network resources
+2015-06-11 16:05:53.923 RateMyMehendi[6323:99980] [CDVTimer][keyboard] 0.057042ms
+2015-06-11 16:05:53.957 RateMyMehendi[6323:99980] [CDVTimer][socialsharing] 33.711016ms
+2015-06-11 16:05:53.968 RateMyMehendi[6323:99980] [CDVTimer][splashscreen] 10.428011ms
+2015-06-11 16:05:53.968 RateMyMehendi[6323:99980] [CDVTimer][TotalPluginStartup] 44.633985ms
+2015-06-11 16:05:54.020 RateMyMehendi[6323:99980] Resetting plugins due to page load.
+2015-06-11 16:05:54.352 RateMyMehendi[6323:99980] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/D3D8CC8D-C329-4D55-9B5F-42974A1FB1F4/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 16:05:55.222 RateMyMehendi[6323:99980] $scope.loadingfalse
+2015-06-11 16:06:40.562 RateMyMehendi[6323:99980] called 5
+2015-06-11 16:06:40.562 RateMyMehendi[6323:99980] inside getowninfo [object Object]
+2015-06-11 16:06:40.562 RateMyMehendi[6323:99980] getOwnInfo sendData [object Object]
+2015-06-11 16:06:40.562 RateMyMehendi[6323:99980] inside getPost
+2015-06-11 16:06:40.563 RateMyMehendi[6323:99980] mpc.user [object Object]
+2015-06-11 16:06:40.563 RateMyMehendi[6323:99980]  [object Object]
+2015-06-11 16:06:41.291 RateMyMehendi[6323:99980] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 16:06:41.380 RateMyMehendi[6323:99980] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 16:06:41.380 RateMyMehendi[6323:99980] mydetails: [object Object]
+2015-06-11 16:09:50.063 RateMyMehendi[6490:101832] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/98F45B7D-DFD9-485E-8A78-C43AE5157BFA/Library/Cookies/Cookies.binarycookies
+2015-06-11 16:09:50.134 RateMyMehendi[6490:101832] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 16:09:50.134 RateMyMehendi[6490:101832] Multi-tasking -> Device: YES, App: YES
+2015-06-11 16:09:50.136 RateMyMehendi[6490:101832] Unlimited access to network resources
+2015-06-11 16:09:50.221 RateMyMehendi[6490:101832] [CDVTimer][keyboard] 0.055015ms
+2015-06-11 16:09:50.256 RateMyMehendi[6490:101832] [CDVTimer][socialsharing] 34.612954ms
+2015-06-11 16:09:50.267 RateMyMehendi[6490:101832] [CDVTimer][splashscreen] 11.566997ms
+2015-06-11 16:09:50.267 RateMyMehendi[6490:101832] [CDVTimer][TotalPluginStartup] 46.683967ms
+2015-06-11 16:09:50.315 RateMyMehendi[6490:101832] Resetting plugins due to page load.
+2015-06-11 16:09:50.670 RateMyMehendi[6490:101832] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/5FB5A687-03FB-479C-B692-861872DCF87D/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 16:09:51.476 RateMyMehendi[6490:101832] $scope.loadingfalse
+2015-06-11 16:11:08.252 RateMyMehendi[6490:101832] called 5
+2015-06-11 16:11:08.252 RateMyMehendi[6490:101832] inside getowninfo [object Object]
+2015-06-11 16:11:08.253 RateMyMehendi[6490:101832] getOwnInfo sendData [object Object]
+2015-06-11 16:11:08.253 RateMyMehendi[6490:101832] inside getPost
+2015-06-11 16:11:08.253 RateMyMehendi[6490:101832] mpc.user [object Object]
+2015-06-11 16:11:08.253 RateMyMehendi[6490:101832]  [object Object]
+2015-06-11 16:11:08.927 RateMyMehendi[6490:101832] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 16:11:08.927 RateMyMehendi[6490:101832] mydetails: [object Object]
+2015-06-11 16:11:09.957 RateMyMehendi[6490:101832] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 16:32:59.108 RateMyMehendi[6681:108690] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/0A331CB9-FD38-4A16-B3FE-5BC058B180BD/Library/Cookies/Cookies.binarycookies
+2015-06-11 16:32:59.180 RateMyMehendi[6681:108690] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 16:32:59.180 RateMyMehendi[6681:108690] Multi-tasking -> Device: YES, App: YES
+2015-06-11 16:32:59.182 RateMyMehendi[6681:108690] Unlimited access to network resources
+2015-06-11 16:32:59.267 RateMyMehendi[6681:108690] [CDVTimer][keyboard] 0.052035ms
+2015-06-11 16:32:59.300 RateMyMehendi[6681:108690] [CDVTimer][socialsharing] 33.415973ms
+2015-06-11 16:32:59.313 RateMyMehendi[6681:108690] [CDVTimer][splashscreen] 12.687027ms
+2015-06-11 16:32:59.313 RateMyMehendi[6681:108690] [CDVTimer][TotalPluginStartup] 46.629012ms
+2015-06-11 16:32:59.359 RateMyMehendi[6681:108690] Resetting plugins due to page load.
+2015-06-11 16:33:31.062 RateMyMehendi[6681:108709] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-06-11 16:33:31.185 RateMyMehendi[6681:108690] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/8E356E24-06DE-4257-A9E0-930AB2476E33/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 16:33:32.145 RateMyMehendi[6681:108690] $scope.loadingfalse
+2015-06-11 16:33:33.633 RateMyMehendi[6681:108690] called 5
+2015-06-11 16:33:33.633 RateMyMehendi[6681:108690] inside getowninfo [object Object]
+2015-06-11 16:33:33.633 RateMyMehendi[6681:108690] getOwnInfo sendData [object Object]
+2015-06-11 16:33:33.633 RateMyMehendi[6681:108690] inside getPost
+2015-06-11 16:33:33.633 RateMyMehendi[6681:108690] mpc.user [object Object]
+2015-06-11 16:33:33.634 RateMyMehendi[6681:108690]  [object Object]
+2015-06-11 16:33:34.100 RateMyMehendi[6681:108690] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 16:33:34.100 RateMyMehendi[6681:108690] mydetails: [object Object]
+2015-06-11 16:33:34.100 RateMyMehendi[6681:108690] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 16:34:15.730 RateMyMehendi[6852:109638] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/A9B24DDD-85A7-454E-9703-32B38C6D3565/Library/Cookies/Cookies.binarycookies
+2015-06-11 16:34:15.803 RateMyMehendi[6852:109638] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 16:34:15.804 RateMyMehendi[6852:109638] Multi-tasking -> Device: YES, App: YES
+2015-06-11 16:34:15.805 RateMyMehendi[6852:109638] Unlimited access to network resources
+2015-06-11 16:34:15.890 RateMyMehendi[6852:109638] [CDVTimer][keyboard] 0.084996ms
+2015-06-11 16:34:15.924 RateMyMehendi[6852:109638] [CDVTimer][socialsharing] 34.205019ms
+2015-06-11 16:34:15.935 RateMyMehendi[6852:109638] [CDVTimer][splashscreen] 10.096967ms
+2015-06-11 16:34:15.935 RateMyMehendi[6852:109638] [CDVTimer][TotalPluginStartup] 44.987023ms
+2015-06-11 16:34:15.983 RateMyMehendi[6852:109638] Resetting plugins due to page load.
+2015-06-11 16:34:16.331 RateMyMehendi[6852:109638] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/95C87CEA-A56B-4009-A9F0-8CC57771BB1B/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 16:34:17.063 RateMyMehendi[6852:109638] $scope.loadingfalse
+2015-06-11 16:34:18.575 RateMyMehendi[6852:109638] called 5
+2015-06-11 16:34:18.576 RateMyMehendi[6852:109638] inside getowninfo [object Object]
+2015-06-11 16:34:18.576 RateMyMehendi[6852:109638] getOwnInfo sendData [object Object]
+2015-06-11 16:34:18.576 RateMyMehendi[6852:109638] inside getPost
+2015-06-11 16:34:18.576 RateMyMehendi[6852:109638] mpc.user [object Object]
+2015-06-11 16:34:18.576 RateMyMehendi[6852:109638]  [object Object]
+2015-06-11 16:34:19.225 RateMyMehendi[6852:109638] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 16:34:19.225 RateMyMehendi[6852:109638] mydetails: [object Object]
+2015-06-11 16:34:19.225 RateMyMehendi[6852:109638] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 16:35:12.638 RateMyMehendi[7019:110501] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/DC476979-D512-4CC5-805C-964BC0F6F6A0/Library/Cookies/Cookies.binarycookies
+2015-06-11 16:35:12.699 RateMyMehendi[7019:110501] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 16:35:12.700 RateMyMehendi[7019:110501] Multi-tasking -> Device: YES, App: YES
+2015-06-11 16:35:12.701 RateMyMehendi[7019:110501] Unlimited access to network resources
+2015-06-11 16:35:12.783 RateMyMehendi[7019:110501] [CDVTimer][keyboard] 0.064015ms
+2015-06-11 16:35:12.816 RateMyMehendi[7019:110501] [CDVTimer][socialsharing] 33.066988ms
+2015-06-11 16:35:12.834 RateMyMehendi[7019:110501] [CDVTimer][splashscreen] 17.233014ms
+2015-06-11 16:35:12.834 RateMyMehendi[7019:110501] [CDVTimer][TotalPluginStartup] 50.816000ms
+2015-06-11 16:35:12.879 RateMyMehendi[7019:110501] Resetting plugins due to page load.
+2015-06-11 16:35:13.252 RateMyMehendi[7019:110501] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/DAF564ED-EEA4-4246-B199-4B842CAEE342/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 16:35:13.960 RateMyMehendi[7019:110501] $scope.loadingfalse
+2015-06-11 16:35:16.256 RateMyMehendi[7019:110501] called 5
+2015-06-11 16:35:16.256 RateMyMehendi[7019:110501] inside getowninfo [object Object]
+2015-06-11 16:35:16.256 RateMyMehendi[7019:110501] getOwnInfo sendData [object Object]
+2015-06-11 16:35:16.256 RateMyMehendi[7019:110501] inside getPost
+2015-06-11 16:35:16.257 RateMyMehendi[7019:110501] mpc.user [object Object]
+2015-06-11 16:35:16.257 RateMyMehendi[7019:110501]  [object Object]
+2015-06-11 16:35:16.864 RateMyMehendi[7019:110501] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 16:35:16.864 RateMyMehendi[7019:110501] mydetails: [object Object]
+2015-06-11 16:35:16.865 RateMyMehendi[7019:110501] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:02:46.273 RateMyMehendi[7284:134730] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/5FBB0BD9-3089-4AA5-BB7F-8068CB7AEDCD/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:02:46.357 RateMyMehendi[7284:134730] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:02:46.358 RateMyMehendi[7284:134730] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:02:46.359 RateMyMehendi[7284:134730] Unlimited access to network resources
+2015-06-11 18:02:46.443 RateMyMehendi[7284:134730] [CDVTimer][keyboard] 0.053048ms
+2015-06-11 18:02:46.477 RateMyMehendi[7284:134730] [CDVTimer][socialsharing] 34.516990ms
+2015-06-11 18:02:46.497 RateMyMehendi[7284:134730] [CDVTimer][splashscreen] 19.055963ms
+2015-06-11 18:02:46.497 RateMyMehendi[7284:134730] [CDVTimer][TotalPluginStartup] 54.107010ms
+2015-06-11 18:02:46.548 RateMyMehendi[7284:134730] Resetting plugins due to page load.
+2015-06-11 18:02:49.337 RateMyMehendi[7284:134730] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/65E0269C-919D-4230-B301-75E089276583/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:02:50.442 RateMyMehendi[7284:134730] $scope.loadingfalse
+2015-06-11 18:02:52.197 RateMyMehendi[7284:134730] called 5
+2015-06-11 18:02:52.197 RateMyMehendi[7284:134730] inside getowninfo [object Object]
+2015-06-11 18:02:52.197 RateMyMehendi[7284:134730] getOwnInfo sendData [object Object]
+2015-06-11 18:02:52.198 RateMyMehendi[7284:134730] inside getPost
+2015-06-11 18:02:52.198 RateMyMehendi[7284:134730] mpc.user [object Object]
+2015-06-11 18:02:52.198 RateMyMehendi[7284:134730]  [object Object]
+2015-06-11 18:02:52.812 RateMyMehendi[7284:134730] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:02:52.812 RateMyMehendi[7284:134730] mydetails: [object Object]
+2015-06-11 18:02:52.812 RateMyMehendi[7284:134730] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:03:08.679 RateMyMehendi[7284:134730] called 2
+2015-06-11 18:03:08.679 RateMyMehendi[7284:134730] inide checkLogin() myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:03:08.679 RateMyMehendi[7284:134730] inide checkLogin() $rootScope.sessionMyID:) 556eef2d2849ea7379182f2a
+2015-06-11 18:03:20.816 RateMyMehendi[7284:134730] called 1
+2015-06-11 18:03:20.816 RateMyMehendi[7284:134730] $scope.loadingtrue
+2015-06-11 18:03:20.816 RateMyMehendi[7284:134730] tag from url Common
+2015-06-11 18:03:20.816 RateMyMehendi[7284:134730] called getpopular
+2015-06-11 18:03:20.816 RateMyMehendi[7284:134730]  popular PostData [object Object]
+2015-06-11 18:03:21.530 RateMyMehendi[7284:134730] $scope.loadingfalse
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730] 55758f5bc7185668e6e3d860
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:03:36.974 RateMyMehendi[7284:134730]  deatils PostData [object Object]
+2015-06-11 18:03:37.682 RateMyMehendi[7284:134730] fsc.ImgDetails [object Object]
+2015-06-11 18:03:37.682 RateMyMehendi[7284:134730] isliked:  false
+2015-06-11 18:03:39.807 RateMyMehendi[7284:134730] IsLoggedIn: 
+2015-06-11 18:03:39.807 RateMyMehendi[7284:134730] Comment clicked image id: 55758f5bc7185668e6e3d860
+2015-06-11 18:03:39.807 RateMyMehendi[7284:134730] post you commented on: 55758f5bc7185668e6e3d860
+2015-06-11 18:03:39.807 RateMyMehendi[7284:134730] called
+2015-06-11 18:03:39.807 RateMyMehendi[7284:134730]  comments PostData [object Object]
+2015-06-11 18:03:40.489 RateMyMehendi[7284:134730] comments [object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:03:47.545 RateMyMehendi[7284:134730] POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:03:47.545 RateMyMehendi[7284:134730] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:03:47.545 RateMyMehendi[7284:134730] Comments : thanks
+2015-06-11 18:03:47.545 RateMyMehendi[7284:134730]  Postcomment PostData [object Object]
+2015-06-11 18:03:48.412 RateMyMehendi[7284:134730] comments Comment posted successfully....
+2015-06-11 18:03:48.413 RateMyMehendi[7284:134730] inside comments page : 55758f5bc7185668e6e3d860
+2015-06-11 18:03:48.413 RateMyMehendi[7284:134730] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:03:48.413 RateMyMehendi[7284:134730]  comments PostData [object Object]
+2015-06-11 18:03:49.152 RateMyMehendi[7284:134730] comments [object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:06:16.203 RateMyMehendi[7453:136360] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/4EDADCE1-92EA-4731-B0CF-1C4A7114ADD2/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:06:16.313 RateMyMehendi[7453:136360] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:06:16.314 RateMyMehendi[7453:136360] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:06:16.315 RateMyMehendi[7453:136360] Unlimited access to network resources
+2015-06-11 18:06:16.433 RateMyMehendi[7453:136360] [CDVTimer][keyboard] 0.069022ms
+2015-06-11 18:06:16.470 RateMyMehendi[7453:136360] [CDVTimer][socialsharing] 36.745965ms
+2015-06-11 18:06:16.486 RateMyMehendi[7453:136360] [CDVTimer][splashscreen] 15.161991ms
+2015-06-11 18:06:16.486 RateMyMehendi[7453:136360] [CDVTimer][TotalPluginStartup] 52.516043ms
+2015-06-11 18:06:16.527 RateMyMehendi[7453:136360] Resetting plugins due to page load.
+2015-06-11 18:07:08.668 RateMyMehendi[7453:136379] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-06-11 18:07:08.949 RateMyMehendi[7453:136360] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/C516F4EB-C82F-422F-B7CB-E746A98F1D40/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:07:09.773 RateMyMehendi[7453:136360] $scope.loadingfalse
+2015-06-11 18:07:12.033 RateMyMehendi[7453:136360] 55758f5bc7185668e6e3d860
+2015-06-11 18:07:12.033 RateMyMehendi[7453:136360] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-11 18:07:12.033 RateMyMehendi[7453:136360] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:07:12.033 RateMyMehendi[7453:136360] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:07:12.034 RateMyMehendi[7453:136360] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:07:12.034 RateMyMehendi[7453:136360]  deatils PostData [object Object]
+2015-06-11 18:07:13.572 RateMyMehendi[7453:136360] fsc.ImgDetails [object Object]
+2015-06-11 18:07:13.573 RateMyMehendi[7453:136360] isliked:  false
+2015-06-11 18:07:15.159 RateMyMehendi[7453:136360] IsLoggedIn: 
+2015-06-11 18:07:15.159 RateMyMehendi[7453:136360] Comment clicked image id: 55758f5bc7185668e6e3d860
+2015-06-11 18:07:15.159 RateMyMehendi[7453:136360] post you commented on: 55758f5bc7185668e6e3d860
+2015-06-11 18:07:15.159 RateMyMehendi[7453:136360] called
+2015-06-11 18:07:15.160 RateMyMehendi[7453:136360]  comments PostData [object Object]
+2015-06-11 18:07:15.636 RateMyMehendi[7453:136360] comments [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:07:16.830 RateMyMehendi[7453:136360] POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:07:16.830 RateMyMehendi[7453:136360] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:07:16.830 RateMyMehendi[7453:136360] Comments : undefined
+2015-06-11 18:07:16.830 RateMyMehendi[7453:136360]  Postcomment PostData [object Object]
+2015-06-11 18:07:17.221 RateMyMehendi[7453:136360] comments Comment posted successfully....
+2015-06-11 18:07:17.221 RateMyMehendi[7453:136360] inside comments page : 55758f5bc7185668e6e3d860
+2015-06-11 18:07:17.221 RateMyMehendi[7453:136360] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:07:17.221 RateMyMehendi[7453:136360]  comments PostData [object Object]
+2015-06-11 18:07:17.617 RateMyMehendi[7453:136360] comments [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:12:04.377 RateMyMehendi[7621:138592] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/2927D64A-A582-4BE7-8A87-A50130928950/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:12:04.451 RateMyMehendi[7621:138592] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:12:04.451 RateMyMehendi[7621:138592] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:12:04.453 RateMyMehendi[7621:138592] Unlimited access to network resources
+2015-06-11 18:12:04.535 RateMyMehendi[7621:138592] [CDVTimer][keyboard] 0.069022ms
+2015-06-11 18:12:04.568 RateMyMehendi[7621:138592] [CDVTimer][socialsharing] 33.517003ms
+2015-06-11 18:12:04.580 RateMyMehendi[7621:138592] [CDVTimer][splashscreen] 11.263013ms
+2015-06-11 18:12:04.580 RateMyMehendi[7621:138592] [CDVTimer][TotalPluginStartup] 45.477986ms
+2015-06-11 18:12:04.627 RateMyMehendi[7621:138592] Resetting plugins due to page load.
+2015-06-11 18:12:04.982 RateMyMehendi[7621:138592] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/AC4AFC7A-AEFA-47DD-9CF9-A03224333661/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:12:05.695 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592] 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592] transfered imgid: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592] I recieve POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:12:26.282 RateMyMehendi[7621:138592]  deatils PostData [object Object]
+2015-06-11 18:12:26.856 RateMyMehendi[7621:138592] fsc.ImgDetails [object Object]
+2015-06-11 18:12:26.856 RateMyMehendi[7621:138592] isliked:  false
+2015-06-11 18:12:28.325 RateMyMehendi[7621:138592] IsLoggedIn: 
+2015-06-11 18:12:28.326 RateMyMehendi[7621:138592] Comment clicked image id: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:28.326 RateMyMehendi[7621:138592] post you commented on: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:28.326 RateMyMehendi[7621:138592] called
+2015-06-11 18:12:28.326 RateMyMehendi[7621:138592]  comments PostData [object Object]
+2015-06-11 18:12:28.768 RateMyMehendi[7621:138592] comments [object Object],[object Object]
+2015-06-11 18:12:30.617 RateMyMehendi[7621:138592] POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:30.618 RateMyMehendi[7621:138592] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:12:30.618 RateMyMehendi[7621:138592] Comments : undefined
+2015-06-11 18:12:37.538 RateMyMehendi[7621:138592] POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:37.538 RateMyMehendi[7621:138592] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:12:37.538 RateMyMehendi[7621:138592] Comments : nice
+2015-06-11 18:12:37.538 RateMyMehendi[7621:138592]  Postcomment PostData [object Object]
+2015-06-11 18:12:37.891 RateMyMehendi[7621:138592] comments Comment posted successfully....
+2015-06-11 18:12:37.891 RateMyMehendi[7621:138592] inside comments page : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:37.891 RateMyMehendi[7621:138592] I recieve POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:12:37.891 RateMyMehendi[7621:138592]  comments PostData [object Object]
+2015-06-11 18:12:38.244 RateMyMehendi[7621:138592] comments [object Object],[object Object],[object Object]
+2015-06-11 18:13:45.261 RateMyMehendi[7621:138592] transfered imgid: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:13:45.261 RateMyMehendi[7621:138592] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:13:45.261 RateMyMehendi[7621:138592] I recieve POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:13:45.261 RateMyMehendi[7621:138592] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:13:45.261 RateMyMehendi[7621:138592]  deatils PostData [object Object]
+2015-06-11 18:13:45.929 RateMyMehendi[7621:138592] fsc.ImgDetails [object Object]
+2015-06-11 18:13:45.929 RateMyMehendi[7621:138592] isliked:  false
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592] called 5
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592] inside getowninfo [object Object]
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592] getOwnInfo sendData [object Object]
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592] inside getPost
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592] mpc.user [object Object]
+2015-06-11 18:13:47.467 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:13:48.084 RateMyMehendi[7621:138592] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:13:48.084 RateMyMehendi[7621:138592] mydetails: [object Object]
+2015-06-11 18:13:48.159 RateMyMehendi[7621:138592] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:13:50.401 RateMyMehendi[7621:138592]  PostData [object Object]
+2015-06-11 18:13:50.765 RateMyMehendi[7621:138592] mpc.Posts likes [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:13:53.293 RateMyMehendi[7621:138592] inside getPost
+2015-06-11 18:13:53.293 RateMyMehendi[7621:138592] mpc.user [object Object]
+2015-06-11 18:13:53.293 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:13:53.725 RateMyMehendi[7621:138592] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:13:56.316 RateMyMehendi[7621:138592] called 1
+2015-06-11 18:13:56.316 RateMyMehendi[7621:138592] $scope.loadingtrue
+2015-06-11 18:13:56.316 RateMyMehendi[7621:138592] tag from url Common
+2015-06-11 18:13:56.316 RateMyMehendi[7621:138592] called getpopular
+2015-06-11 18:13:56.316 RateMyMehendi[7621:138592]  popular PostData [object Object]
+2015-06-11 18:13:56.993 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:13:59.721 RateMyMehendi[7621:138592] userid: 55388ab0606c800e93237bdd
+2015-06-11 18:13:59.721 RateMyMehendi[7621:138592] 55758f5bc7185668e6e3d860
+2015-06-11 18:13:59.721 RateMyMehendi[7621:138592] User ID: 55388ab0606c800e93237bdd
+2015-06-11 18:13:59.722 RateMyMehendi[7621:138592] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 18:13:59.722 RateMyMehendi[7621:138592] getOwnInfo sendData [object Object]
+2015-06-11 18:13:59.722 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:14:00.127 RateMyMehendi[7621:138592] response of getUserInfo [object Object]
+2015-06-11 18:14:00.127 RateMyMehendi[7621:138592] uc.Profile [object Object]
+2015-06-11 18:14:00.128 RateMyMehendi[7621:138592] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 18:14:24.436 RateMyMehendi[7621:138592] $scope.loadingtrue
+2015-06-11 18:14:24.436 RateMyMehendi[7621:138592] tag from url Common
+2015-06-11 18:14:24.436 RateMyMehendi[7621:138592] called getpopular
+2015-06-11 18:14:24.436 RateMyMehendi[7621:138592]  popular PostData [object Object]
+2015-06-11 18:14:25.164 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:15:58.111 RateMyMehendi[7621:138592] called 4
+2015-06-11 18:16:05.756 RateMyMehendi[7621:138592] called 1
+2015-06-11 18:16:05.756 RateMyMehendi[7621:138592] $scope.loadingtrue
+2015-06-11 18:16:05.756 RateMyMehendi[7621:138592] tag from url Common
+2015-06-11 18:16:05.756 RateMyMehendi[7621:138592] called getpopular
+2015-06-11 18:16:05.756 RateMyMehendi[7621:138592]  popular PostData [object Object]
+2015-06-11 18:16:06.705 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:16:08.552 RateMyMehendi[7621:138592] called 2
+2015-06-11 18:16:08.553 RateMyMehendi[7621:138592] inide checkLogin() myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:16:08.553 RateMyMehendi[7621:138592] inide checkLogin() $rootScope.sessionMyID:) 556eef2d2849ea7379182f2a
+2015-06-11 18:16:10.578 RateMyMehendi[7621:138592] called 3
+2015-06-11 18:16:10.578 RateMyMehendi[7621:138592] inide checkLogin() myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:16:10.578 RateMyMehendi[7621:138592] inide checkLogin() $rootScope.sessionMyID:) 556eef2d2849ea7379182f2a
+2015-06-11 18:16:12.131 RateMyMehendi[7621:138592] called 4
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592] called 5
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592] inside getowninfo [object Object]
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592] getOwnInfo sendData [object Object]
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592] inside getPost
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592] mpc.user [object Object]
+2015-06-11 18:16:14.965 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:16:16.335 RateMyMehendi[7621:138592] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:16:16.335 RateMyMehendi[7621:138592] mydetails: [object Object]
+2015-06-11 18:16:16.465 RateMyMehendi[7621:138592] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:16:54.454 RateMyMehendi[7621:138592] called 1
+2015-06-11 18:16:54.454 RateMyMehendi[7621:138592] $scope.loadingtrue
+2015-06-11 18:16:54.454 RateMyMehendi[7621:138592] tag from url Common
+2015-06-11 18:16:54.454 RateMyMehendi[7621:138592] called getpopular
+2015-06-11 18:16:54.454 RateMyMehendi[7621:138592]  popular PostData [object Object]
+2015-06-11 18:16:55.172 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:17:06.174 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:06.174 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 21 26
+2015-06-11 18:17:08.561 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:08.561 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 22 26
+2015-06-11 18:17:09.839 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:09.839 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 23 26
+2015-06-11 18:17:11.027 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:11.028 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 24 26
+2015-06-11 18:17:11.328 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:11.329 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 25 26
+2015-06-11 18:17:13.979 RateMyMehendi[7621:138592] loadmoredata:    @@@@@@:  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:17:13.979 RateMyMehendi[7621:138592] $scope.Posts.length @@@@@@ : 26 26
+2015-06-11 18:17:16.385 RateMyMehendi[7621:138592] 5575972d258e86b7c4075049
+2015-06-11 18:17:16.385 RateMyMehendi[7621:138592] transfered imgid: 5575972d258e86b7c4075049
+2015-06-11 18:17:16.385 RateMyMehendi[7621:138592] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:17:16.385 RateMyMehendi[7621:138592] I recieve POST ID : 5575972d258e86b7c4075049
+2015-06-11 18:17:16.385 RateMyMehendi[7621:138592] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:17:16.386 RateMyMehendi[7621:138592]  deatils PostData [object Object]
+2015-06-11 18:17:16.732 RateMyMehendi[7621:138592] fsc.ImgDetails [object Object]
+2015-06-11 18:17:16.732 RateMyMehendi[7621:138592] isliked:  false
+2015-06-11 18:17:21.606 RateMyMehendi[7621:138592] called 5
+2015-06-11 18:17:21.606 RateMyMehendi[7621:138592] inside getowninfo [object Object]
+2015-06-11 18:17:21.607 RateMyMehendi[7621:138592] getOwnInfo sendData [object Object]
+2015-06-11 18:17:21.607 RateMyMehendi[7621:138592] inside getPost
+2015-06-11 18:17:21.607 RateMyMehendi[7621:138592] mpc.user [object Object]
+2015-06-11 18:17:21.607 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:17:22.076 RateMyMehendi[7621:138592] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:17:22.076 RateMyMehendi[7621:138592] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:17:22.076 RateMyMehendi[7621:138592] mydetails: [object Object]
+2015-06-11 18:17:26.502 RateMyMehendi[7621:138592]  PostData [object Object]
+2015-06-11 18:17:27.436 RateMyMehendi[7621:138592] mpc.Posts likes [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:17:29.385 RateMyMehendi[7621:138592] inside getPost
+2015-06-11 18:17:29.385 RateMyMehendi[7621:138592] mpc.user [object Object]
+2015-06-11 18:17:29.385 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:17:29.851 RateMyMehendi[7621:138592] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:17:33.373 RateMyMehendi[7621:138592] called 1
+2015-06-11 18:17:33.373 RateMyMehendi[7621:138592] $scope.loadingtrue
+2015-06-11 18:17:33.374 RateMyMehendi[7621:138592] tag from url Common
+2015-06-11 18:17:33.374 RateMyMehendi[7621:138592] called getpopular
+2015-06-11 18:17:33.374 RateMyMehendi[7621:138592]  popular PostData [object Object]
+2015-06-11 18:17:33.883 RateMyMehendi[7621:138592] $scope.loadingfalse
+2015-06-11 18:17:35.847 RateMyMehendi[7621:138592] userid: 55388ab0606c800e93237bdd
+2015-06-11 18:17:35.847 RateMyMehendi[7621:138592] 55758f5bc7185668e6e3d860
+2015-06-11 18:17:35.848 RateMyMehendi[7621:138592] User ID: 55388ab0606c800e93237bdd
+2015-06-11 18:17:35.848 RateMyMehendi[7621:138592] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 18:17:35.848 RateMyMehendi[7621:138592] getOwnInfo sendData [object Object]
+2015-06-11 18:17:35.848 RateMyMehendi[7621:138592]  [object Object]
+2015-06-11 18:17:36.258 RateMyMehendi[7621:138592] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 18:17:36.258 RateMyMehendi[7621:138592] response of getUserInfo [object Object]
+2015-06-11 18:17:36.259 RateMyMehendi[7621:138592] uc.Profile [object Object]
+2015-06-11 18:17:44.956 RateMyMehendi[7621:138592] called 4
+2015-06-11 18:17:57.014 RateMyMehendi[7791:140770] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/A170CB2B-59A2-46FD-BABF-B605C4B707E0/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:17:57.091 RateMyMehendi[7791:140770] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:17:57.091 RateMyMehendi[7791:140770] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:17:57.093 RateMyMehendi[7791:140770] Unlimited access to network resources
+2015-06-11 18:17:57.174 RateMyMehendi[7791:140770] [CDVTimer][keyboard] 0.048995ms
+2015-06-11 18:17:57.208 RateMyMehendi[7791:140770] [CDVTimer][socialsharing] 34.402013ms
+2015-06-11 18:17:57.219 RateMyMehendi[7791:140770] [CDVTimer][splashscreen] 10.784984ms
+2015-06-11 18:17:57.219 RateMyMehendi[7791:140770] [CDVTimer][TotalPluginStartup] 45.664012ms
+2015-06-11 18:17:57.272 RateMyMehendi[7791:140770] Resetting plugins due to page load.
+2015-06-11 18:17:57.610 RateMyMehendi[7791:140770] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/EE66E2F4-EEC2-4C9A-B64B-B19E197CA46F/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:17:58.313 RateMyMehendi[7791:140770] $scope.loadingfalse
+2015-06-11 18:18:09.294 RateMyMehendi[7791:140770] called 5
+2015-06-11 18:18:09.295 RateMyMehendi[7791:140770] inside getowninfo [object Object]
+2015-06-11 18:18:09.295 RateMyMehendi[7791:140770] getOwnInfo sendData [object Object]
+2015-06-11 18:18:09.295 RateMyMehendi[7791:140770] inside getPost
+2015-06-11 18:18:09.295 RateMyMehendi[7791:140770] mpc.user [object Object]
+2015-06-11 18:18:09.295 RateMyMehendi[7791:140770]  [object Object]
+2015-06-11 18:18:09.882 RateMyMehendi[7791:140770] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:18:09.882 RateMyMehendi[7791:140770] mydetails: [object Object]
+2015-06-11 18:18:09.882 RateMyMehendi[7791:140770] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:18:15.685 RateMyMehendi[7791:140770] called 1
+2015-06-11 18:18:15.686 RateMyMehendi[7791:140770] $scope.loadingtrue
+2015-06-11 18:18:15.686 RateMyMehendi[7791:140770] tag from url Common
+2015-06-11 18:18:15.686 RateMyMehendi[7791:140770] called getpopular
+2015-06-11 18:18:15.686 RateMyMehendi[7791:140770]  popular PostData [object Object]
+2015-06-11 18:18:17.304 RateMyMehendi[7791:140770] $scope.loadingfalse
+2015-06-11 18:18:18.457 RateMyMehendi[7791:140770] userid: 55388ab0606c800e93237bdd
+2015-06-11 18:18:18.457 RateMyMehendi[7791:140770] 55758f5bc7185668e6e3d860
+2015-06-11 18:18:18.458 RateMyMehendi[7791:140770] User ID: 55388ab0606c800e93237bdd
+2015-06-11 18:18:18.458 RateMyMehendi[7791:140770] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 18:18:18.458 RateMyMehendi[7791:140770] getOwnInfo sendData [object Object]
+2015-06-11 18:18:18.458 RateMyMehendi[7791:140770]  [object Object]
+2015-06-11 18:18:18.879 RateMyMehendi[7791:140770] response of getUserInfo [object Object]
+2015-06-11 18:18:18.880 RateMyMehendi[7791:140770] uc.Profile [object Object]
+2015-06-11 18:18:18.880 RateMyMehendi[7791:140770] uc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 10
+2015-06-11 18:21:19.587 RateMyMehendi[7958:142246] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/6EAD31D6-9561-4CF6-97EE-4F0419A3F725/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:21:19.658 RateMyMehendi[7958:142246] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:21:19.659 RateMyMehendi[7958:142246] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:21:19.660 RateMyMehendi[7958:142246] Unlimited access to network resources
+2015-06-11 18:21:19.743 RateMyMehendi[7958:142246] [CDVTimer][keyboard] 0.060976ms
+2015-06-11 18:21:19.777 RateMyMehendi[7958:142246] [CDVTimer][socialsharing] 34.153998ms
+2015-06-11 18:21:19.787 RateMyMehendi[7958:142246] [CDVTimer][splashscreen] 9.880006ms
+2015-06-11 18:21:19.787 RateMyMehendi[7958:142246] [CDVTimer][TotalPluginStartup] 44.587016ms
+2015-06-11 18:21:19.836 RateMyMehendi[7958:142246] Resetting plugins due to page load.
+2015-06-11 18:21:20.194 RateMyMehendi[7958:142246] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/73EE1A9C-A435-4ACF-A47C-39FE51480BA6/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:21:20.959 RateMyMehendi[7958:142246] $scope.loadingfalse
+2015-06-11 18:22:37.054 RateMyMehendi[7958:142246] called 5
+2015-06-11 18:22:37.055 RateMyMehendi[7958:142246] inside getowninfo [object Object]
+2015-06-11 18:22:37.055 RateMyMehendi[7958:142246] getOwnInfo sendData [object Object]
+2015-06-11 18:22:37.055 RateMyMehendi[7958:142246] inside getPost
+2015-06-11 18:22:37.056 RateMyMehendi[7958:142246] mpc.user [object Object]
+2015-06-11 18:22:37.056 RateMyMehendi[7958:142246]  [object Object]
+2015-06-11 18:22:37.720 RateMyMehendi[7958:142246] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:22:37.720 RateMyMehendi[7958:142246] mydetails: [object Object]
+2015-06-11 18:22:37.820 RateMyMehendi[7958:142246] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:22:40.875 RateMyMehendi[7958:142246] called 4
+2015-06-11 18:23:03.213 RateMyMehendi[8130:143567] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/3F0A1B84-F003-4CE5-BCD7-A0C0112EC825/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:23:03.276 RateMyMehendi[8130:143567] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:23:03.276 RateMyMehendi[8130:143567] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:23:03.278 RateMyMehendi[8130:143567] Unlimited access to network resources
+2015-06-11 18:23:03.361 RateMyMehendi[8130:143567] [CDVTimer][keyboard] 0.088990ms
+2015-06-11 18:23:03.395 RateMyMehendi[8130:143567] [CDVTimer][socialsharing] 33.079028ms
+2015-06-11 18:23:03.406 RateMyMehendi[8130:143567] [CDVTimer][splashscreen] 10.910034ms
+2015-06-11 18:23:03.406 RateMyMehendi[8130:143567] [CDVTimer][TotalPluginStartup] 44.627011ms
+2015-06-11 18:23:03.452 RateMyMehendi[8130:143567] Resetting plugins due to page load.
+2015-06-11 18:23:03.796 RateMyMehendi[8130:143567] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/1CE6D9E3-AC6D-4255-A6B5-EAFB2332DC4A/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:23:04.475 RateMyMehendi[8130:143567] $scope.loadingfalse
+2015-06-11 18:24:33.934 RateMyMehendi[8300:144636] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/0EC95596-1747-4F19-8DDF-72629DE9938E/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:24:33.998 RateMyMehendi[8300:144636] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:24:33.999 RateMyMehendi[8300:144636] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:24:34.000 RateMyMehendi[8300:144636] Unlimited access to network resources
+2015-06-11 18:24:34.087 RateMyMehendi[8300:144636] [CDVTimer][keyboard] 0.046968ms
+2015-06-11 18:24:34.123 RateMyMehendi[8300:144636] [CDVTimer][socialsharing] 36.064029ms
+2015-06-11 18:24:34.133 RateMyMehendi[8300:144636] [CDVTimer][splashscreen] 9.725988ms
+2015-06-11 18:24:34.133 RateMyMehendi[8300:144636] [CDVTimer][TotalPluginStartup] 46.245992ms
+2015-06-11 18:24:34.180 RateMyMehendi[8300:144636] Resetting plugins due to page load.
+2015-06-11 18:24:34.534 RateMyMehendi[8300:144636] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/A0AA7BCD-96D0-410C-9CBF-615B66D392B6/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:24:35.244 RateMyMehendi[8300:144636] $scope.loadingfalse
+2015-06-11 18:28:51.995 RateMyMehendi[8480:146466] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/74B68F04-BA3A-4FDE-AE60-BA5E2D20FDBD/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:28:52.077 RateMyMehendi[8480:146466] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:28:52.077 RateMyMehendi[8480:146466] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:28:52.079 RateMyMehendi[8480:146466] Unlimited access to network resources
+2015-06-11 18:28:52.164 RateMyMehendi[8480:146466] [CDVTimer][keyboard] 0.051022ms
+2015-06-11 18:28:52.200 RateMyMehendi[8480:146466] [CDVTimer][socialsharing] 35.767019ms
+2015-06-11 18:28:52.217 RateMyMehendi[8480:146466] [CDVTimer][splashscreen] 17.437994ms
+2015-06-11 18:28:52.217 RateMyMehendi[8480:146466] [CDVTimer][TotalPluginStartup] 53.700030ms
+2015-06-11 18:28:52.263 RateMyMehendi[8480:146466] Resetting plugins due to page load.
+2015-06-11 18:28:52.605 RateMyMehendi[8480:146466] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/0E825F00-D2EC-4DA9-8A19-00EFB2AB0848/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:28:54.789 RateMyMehendi[8480:146466] $scope.loadingfalse
+2015-06-11 18:31:43.193 RateMyMehendi[8649:147523] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/66734FB9-E7E1-4944-AA7F-133E960D7393/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:31:43.265 RateMyMehendi[8649:147523] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:31:43.265 RateMyMehendi[8649:147523] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:31:43.267 RateMyMehendi[8649:147523] Unlimited access to network resources
+2015-06-11 18:31:43.350 RateMyMehendi[8649:147523] [CDVTimer][keyboard] 0.052989ms
+2015-06-11 18:31:43.384 RateMyMehendi[8649:147523] [CDVTimer][socialsharing] 33.618987ms
+2015-06-11 18:31:43.396 RateMyMehendi[8649:147523] [CDVTimer][splashscreen] 11.462033ms
+2015-06-11 18:31:43.396 RateMyMehendi[8649:147523] [CDVTimer][TotalPluginStartup] 45.590043ms
+2015-06-11 18:31:43.445 RateMyMehendi[8649:147523] Resetting plugins due to page load.
+2015-06-11 18:31:43.778 RateMyMehendi[8649:147523] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/9DBC1E7B-A2B4-4073-89C8-C4CFFB8DAB56/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:32:09.637 RateMyMehendi[8649:147523] $scope.loadingfalse
+2015-06-11 18:37:17.404 RateMyMehendi[8817:148997] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/9DF18CD9-E63A-46A7-B6FA-B758964CDBE2/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:37:17.479 RateMyMehendi[8817:148997] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:37:17.479 RateMyMehendi[8817:148997] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:37:17.481 RateMyMehendi[8817:148997] Unlimited access to network resources
+2015-06-11 18:37:17.564 RateMyMehendi[8817:148997] [CDVTimer][keyboard] 0.055969ms
+2015-06-11 18:37:17.598 RateMyMehendi[8817:148997] [CDVTimer][socialsharing] 34.206033ms
+2015-06-11 18:37:17.611 RateMyMehendi[8817:148997] [CDVTimer][splashscreen] 12.106001ms
+2015-06-11 18:37:17.611 RateMyMehendi[8817:148997] [CDVTimer][TotalPluginStartup] 46.911001ms
+2015-06-11 18:37:17.646 RateMyMehendi[8817:148997] Resetting plugins due to page load.
+2015-06-11 18:37:17.979 RateMyMehendi[8817:148997] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/260533D0-FB08-483D-8E10-98E65A00EF1A/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:37:18.690 RateMyMehendi[8817:148997] $scope.loadingfalse
+2015-06-11 18:41:38.266 RateMyMehendi[9002:151205] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/48567F17-A29C-4B03-84E8-135A7F9A4670/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:41:38.342 RateMyMehendi[9002:151205] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:41:38.342 RateMyMehendi[9002:151205] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:41:38.344 RateMyMehendi[9002:151205] Unlimited access to network resources
+2015-06-11 18:41:38.428 RateMyMehendi[9002:151205] [CDVTimer][keyboard] 0.054002ms
+2015-06-11 18:41:38.463 RateMyMehendi[9002:151205] [CDVTimer][socialsharing] 34.964025ms
+2015-06-11 18:41:38.474 RateMyMehendi[9002:151205] [CDVTimer][splashscreen] 10.598004ms
+2015-06-11 18:41:38.474 RateMyMehendi[9002:151205] [CDVTimer][TotalPluginStartup] 46.063006ms
+2015-06-11 18:41:38.522 RateMyMehendi[9002:151205] Resetting plugins due to page load.
+2015-06-11 18:41:38.881 RateMyMehendi[9002:151205] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/CDA8904A-DC61-43B6-9343-41114A4B6EF2/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:41:39.765 RateMyMehendi[9002:151205] $scope.loadingfalse
+2015-06-11 18:41:41.011 RateMyMehendi[9002:151205] called 4
+2015-06-11 18:41:58.989 RateMyMehendi[9170:151867] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/14DDFA86-7DEC-4414-98C5-CBDE7AF97CB0/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:41:59.050 RateMyMehendi[9170:151867] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:41:59.051 RateMyMehendi[9170:151867] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:41:59.054 RateMyMehendi[9170:151867] Unlimited access to network resources
+2015-06-11 18:41:59.137 RateMyMehendi[9170:151867] [CDVTimer][keyboard] 0.054955ms
+2015-06-11 18:41:59.172 RateMyMehendi[9170:151867] [CDVTimer][socialsharing] 34.452975ms
+2015-06-11 18:41:59.182 RateMyMehendi[9170:151867] [CDVTimer][splashscreen] 9.985983ms
+2015-06-11 18:41:59.182 RateMyMehendi[9170:151867] [CDVTimer][TotalPluginStartup] 44.952035ms
+2015-06-11 18:41:59.228 RateMyMehendi[9170:151867] Resetting plugins due to page load.
+2015-06-11 18:41:59.568 RateMyMehendi[9170:151867] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/773B3F99-4C6B-479D-985D-53DCECC61ED2/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:42:01.333 RateMyMehendi[9170:151867] $scope.loadingfalse
+2015-06-11 18:42:02.231 RateMyMehendi[9170:151867] called 4
+2015-06-11 18:42:06.066 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:06.315 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:06.490 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:42:06.529 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:06.713 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object]
+2015-06-11 18:42:07.973 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object]
+2015-06-11 18:42:09.363 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:09.510 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:09.680 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object]
+2015-06-11 18:42:09.889 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object]
+2015-06-11 18:42:10.983 RateMyMehendi[9170:151867]  search PostData [object Object]
+2015-06-11 18:42:11.358 RateMyMehendi[9170:151867] searched :  [object Object],[object Object],[object Object]
+2015-06-11 18:42:32.955 RateMyMehendi[9337:152546] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/29A3FAA0-88BB-4345-B1B8-85032B7DD561/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:42:33.025 RateMyMehendi[9337:152546] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:42:33.025 RateMyMehendi[9337:152546] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:42:33.027 RateMyMehendi[9337:152546] Unlimited access to network resources
+2015-06-11 18:42:33.110 RateMyMehendi[9337:152546] [CDVTimer][keyboard] 0.052035ms
+2015-06-11 18:42:33.145 RateMyMehendi[9337:152546] [CDVTimer][socialsharing] 34.282982ms
+2015-06-11 18:42:33.156 RateMyMehendi[9337:152546] [CDVTimer][splashscreen] 10.968983ms
+2015-06-11 18:42:33.156 RateMyMehendi[9337:152546] [CDVTimer][TotalPluginStartup] 45.786977ms
+2015-06-11 18:42:33.206 RateMyMehendi[9337:152546] Resetting plugins due to page load.
+2015-06-11 18:42:33.546 RateMyMehendi[9337:152546] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/BE71D72A-EBF7-4FE7-B0F8-7EA536ADA8F2/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:42:34.543 RateMyMehendi[9337:152546] $scope.loadingfalse
+2015-06-11 18:42:35.709 RateMyMehendi[9337:152546] called 5
+2015-06-11 18:42:35.709 RateMyMehendi[9337:152546] inside getowninfo [object Object]
+2015-06-11 18:42:35.710 RateMyMehendi[9337:152546] getOwnInfo sendData [object Object]
+2015-06-11 18:42:35.710 RateMyMehendi[9337:152546] inside getPost
+2015-06-11 18:42:35.710 RateMyMehendi[9337:152546] mpc.user [object Object]
+2015-06-11 18:42:35.710 RateMyMehendi[9337:152546]  [object Object]
+2015-06-11 18:42:36.357 RateMyMehendi[9337:152546] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:42:36.357 RateMyMehendi[9337:152546] mydetails: [object Object]
+2015-06-11 18:42:36.357 RateMyMehendi[9337:152546] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:42:38.167 RateMyMehendi[9337:152546] called 4
+2015-06-11 18:42:41.937 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:42:42.309 RateMyMehendi[9337:152546] searched :  [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:42:43.303 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:42:43.489 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:42:47.918 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:42:47.918 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:42:49.907 RateMyMehendi[9337:152546] Error in search [object Object]
+2015-06-11 18:42:49.908 RateMyMehendi[9337:152546] Error in search [object Object]
+2015-06-11 18:42:55.121 RateMyMehendi[9337:152546] userid: 553630d76a45f25309166e05
+2015-06-11 18:42:55.121 RateMyMehendi[9337:152546] 55780bf3cbd45a2afc3123a0
+2015-06-11 18:42:55.122 RateMyMehendi[9337:152546] User ID: 553630d76a45f25309166e05
+2015-06-11 18:42:55.122 RateMyMehendi[9337:152546] My ID: 556eef2d2849ea7379182f2a
+2015-06-11 18:42:55.122 RateMyMehendi[9337:152546] getOwnInfo sendData [object Object]
+2015-06-11 18:42:55.122 RateMyMehendi[9337:152546]  [object Object]
+2015-06-11 18:42:57.098 RateMyMehendi[9337:152546] searched :  [object Object],[object Object]
+2015-06-11 18:42:57.169 RateMyMehendi[9337:152546] searched :  [object Object],[object Object]
+2015-06-11 18:42:57.428 RateMyMehendi[9337:152546] response of getUserInfo [object Object]
+2015-06-11 18:42:57.428 RateMyMehendi[9337:152546] uc.Profile [object Object]
+2015-06-11 18:42:57.802 RateMyMehendi[9337:152546] uc.Posts posts [object Object] 1
+2015-06-11 18:42:59.818 RateMyMehendi[9337:152546]  PostData [object Object]
+2015-06-11 18:43:00.233 RateMyMehendi[9337:152546] uc.Posts likes [object Object] 1
+2015-06-11 18:43:03.292 RateMyMehendi[9337:152546] user profile page
+2015-06-11 18:43:03.292 RateMyMehendi[9337:152546] postid to be passed: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:03.292 RateMyMehendi[9337:152546] transfered imgid: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:03.293 RateMyMehendi[9337:152546] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:43:03.293 RateMyMehendi[9337:152546] I recieve POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:03.293 RateMyMehendi[9337:152546] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:43:03.293 RateMyMehendi[9337:152546]  deatils PostData [object Object]
+2015-06-11 18:43:04.045 RateMyMehendi[9337:152546] fsc.ImgDetails [object Object]
+2015-06-11 18:43:04.045 RateMyMehendi[9337:152546] isliked:  false
+2015-06-11 18:43:05.568 RateMyMehendi[9337:152546] fsc.ImgDetails.cntLikes1
+2015-06-11 18:43:05.568 RateMyMehendi[9337:152546]  [object Object]
+2015-06-11 18:43:07.310 RateMyMehendi[9337:152546] IsLoggedIn: 
+2015-06-11 18:43:07.311 RateMyMehendi[9337:152546] Comment clicked image id: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:07.311 RateMyMehendi[9337:152546] post you commented on: 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:07.311 RateMyMehendi[9337:152546] called
+2015-06-11 18:43:07.311 RateMyMehendi[9337:152546]  comments PostData [object Object]
+2015-06-11 18:43:07.746 RateMyMehendi[9337:152546] comments [object Object],[object Object],[object Object]
+2015-06-11 18:43:12.886 RateMyMehendi[9337:152546] POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:12.886 RateMyMehendi[9337:152546] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:43:12.886 RateMyMehendi[9337:152546] Comments : cxvvcx
+2015-06-11 18:43:12.886 RateMyMehendi[9337:152546]  Postcomment PostData [object Object]
+2015-06-11 18:43:13.244 RateMyMehendi[9337:152546] comments Comment posted successfully....
+2015-06-11 18:43:13.244 RateMyMehendi[9337:152546] inside comments page : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:13.244 RateMyMehendi[9337:152546] I recieve POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:13.244 RateMyMehendi[9337:152546]  comments PostData [object Object]
+2015-06-11 18:43:13.585 RateMyMehendi[9337:152546] comments [object Object],[object Object],[object Object],[object Object]
+2015-06-11 18:43:15.324 RateMyMehendi[9337:152546] POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:43:15.324 RateMyMehendi[9337:152546] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:43:15.324 RateMyMehendi[9337:152546] Comments : 
+2015-06-11 18:44:44.548 RateMyMehendi[9337:152546] POST ID : 55780bf3cbd45a2afc3123a0
+2015-06-11 18:44:44.549 RateMyMehendi[9337:152546] USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:44:44.549 RateMyMehendi[9337:152546] Comments : 
+2015-06-11 18:44:47.178 RateMyMehendi[9337:152546] called 1
+2015-06-11 18:44:47.179 RateMyMehendi[9337:152546] $scope.loadingtrue
+2015-06-11 18:44:47.179 RateMyMehendi[9337:152546] tag from url Common
+2015-06-11 18:44:47.179 RateMyMehendi[9337:152546] called getpopular
+2015-06-11 18:44:47.179 RateMyMehendi[9337:152546]  popular PostData [object Object]
+2015-06-11 18:44:57.205 RateMyMehendi[9337:152546] $scope.loadingfalse
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546] called 5
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546] inside getowninfo [object Object]
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546] getOwnInfo sendData [object Object]
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546] inside getPost
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546] mpc.user [object Object]
+2015-06-11 18:45:00.621 RateMyMehendi[9337:152546]  [object Object]
+2015-06-11 18:45:00.891 RateMyMehendi[9337:152546] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:45:00.891 RateMyMehendi[9337:152546] mydetails: [object Object]
+2015-06-11 18:45:01.240 RateMyMehendi[9337:152546] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:45:04.085 RateMyMehendi[9337:152546] myprofile page
+2015-06-11 18:45:04.085 RateMyMehendi[9337:152546] img id to be passed: 55783264b61ddc98c2101c3c
+2015-06-11 18:45:04.085 RateMyMehendi[9337:152546] on edit pic: imgid  55783264b61ddc98c2101c3c
+2015-06-11 18:45:04.085 RateMyMehendi[9337:152546] epc.tags: 
+2015-06-11 18:45:04.085 RateMyMehendi[9337:152546] img details [object Object]
+2015-06-11 18:45:04.086 RateMyMehendi[9337:152546] inside get post details...
+2015-06-11 18:45:04.086 RateMyMehendi[9337:152546]  deatils PostData [object Object]
+2015-06-11 18:45:04.665 RateMyMehendi[9337:152546] epc.post result: [object Object]
+2015-06-11 18:45:04.666 RateMyMehendi[9337:152546] epc.Post.tags: Common
+2015-06-11 18:45:04.666 RateMyMehendi[9337:152546] epc.tags: inside getpostdetails Common
+2015-06-11 18:45:04.666 RateMyMehendi[9337:152546] des: 
+2015-06-11 18:45:07.072 RateMyMehendi[9337:152546] inside getowninfo [object Object]
+2015-06-11 18:45:07.073 RateMyMehendi[9337:152546] getOwnInfo sendData [object Object]
+2015-06-11 18:45:07.073 RateMyMehendi[9337:152546] inside getPost
+2015-06-11 18:45:07.073 RateMyMehendi[9337:152546] mpc.user [object Object]
+2015-06-11 18:45:07.073 RateMyMehendi[9337:152546]  [object Object]
+2015-06-11 18:45:07.573 RateMyMehendi[9337:152546] {"DPPath":"http://api-ratemymehendi.rhcloud.com/profile/lovely-baby1433930615113.jpg","_id":"556eef2d2849ea7379182f2a","age":0,"email":"balkrishnasawant04@gmail.com","fbId":"0","gender":"M","userName":"Ankit Sawant"}
+2015-06-11 18:45:07.574 RateMyMehendi[9337:152546] mydetails: [object Object]
+2015-06-11 18:45:07.724 RateMyMehendi[9337:152546] mpc.Posts posts [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] 15
+2015-06-11 18:45:09.077 RateMyMehendi[9337:152546] called 4
+2015-06-11 18:45:12.541 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:45:12.541 RateMyMehendi[9337:152546]  search PostData [object Object]
+2015-06-11 18:45:13.117 RateMyMehendi[9337:152546] searched :  [object Object]
+2015-06-11 18:45:13.139 RateMyMehendi[9337:152546] searched :  [object Object]
+2015-06-11 18:45:16.285 RateMyMehendi[9337:152546] called 1
+2015-06-11 18:45:16.285 RateMyMehendi[9337:152546] $scope.loadingtrue
+2015-06-11 18:45:16.285 RateMyMehendi[9337:152546] tag from url Common
+2015-06-11 18:45:16.285 RateMyMehendi[9337:152546] called getpopular
+2015-06-11 18:45:16.285 RateMyMehendi[9337:152546]  popular PostData [object Object]
+2015-06-11 18:45:17.006 RateMyMehendi[9337:152546] $scope.loadingfalse
+2015-06-11 18:45:18.562 RateMyMehendi[9337:152546] 55758f5bc7185668e6e3d860
+2015-06-11 18:45:18.563 RateMyMehendi[9337:152546] transfered imgid: 55758f5bc7185668e6e3d860
+2015-06-11 18:45:18.563 RateMyMehendi[9337:152546] myid: 556eef2d2849ea7379182f2a
+2015-06-11 18:45:18.563 RateMyMehendi[9337:152546] I recieve POST ID : 55758f5bc7185668e6e3d860
+2015-06-11 18:45:18.563 RateMyMehendi[9337:152546] I recieve USER ID : 556eef2d2849ea7379182f2a
+2015-06-11 18:45:18.563 RateMyMehendi[9337:152546]  deatils PostData [object Object]
+2015-06-11 18:45:18.960 RateMyMehendi[9337:152546] fsc.ImgDetails [object Object]
+2015-06-11 18:45:18.960 RateMyMehendi[9337:152546] isliked:  false
+2015-06-11 18:45:22.520 RateMyMehendi[9337:152546] $scope.loadingtrue
+2015-06-11 18:45:22.520 RateMyMehendi[9337:152546] tag from url Common
+2015-06-11 18:45:22.521 RateMyMehendi[9337:152546] called getpopular
+2015-06-11 18:45:22.521 RateMyMehendi[9337:152546]  popular PostData [object Object]
+2015-06-11 18:45:23.159 RateMyMehendi[9337:152546] $scope.loadingfalse
+2015-06-11 18:46:45.104 RateMyMehendi[9509:154316] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/2B3C3A43-BB2C-40E8-B324-5DC3DD4B37B6/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:46:45.174 RateMyMehendi[9509:154316] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:46:45.174 RateMyMehendi[9509:154316] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:46:45.175 RateMyMehendi[9509:154316] Unlimited access to network resources
+2015-06-11 18:46:45.261 RateMyMehendi[9509:154316] [CDVTimer][keyboard] 0.054002ms
+2015-06-11 18:46:45.295 RateMyMehendi[9509:154316] [CDVTimer][socialsharing] 33.744991ms
+2015-06-11 18:46:45.306 RateMyMehendi[9509:154316] [CDVTimer][splashscreen] 11.229992ms
+2015-06-11 18:46:45.307 RateMyMehendi[9509:154316] [CDVTimer][TotalPluginStartup] 45.498013ms
+2015-06-11 18:46:45.354 RateMyMehendi[9509:154316] Resetting plugins due to page load.
+2015-06-11 18:46:45.699 RateMyMehendi[9509:154316] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/2605320A-7B2A-4616-8164-545F8F26F65C/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:46:46.490 RateMyMehendi[9509:154316] $scope.loadingfalse
+2015-06-11 18:47:07.863 RateMyMehendi[9676:154855] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Data/Application/3366A244-E165-49E8-989A-324D81AC4399/Library/Cookies/Cookies.binarycookies
+2015-06-11 18:47:07.934 RateMyMehendi[9676:154855] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-11 18:47:07.934 RateMyMehendi[9676:154855] Multi-tasking -> Device: YES, App: YES
+2015-06-11 18:47:07.936 RateMyMehendi[9676:154855] Unlimited access to network resources
+2015-06-11 18:47:08.022 RateMyMehendi[9676:154855] [CDVTimer][keyboard] 0.052989ms
+2015-06-11 18:47:08.056 RateMyMehendi[9676:154855] [CDVTimer][socialsharing] 33.589005ms
+2015-06-11 18:47:08.068 RateMyMehendi[9676:154855] [CDVTimer][splashscreen] 11.911988ms
+2015-06-11 18:47:08.068 RateMyMehendi[9676:154855] [CDVTimer][TotalPluginStartup] 45.980990ms
+2015-06-11 18:47:08.114 RateMyMehendi[9676:154855] Resetting plugins due to page load.
+2015-06-11 18:47:08.442 RateMyMehendi[9676:154855] Finished load of: file:///Users/dev/Library/Developer/CoreSimulator/Devices/4DFB363E-33D7-45F3-A5CB-3C9B7D5998A2/data/Containers/Bundle/Application/295E78D0-4965-472E-9EEE-A9566CF276E1/RateMyMehendi.app/www/index.html#/app/home/Common
+2015-06-11 18:47:09.263 RateMyMehendi[9676:154855] $scope.loadingfalse

@@ -1,0 +1,64 @@
+
+<ion-view data-ng-init="uc.getUserInfo()">
+    <ion-nav-bar class="bar-stable bar-assertive">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+<!--    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>-->
+    <div class="list MyDetails">
+        <div class="item item-avatar">
+                <img ng-src="{{uc.Profile.DPPath }}" alt=""/>
+                <h2>{{uc.Profile.userName}}</h2>
+        </div>
+    </div>
+    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable ">
+        <div  class="tabs">
+            <a class="tab-item" 
+               ng-class="{'active':IsPostTabActive}"
+               ng-click="IsPostTabActive=true;IsLikeTabActive=false; uc.getUserPost();"
+               data-ng-init="IsPostTabActive=true;IsLikeTabActive=false; uc.getUserPost();">
+              Posts
+            </a>
+            <a class="tab-item"
+               ng-class="{'active':IsLikeTabActive}"
+               ng-click="IsLikeTabActive=true;IsPostTabActive=false; uc.getUserLike();">
+              Likes
+            </a>
+        </div>
+    </div>
+    <ion-content class="MyDetailsBody">
+        <div id="PostDetails" class="list card" ng-repeat="Post in uc.Posts" ng-if="(loading === false && loadinggetOwninfo=== true &&  postLikesAvailable === true)">
+            <div class="item item-body">
+             
+             <a href="#/app/FullSizeImage"><img class="full-image" ng-src="{{Post.imagePath}}" alt="" ng-click="uc.getpostid('{{Post._id}}')"/></a>
+                <!--<img class="full-image" src="img/thumbnail1.png" alt=""/>-->
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left" ng-controller="ShareController" ng-click="uc.getpostid('{{Post._id}}')">
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-android-favorite" ng-style="{ color:Post.liked? 'red':'#444' }"></i>
+                {{Post.cntLikes}} Like
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-chatbox"></i>
+                {{Post.cntComments}} Comment
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                    <i class="icon ion-social-facebook"></i>
+                    Share
+              </a>
+            <a class="tab-item"  href="#/app/FullSizeImage">
+                <i class="icon ion-social-whatsapp"></i>
+                Share
+            </a>
+            </div>
+        </div>
+        <ion-infinite-scroll distance="2"
+                     on-infinite="loadMoreData()"
+                     ng-if="!moredata && !loading;"
+        ></ion-infinite-scroll>
+    </ion-content>
+    </ion-view>
+  

@@ -1,0 +1,60 @@
+
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+<!--    <div id="searchDiv" class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon" ng-click=""></i>
+          <input type="text" placeholder="Search" id="searchBox">
+        </label>
+    </div>-->
+    <div id="searchDiv">
+        <div class="main">           
+          <autocomplete ng-model="result" attr-placeholder="Type to search designs..." click-activation="true" data="designs" on-type="doSomething" on-select="doSomethingElse"></autocomplete>
+        </div>
+    </div>
+    <ion-content  id="searchResultDiv">
+        <div class="list card"  ng-repeat="Post in searchPosts" ng-click="getimageid('{{Post._id}}')">
+            <div class="headerformat item item-avatar">
+<!--                <a href="#/app/userProfile">
+                    <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt="" style="max-width: 40px; max-height: 40px;"/>
+                    <h2>{{Post.uploader.userName}}</h2>
+                </a>-->
+                <a href="#/app/userProfile" ng-if="MyId!==Post.uploader._id">
+                    <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
+                    <h2>{{Post.uploader.userName}}</h2>
+                    <!--<p> {{Post.imageId}}</p>-->
+                </a>
+                <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                    <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
+                    <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
+                    <!--<p> {{Post.imageId}}</p>-->
+                </a>
+            </div>
+            <div class="item item-body">
+                <a href="#/app/FullSizeImage"><img ng-click="getimageid('{{Post._id}}')" class="full-image" ng-src="{{ Post.imagePath }}" alt=""/></a>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left" ng-controller="ShareController">
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-android-favorite"  ng-style="{ color:Post.liked? 'red':'#444' }"></i>
+                {{Post.cntLikes}} Like
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-chatbox"></i>
+                {{Post.cntComments}} Comment
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-social-facebook"></i>
+                Share
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-social-whatsapp"></i>
+                Share
+              </a>
+            </div>
+        </div>
+        <div class="space"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,79 @@
+
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <div ng-controller="MyProfileCtrl" class="MyDetails list">
+        <div class="item item-avatar">
+            <img ng-src="{{mpc.OwnInfo.DPPath}}" alt=""  ng-click="openModal(1)"/>
+            <h2>{{mpc.OwnInfo.userName}}</h2>
+        </div>
+    </div>
+    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable ">
+        <div  class="tabs">
+      <a class="tab-item"
+         ng-class="{'active':IsPostTabActive}"
+         ng-click="IsPostTabActive=true;IsLikeTabActive=false; mpc.getOwnPost();"
+         data-ng-init="IsPostTabActive=true;IsLikeTabActive=false;">
+        Posts
+      </a>
+      <a class="tab-item"
+         ng-class="{'active':IsLikeTabActive}"
+         ng-click="IsLikeTabActive=true;IsPostTabActive=false; mpc.getOwnLike();">
+        Likes
+      </a>
+    </div>
+    </div>
+    <ion-content class="MyDetailsBody">
+        <div id="PostDetails" class="list card" ng-repeat="posts in mpc.Posts" ng-if="(loading === false && loadinggetOwninfo=== true &&  postLikesAvailable === true)">
+            <div class="item item-body" >
+            <a href="#/app/EditUploadedPicDetails" ng-click="mpc.sendimgID('{{posts._id}}')" ng-model="posts._id" ng-hide="IsLikeTabActive">
+                <i style="padding: 15px; padding-top: 5px; right:0px" id="EditIcon" class="icon ion-edit assertive" ></i>
+            </a> 
+                <!--<i id="DeleteIcon" class="icon ion-android-delete assertive" ng-click="showDeletePost()"></i>-->
+             <a href="#/app/FullSizeImage" ng-click="mpc.sendimgID('{{posts._id}}')" ng-model="posts._id">
+                 <img class="full-image" ng-src="{{posts.imagePath}}" alt="" />
+             </a>
+                <!--<img class="full-image" src="img/thumbnail1.png" alt=""/>-->
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left" ng-click="mpc.sendimgID('{{posts._id}}')" ng-controller="ShareController">
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-android-favorite" ng-style="{ color:posts.liked? 'red':'#444' }"></i>
+                {{posts.cntLikes}} Likes
+              </a>
+              <a class="tab-item" href="#/app/FullSizeImage">
+                <i class="icon ion-chatbox"></i>
+                {{posts.cntComments}} Comments
+              </a>
+               <a class="tab-item"  href="#/app/FullSizeImage">
+                   <i class="icon ion-social-facebook"></i>
+                   Share
+               </a>
+               <a class="tab-item" href="#/app/FullSizeImage">
+                   <i class="icon ion-social-whatsapp"></i>
+                   Share
+               </a> 
+            </div>
+        </div>
+        <ion-infinite-scroll distance="2"
+                     on-infinite="loadMoreData()"
+                     ng-if="!moredata && !loading;"
+        ></ion-infinite-scroll>
+    </ion-content>
+    </ion-view>
+   <script id="EditProfilePicModal.html" type="text/ng-template">
+      <ion-modal-view>
+        <ion-header-bar class="bar bar-header bar-assertive">
+          <h1 class="title" id="EditpicPopup">Edit Profile Pic</h1>
+            <i id="ClosePopup" class="icon ion-close-round" ng-click="closeModal(1)"></i>
+        </ion-header-bar>
+        <ion-content class="padding">
+          <div id="PopupBtn"class="list">
+           <a href="#/app/DpChangeCamera"> <button class="button button-block button-upload" ng-click="closeModal(1)">Upload Photo</button></a>
+           <a href="#/app/DpChangeGallery"> <button class="button button-block button-upload" ng-click="closeModal(1)">Choose from Photos</button></a>
+          </div>
+        </ion-content>
+ </ion-modal-view>
+</script>

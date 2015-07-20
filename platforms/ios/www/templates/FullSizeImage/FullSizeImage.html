@@ -1,0 +1,48 @@
+ <ion-view data-ng-init="fsc.getImage()">
+    <ion-nav-bar class="bar-stable bar-assertive">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+        <ion-content class="padding">
+    <div id="ImageDetails" class="list card" ng-show="loading === false">
+              <!--<div class="list card">-->
+       <div class="item item-image">
+           <img ng-src="{{fsc.ImgDetails.imagePath}}" alt=""/>
+           <!--<img src="img/thumbnail1.png" alt=""/>-->
+       </div>
+        <div class="item item-body">
+            <p id="likescomments">
+              <a href="" id="likesCount" class="subdued">{{likesCount}} Likes</a>
+              <a href="" class="subdued">{{fsc.ImgDetails.cntComments}} Comments</a>
+            </p>
+        </div> 
+<!--            <input type="text" ng-model="item.message">-->
+      <div class="item tabs tabs-secondary tabs-icon-left" ng-controller="ShareController">
+        <a class="tab-item" href ng-click="fsc.ClickedLiked()">
+            <i class="icon ion-android-favorite" ng-style="{color:fsc.color}"></i>
+          Like
+        </a>
+         <a class="tab-item" href ng-click="fsc.ClickedComment()">
+           <i class="icon ion-chatbox"></i>
+            Comment
+        </a>
+         <a class="tab-item"  ng-click="fsc.share(shareimagePath)" href="">
+            <i class="icon ion-social-facebook"></i>
+            Share
+        </a>
+<!--       <a class="tab-item"  ng-click="shareonFB(shareimagePath)" href="">
+            <i class="icon ion-social-facebook"></i>
+            Share
+        </a>-->
+       <a class="tab-item"  ng-click="shareonWhatsapp(shareimagePath)" href="">
+            <i class="icon ion-social-whatsapp"></i>
+            Share
+        </a>
+      </div>
+      <div id="para"  ng-show="showPara">
+          <p id="ImageDescription">{{fsc.ImgDetails.des}}</p>
+      </div>          
+</div>
+                  <div class="space"></div>  
+    </ion-content>
+</ion-view>

@@ -1,0 +1,59 @@
+
+<ion-view>
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    <div class="tabs-striped tabs-top tabs-background-stable ">
+        <div class="tabs">
+            <a class="tab-item active" href="#" ng-class="{'active':IsPopularTabActive}"
+               ng-click="IsPopularTabActive=true;IsRecentTabActive=false; getPopular1();"
+         data-ng-init="IsPopularTabActive=true;IsRecentabActive=false;getPopular1();">
+            Popular
+          </a>
+          <a class="tab-item" href="#" ng-class="{'active':IsRecentTabActive}"
+         ng-click="IsRecentTabActive=true;IsPopularTabActive=false;getRecent();">
+            Recent
+          </a>
+        </div>  
+    </div>
+    
+    <ion-content id="designs" >
+    <!--    <input type="text" name="tp" ng-model="hm.message"/>
+    <button class="button button-positive" ng-click="hm.msg()"></button>-->
+        <div class="list card" ng-repeat="Post in getPosts">
+            <div class="headerformat item item-avatar">
+                <a href="#/app/uploaderProfile">
+                    <img ng-click="hm.getuid('{{Post.uid}}')" ng-src="{{Post.DPPath}}" alt=""/>
+                    <h2>{{Post.userName}}</h2>
+                </a>
+
+            </div>
+            <div class="bodyformat item item-body">
+                <a href="#/app/FullSizeImage"><img class="full-image" ng-click="hm.getimageid('{{Post.imageId}}')" ng-src="{{Post.imagePath}}" alt=""/></a>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                <i class="icon ion-android-favorite"></i>
+                Like
+              </a>
+              <a class="tab-item" href="#/app/comment">
+                <i class="icon ion-chatbox"></i>
+                Comment
+              </a>
+              <a class="tab-item"  ng-click="shareonFB('{{Post.imagePath}}')" href="#">
+                <i class="icon ion-social-facebook"></i>
+                Share
+              </a>
+              <a class="tab-item"  ng-click="shareonWhatsapp('{{Post.imagePath}}')" href="#">
+                <i class="icon ion-social-whatsapp"></i>
+                Share
+              </a>
+            </div>
+        </div>
+    
+    
+    <div class="space"></div>
+    
+    </ion-content>
+</ion-view>

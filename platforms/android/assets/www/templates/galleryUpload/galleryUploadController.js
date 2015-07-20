@@ -1,6 +1,6 @@
 
 angular.module('starter.controllers')
-.controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage){
+.controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','cameraUploadService',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,cameraUploadService){
         function setTabClass() {
            angular.element(document.querySelector("#tabUpload")).removeClass("active");
 
@@ -100,14 +100,24 @@ angular.module('starter.controllers')
                              $scope.form.form.desc="";
                         }
                         var formData = new FormData();
+//                        console.log($localstorage.get('sessionMyID'))
                         console.log("userID"+$localstorage.get('sessionMyID'));
                         formData.append("userPhoto", photo);
 //                        formData.append("userID", $rootScope.sessionMyID);
                         formData.append("userID", $localstorage.get('sessionMyID'));
                         formData.append("desc", $scope.form.form.desc);
                         formData.append("tagName", tagName);
+
+//  $scope.uploadCameraDetails = {
+////			userID : $rootScope.sessionMyID,
+//			userID : $localstorage.get('sessionMyID'),																// begining of response set used for scroll down
+//			imageData : photo,													// tagName used for filtering the response on toggle click
+//                        desc : $scope.form.form.desc,
+//                        tagName : tagName
+//                };
                             galleryUploadService.uploadImage(formData).then(function (response) {
-                            console.log("uploadImage", response.data);
+//                cameraUploadService.uploadCameraImage($scope.uploadCameraDetails).then(function (response) {            
+                console.log("uploadImage", response.data);
                            // alert("Your image uploaded Successfully...");
                             $scope.uploadPopup();
                             $scope.loading = false;
@@ -133,7 +143,10 @@ angular.module('starter.controllers')
                            //setTabClass();
                             },
                             function (error) {
-                                console.log("Error uploadImage", error);
+//                                alert(error.data);
+                                    console.log(error);
+                                    $scope.loading = false;
+                                    $ionicLoading.hide();
                              });
                        
                         }
@@ -158,11 +171,11 @@ angular.module('starter.controllers')
                     });
                     return false;
             }
-        }
+        };
         $scope.filechange = function (ev, file) {
 //            alert("inside filechnage");
             console.log("event", ev);
-            console.log("file", ev.target.files[0]);
+            console.log("file to upload", ev.target.files[0]);
             $scope.fileUpload = ev.target.files[0];
             if($scope.validateImage(ev.target.files[0]))
             {
@@ -195,9 +208,9 @@ angular.module('starter.controllers')
 //            }
             if($scope.validateImage($scope.fileUpload))
             {
-                alert($scope.fileUpload.name);
+//                alert($scope.fileUpload.name);
                         console.log($scope.fileUpload);
-//                _upload($scope.fileUpload);
+                _upload($scope.fileUpload);
             }
         };               
         

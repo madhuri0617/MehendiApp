@@ -94,6 +94,7 @@ angular.module('starter.controllers')
             };
 
             $cordovaCamera.getPicture(options).then(function (imageData) {
+                $('#Selectedimage').show();
             $('#Selectedimage').attr('src', "data:image/jpeg;base64,"+imageData);
             
 //            alert(imageData);
@@ -162,7 +163,7 @@ angular.module('starter.controllers')
                 $scope.loading = false;
                 $ionicLoading.hide();
                 $ionicScrollDelegate.scrollTop();
-//                $('#Selectedimage').hide();
+                $('#Selectedimage').hide();
                  $('#Selectedimage').attr('src', "");
                 //$scope.form=null;
                 $scope.form.form.desc = "";

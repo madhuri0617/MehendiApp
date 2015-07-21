@@ -60,7 +60,7 @@
         console.log("MyId in userProfile controller: "+fsc.MyId);
         $scope.showPara = true;
 //      $rootScope.FromPage='app/FullSizeImage';
-        $localstorage.set('FromPage','app/FullSizeImage');
+        $localstorage.set('FromPage','app/FullSizeImage/'+$scope.fullsizeimageId);
         //console.log("Image ID: " +$rootScope.sessionImageID);
         fsc.like='';
         fsc.MyId;

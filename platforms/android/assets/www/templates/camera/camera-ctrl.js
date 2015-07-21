@@ -97,7 +97,7 @@ angular.module('starter.controllers')
                 $('#Selectedimage').show();
             $('#Selectedimage').attr('src', "data:image/jpeg;base64,"+imageData);
             
-//            alert(imageData);
+            alert(imageData);
 //            $scope.fileUpload = dataURItoBlob("data:image/jpeg;base64,"+imageData);
             $scope.fileUpload = "data:image/jpeg;base64," + imageData;
 //            alert($scope.fileUpload);

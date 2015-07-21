@@ -299,9 +299,11 @@
         };
         fsc.gotoZoom = function()
         {
+                    console.log("gotoZoom");
 //            $rootScope.imageToZoom = $scope.shareimagePath;
             $localstorage.set('imageToZoom',$scope.shareimagePath);
             $rootScope.controlzoom = localStorage.getItem("controlZoom");
+//            alert($rootScope.controlzoom);
             if($rootScope.controlzoom === 'zoomImageController')
             $location.path('app/zoomImage');
             if($rootScope.controlzoom === 'ZoomDesktopController')

@@ -19,6 +19,8 @@ angular.module('starter.controllers')
            angular.element(document.querySelector("#tabMyprofile")).addClass("active");
            angular.element(document.querySelector("#tabHome")).removeClass("active");
            angular.element(document.querySelector("#tabSearch")).removeClass("active");
+           angular.element(document.querySelector("#tabUpload")).removeClass("active");
+           angular.element(document.querySelector("#tabCamera")).removeClass("active");
          };
          setTabClass();
         var mpc = this;

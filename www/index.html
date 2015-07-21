@@ -44,11 +44,13 @@
             if( isMobile === true)
             {
 //                alert("running in mobile");
+                localStorage.setItem("controlZoom", "zoomImageController");
                 localStorage.setItem('mobile', true);
             }
             if( isMobile === false)
             {
 //                alert("running in desktop");
+                localStorage.setItem("controlZoom", "ZoomDesktopController");
                 localStorage.setItem('mobile', false);
             }
 //            var isMobile = false; //initiate as false

@@ -74,9 +74,10 @@ angular.module('starter.controllers')
             }
          };
         var _upload = function (photo) {
-            alert(photo.name);
-            alert(photo.type);
-            alert(photo.size);
+//                    console.log("file to send", filetoSend);
+//                    console.log("name: ",photo.name);
+//                    console.log("Type: ",photo.type);
+//                    console.log("Size: ",photo.size);
             var tagName=[];
              for(var i=0;i<$scope.tagList.length;i++)
             {
@@ -108,16 +109,19 @@ angular.module('starter.controllers')
                         formData.append("desc", $scope.form.form.desc);
                         formData.append("tagName", tagName);
 
-//  $scope.uploadCameraDetails = {
-////			userID : $rootScope.sessionMyID,
-//			userID : $localstorage.get('sessionMyID'),																// begining of response set used for scroll down
-//			imageData : photo,													// tagName used for filtering the response on toggle click
-//                        desc : $scope.form.form.desc,
-//                        tagName : tagName
-//                };
+//                        $scope.uploadFileDetails = {
+//    //			userID : $rootScope.sessionMyID,
+//                            userID : $localstorage.get('sessionMyID'),																// begining of response set used for scroll down
+//                            imageData : filetoSend,
+//                            fileName : photo.name,
+//                            desc : $scope.form.form.desc,
+//                            tagName : tagName
+//                        };
+//                        console.log("JSON********************* ",$scope.uploadFileDetails);
+//                        console.log("tags: ",tagName);
                             galleryUploadService.uploadImage(formData).then(function (response) {
-//                cameraUploadService.uploadCameraImage($scope.uploadCameraDetails).then(function (response) {            
-                console.log("uploadImage", response.data);
+//                cameraUploadService.uploadCameraImage($scope.uploadFileDetails).then(function (response) {            
+                            console.log("uploadImage", response.data);
                            // alert("Your image uploaded Successfully...");
                             $scope.uploadPopup();
                             $scope.loading = false;
@@ -191,6 +195,9 @@ angular.module('starter.controllers')
                     var reader = new FileReader();
                     reader.onload = function (e) {
                     $('#Selectedimage').attr('src', e.target.result);
+                    $scope.file = e.target.result;
+                    $scope.file = $scope.file.toString();
+//                                console.log($scope.file);
                     $('#Selectedimage').show();
                     };
                     reader.readAsDataURL($scope.fileUpload);
@@ -208,9 +215,9 @@ angular.module('starter.controllers')
 //            }
             if($scope.validateImage($scope.fileUpload))
             {
-//                alert($scope.fileUpload.name);
-                        console.log($scope.fileUpload);
-                _upload($scope.fileUpload);
+//                        console.log("File base64: ",$scope.file);
+//                        console.log("File object: ",$scope.fileUpload);
+                        _upload($scope.fileUpload);
             }
         };               
         

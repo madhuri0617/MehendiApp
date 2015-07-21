@@ -407,150 +407,119 @@ angular.module('starter.controllers', ['ionic'])
 //                alert("NO logged in user available need to login: ",$localstorage.get('sessionMyID'));
     }
     $rootScope.zoomImagePage = false;
-        $scope.errorPopup = function(msg) {
-            $ionicPopup.alert({
-              title: 'Error',
-              template: msg,
-              okType: ' button-upload' 
-          });
-          };
-          //alert("inside loginctrl");
-        function setTabClass() {
-           angular.element(document.querySelector("#tabMyprofile")).addClass("active");
-           angular.element(document.querySelector("#tabCamera")).removeClass("active");
-           angular.element(document.querySelector("#tabHome")).removeClass("active");
-           angular.element(document.querySelector("#tabUpload")).removeClass("active");
-           angular.element(document.querySelector("#tabSearch")).removeClass("active");
-           
-         };
-         setTabClass();
-//        var userName = req.body.userName;
-//	var email = req.body.email;
-//	var gender = req.body.gender;
-//	var fbId = req.body.fbId;
-
-        $scope.facebookLogin = function () {
-            OpenFB.login('email,read_stream,publish_actions').then(
-                function () {
-                     OpenFB.get('/me')
-                        .success(function (user) {
-                        $scope.user = user;
-                       // $scope.me.fbId=user.id;
-                       $scope.me.fbId='0';
-                        $scope.me.userName=user.name;
-                        $scope.me.email=user.email;
-                        if(user.gender==='female')
-                        {
-                           $scope.me.gender='F';
-                        }
-                        else if (user.gender==='male')
-                        {
-                            $scope.me.gender='M';
-                        }
-                        else
-                        {
-                            $scope.me.gender='O';
-                        }
-                        //$scope.me.gender=user.gender;
-                      //  alert('id= '+user.id+' name= '+user.name+' email= '+user.email+' gender= '+user.gender+' age= '+user.age);
-                        $http.post('http://api.mehndistar.com/login',$scope.me).success(function(response)
-                        {
-                           // alert('inside sucess');
-                            //alert(response);
-                            $scope.Myid=response._id;//'55041c5ec20ec607edaf7729';
-                          //  alert("response in success: ",$scope.MyDetails);
-//                            alert("given id:"+ $scope.Myid);
-                            
-                             $rootScope.sessionMyID=$scope.Myid;
-//                            $localstorage.set('sessionMyID',$rootScope.sessionMyID);
-
-                            $localstorage.set('sessionMyID',$scope.Myid);
-//                            alert($localstorage.get('sessionMyID'));
-//                            $rootScope.IsLoggedIn=true;
-                            $localstorage.set('IsLoggedIn',true);
-                            //$localStorage.IsLoggedIn=true;
-                            //alert('localstorage value:'+$localstorage.get('sessionMyID'));
-//                            $location.path($rootScope.FromPage);
-//                            alert($localstorage.get('FromPage'));
-                            $location.path($localstorage.get('FromPage'));
-                           // $state.go('app.MyProfile');
-//                            $location.path('app/MyProfile');
-                                }).error(function(){
-//                                   alert('inside error');
-                               });
-
-                        });
-                },
-                function () {
-//                    $rootScope.IsLoggedIn=false;
-                    $localstorage.set('IsLoggedIn','false');
-                    var msg = 'Facebook login failed';
-                    $scope.errorPopup(msg);
-                });
+    $scope.errorPopup = function(msg) {
+        $ionicPopup.alert({
+          title: 'Error',
+          template: msg,
+          okType: ' button-upload' 
+      });
     };
+    function setTabClass() {
+       angular.element(document.querySelector("#tabMyprofile")).addClass("active");
+       angular.element(document.querySelector("#tabCamera")).removeClass("active");
+       angular.element(document.querySelector("#tabHome")).removeClass("active");
+       angular.element(document.querySelector("#tabUpload")).removeClass("active");
+       angular.element(document.querySelector("#tabSearch")).removeClass("active");
 
-
-
-
-    })
+     };
+    setTabClass();
+    $scope.facebookLogin = function () 
+    {
+        OpenFB.login('email,read_stream,publish_actions').then(
+            function () 
+            {
+                OpenFB.get('/me')
+                .success(function (user) 
+                {
+                    $scope.user = user;
+                   // $scope.me.fbId=user.id;
+                   $scope.me.fbId='0';
+                    $scope.me.userName=user.name;
+                    $scope.me.email=user.email;
+                    if(user.gender==='female')
+                    {
+                       $scope.me.gender='F';
+                    }
+                    else if (user.gender==='male')
+                    {
+                        $scope.me.gender='M';
+                    }
+                    else
+                    {
+                        $scope.me.gender='O';
+                    }
+                          //  alert('id= '+user.id+' name= '+user.name+' email= '+user.email+' gender= '+user.gender+' age= '+user.age);
+                    $http.post('http://api.mehndistar.com/login',$scope.me).success(function(response)
+                    {
+                        $scope.Myid=response._id;                            
+                        $rootScope.sessionMyID=$scope.Myid;
+                        $localstorage.set('sessionMyID',$scope.Myid);
+                        $localstorage.set('IsLoggedIn',true);
+                        $location.path($localstorage.get('FromPage'));
+                    }).error(function(){
+    //                                   alert('inside error');
+                        });
+                });
+            },
+            function () {
+//                    $rootScope.IsLoggedIn=false;
+                $localstorage.set('IsLoggedIn','false');
+                var msg = 'Facebook login failed';
+                $scope.errorPopup(msg);
+            });
+    };
+})
     //controller for facebook persons
 .controller('PersonCtrl', function ($scope, $stateParams, OpenFB) {
-        OpenFB.get('/' + $stateParams.personId).success(function (user) {
-            $scope.user = user;
-            console.log('details '+user);
-
-        });
-    })
+    OpenFB.get('/' + $stateParams.personId).success(function (user) {
+        $scope.user = user;
+        console.log('details '+user);
+    });
+})
     /*================================== share post on fb ===============================*/
 .controller("ShareController", function($ionicPopup,OpenFB,$localstorage,$ionicLoading,$scope, $cordovaSocialSharing) {
-    
         $scope.sharePopup = function() {
             $ionicPopup.alert({
               title: 'Success',
               template: 'This item has been shared on facebook',
               okType: ' button-upload'
-            });
+        });
     };
     //SHARE ON facebbok
-          $scope.shareOnFacebook = function (postDetails) {
-//                console.log("inside share");
-//            alert("imageshare"+ imgPath);
-                console.log("postdetails: ",postDetails);
-            var MyID=$localstorage.get('sessionMyID');
-            if(!MyID)
-            {
-                $scope.loginPopup();
-            }
-            else{
-           $scope.loadingWheel();
-           OpenFB.get('/me')
-               .success(function (user) {
+    $scope.shareOnFacebook = function (postDetails) {
+//      console.log("postdetails: ",postDetails);
+      var MyID=$localstorage.get('sessionMyID');
+      if(!MyID)
+      {
+          $scope.loginPopup();
+      }
+      else{
+        $scope.loadingWheel();
+        OpenFB.get('/me')
+         .success(function (user) {
 //                   alert("token refreshed");
-            });
-               console.log('MyID:',$localstorage.get('sessionMyID'));
-  
-                $scope.item = {
-                    picture: postDetails.imagePath,
-                    link: 'http://mehndistar.com/#/app/FullSizeFb/'+ postDetails._id
-                };
-
-                OpenFB.post('/me/feed', $scope.item)
-                    .success(function () {
+        });
+//         console.log('MyID:',$localstorage.get('sessionMyID'));
+          $scope.item = {
+              picture: postDetails.imagePath,
+              link: 'http://mehndistar.com/#/app/FullSizeFb/'+ postDetails._id
+          };
+          OpenFB.post('/me/feed', $scope.item)
+              .success(function () {
 //                        alert("This item has been shared on facebook");
-                        $scope.loading = false;
-                        $ionicLoading.hide();
-                        $scope.sharePopup();
-                    })
-                    .error(function(data) {
+                  $scope.loading = false;
+                  $ionicLoading.hide();
+                  $scope.sharePopup();
+              })
+              .error(function(data) {
 //                        $scope.errorPopup(data.error.message);
-                        $scope.errorPopup("Your tokan has expired! You need to relogin to MehendiSTAR to share this design on Facebook");
-                        $scope.loading = false;
-                        $ionicLoading.hide();
-                    });
-            }
-        };
+                  $scope.errorPopup("Your tokan has expired! You need to relogin to MehendiSTAR to share this design on Facebook");
+                  $scope.loading = false;
+                  $ionicLoading.hide();
+              });
+      }
+    };
     $scope.shareonWhatsapp = function(imagePath) {
-        console.log('inside whatsaap share');
         $cordovaSocialSharing
        .shareViaWhatsApp("Shared via MehndiSTAR App",imagePath, "")
        .then(function(result) {

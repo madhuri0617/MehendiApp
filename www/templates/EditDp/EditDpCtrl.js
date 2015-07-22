@@ -1,5 +1,5 @@
     angular.module('starter.controllers')
-    .controller('EditDpCtrl', ['$http','$scope','$rootScope','EditDpService','$location','$state','$cordovaCamera','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage', function EditDpCtrl($http,$scope,$rootScope,EditDpService,$location,$state,$cordovaCamera,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage) 
+    .controller('EditDpCtrl', ['$http','$scope','$rootScope','EditDpService','$location','$state','$cordovaCamera','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function EditDpCtrl($http,$scope,$rootScope,EditDpService,$location,$state,$cordovaCamera,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) 
    {
        //change dp:
 //       $localstorage.set('zoomImagePage',false);
@@ -89,19 +89,19 @@
 //			userID : $rootScope.sessionMyID,															
 //			imageData : photo											                       
 //                };
-//                console.log("userID"+$rootScope.sessionMyID);
+//                $log.debug("userID"+$rootScope.sessionMyID);
 
                 $scope.uploadCameraDetails = {
 			userID : $localstorage.get('sessionMyID'),															
 			imageData : photo											                       
                 };
-                console.log("userID"+$localstorage.get('sessionMyID'));
+                $log.debug("userID"+$localstorage.get('sessionMyID'));
 //                formData.append("userPhoto", photo );
 //                formData.append("userID", $rootScope.sessionMyID);
                 
                 //service call
                 EditDpService.uploadDpCamera($scope.uploadCameraDetails).then(function (response) {
-                console.log("uploadImage", response.data);
+                $log.debug("uploadImage", response.data);
 
                 $scope.uploadPopup();
                 $scope.form=null;
@@ -111,7 +111,7 @@
                 //$location.path('app/MyProfile');
                 },
                 function (error) {
-                    console.log("Error uploadImage", error);
+                    $log.debug("Error uploadImage", error);
                  });
             }
         };
@@ -128,15 +128,15 @@
 //            {
                 $scope.loadingWheel();
                 var formData = new FormData();
-    //            console.log("userID"+$rootScope.sessionMyID);
+    //            $log.debug("userID"+$rootScope.sessionMyID);
     //            formData.append("userPhoto", photo);
     //            formData.append("userID", $rootScope.sessionMyID);
-                console.log("userID"+$localstorage.get('sessionMyID'));
+                $log.debug("userID"+$localstorage.get('sessionMyID'));
                 formData.append("userPhoto", photo);
                 formData.append("userID", $localstorage.get('sessionMyID'));
 
                 EditDpService.uploadDp(formData).then(function (response) {
-                console.log("uploadImage", response.data);
+                $log.debug("uploadImage", response.data);
 
                 $scope.uploadPopup();
                 $scope.form=null;
@@ -147,7 +147,7 @@
                 //$location.path('app/MyProfile');
                 },
                 function (error) {
-                    console.log("Error uploadImage", error);
+                    $log.debug("Error uploadImage", error);
                  });
 //            }
 //            else
@@ -158,9 +158,9 @@
         }        
     };
         $scope.validateImage = function(file){
-            // console.log(file);
+            // $log.debug(file);
             var filetype = file.type.substring(0,file.type.indexOf('/'));
-            console.log(filetype);
+            $log.debug(filetype);
             if (filetype == "image") {
 //                     $scope.uploadDisabled = false;
 //                     alert($scope.uploadDisabled)
@@ -179,15 +179,15 @@
             }
         }
         $scope.filechange = function (ev, file) {
-            console.log("event", ev);
-            console.log("file", ev.target.files[0]);
+            $log.debug("event", ev);
+            $log.debug("file", ev.target.files[0]);
             $scope.fileUpload = ev.target.files[0];
             if($scope.validateImage(ev.target.files[0]))
             {
                 $scope.fileUpload = ev.target.files[0];
                 $scope.fileType = ev.target.files[0].type;
     //            alert($scope.fileType);
-    //        console.log("file upload: " , $scope.fileUpload )
+    //        $log.debug("file upload: " , $scope.fileUpload )
                  if ($scope.fileUpload) {
                     var reader = new FileReader();
                     reader.onload = function (e) {

@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-.controller('CameraCtrl', ['$cordovaCamera', '$scope','$rootScope','cameraUploadService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage', function CameraCtr($cordovaCamera, $scope,$rootScope,cameraUploadService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage) {
+.controller('CameraCtrl', ['$cordovaCamera', '$scope','$rootScope','cameraUploadService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function CameraCtr($cordovaCamera, $scope,$rootScope,cameraUploadService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) {
     function setTabClass() {
         angular.element(document.querySelector("#tabCamera")).removeClass("active");
         angular.element(document.querySelector("#tabMyprofile")).addClass("active");
@@ -120,7 +120,7 @@ angular.module('starter.controllers')
 //                
             //service call
             cameraUploadService.uploadCameraImage($scope.uploadCameraDetails).then(function (response) {
-//            console.log("uploadImage", response.data);
+                $log.debug("uploadImage", response.data);
                 $scope.uploadPopup();
                 $scope.loading = false;
                 $ionicLoading.hide();
@@ -138,7 +138,7 @@ angular.module('starter.controllers')
                 }
             },
             function (error) {
-//                console.log("Error uploadImage", error);
+                $log.debug("Error uploadImage", error);
              });
         }
     };

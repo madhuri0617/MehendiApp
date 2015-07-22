@@ -1,7 +1,7 @@
 angular.module('Services')
-        .service('MyProfileService',function($http){
+        .service('MyProfileService',function($http,$log){
         this.getOwnInfo = function (PostData) {
-            console.log("getOwnInfo sendData", PostData);
+            $log.debug("getOwnInfo sendData", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,
@@ -9,7 +9,7 @@ angular.module('Services')
             });
 	};
         this.getOwnPost = function (PostData) {
-            console.log("", PostData);
+            $log.debug("", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,
@@ -17,7 +17,7 @@ angular.module('Services')
             });
 	};
         this.getOwnLike = function (PostData) {
-            console.log(" PostData", PostData);
+            $log.debug(" PostData", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,

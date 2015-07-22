@@ -1,5 +1,5 @@
  angular.module('starter.controllers')
- .controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage) {
+ .controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage','$log', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage,$log) {
         $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
         $scope.loadingWheel = function() {
@@ -33,7 +33,7 @@
          setTabClass();
          $scope.check = function(tag)
          {
-            console.log("inside check" , tag);
+            $log.debug("inside check" , tag);
             if(tag.checked===false)
             {
                 tag.checked = true;
@@ -44,7 +44,7 @@
             }
          };
          $scope.toggleGroup = function(group) {
-//                    console.log("inside toggleGroup" );
+                    $log.debug("inside toggleGroup" );
            if ($scope.isGroupShown(group)) {
              $scope.shownGroup = null;
            } else {
@@ -52,7 +52,7 @@
            }
          };
          $scope.toggleGroup1 = function(group) {
-//                    console.log("inside toggleGroup" );
+                    $log.debug("inside toggleGroup" );
            if ($scope.isGroupShown(group)=== true) {
              $scope.shownGroup = null;
            }
@@ -62,7 +62,7 @@
          };
         var epc = this;
         
-        console.log('on edit pic: imgid ',$localstorage.get('sessionImageID'));
+        $log.debug('on edit pic: imgid ',$localstorage.get('sessionImageID'));
         epc.Post=[];
         epc.tagFinal=[];
         epc.tags=[];
@@ -79,18 +79,18 @@
 			//userID:'55041c5ec20ec607edaf7729'												// tagName used for filtering the response on toggle click
 		};
         epc.getPostDetail = function(){
-            console.log('img details',epc.image)
-            console.log('inside get post details...');
+            $log.debug('img details',epc.image)
+            $log.debug('inside get post details...');
             
             
             EditUploadedPicService.getPostDetail(epc.image).then(function (response) {
                 epc.Post = response.data;
                 $scope.loading = false;
                 $ionicLoading.hide();
-                console.log('epc.post result:',epc.Post);
-                console.log('epc.Post.tags:',epc.Post[0].tags);
+                $log.debug('epc.post result:',epc.Post);
+                $log.debug('epc.Post.tags:',epc.Post[0].tags);
                 epc.tags = epc.Post[0].tags;
-                console.log('epc.tags: inside getpostdetails',epc.tags);
+                $log.debug('epc.tags: inside getpostdetails',epc.tags);
                 
                 for(var i=0;i<epc.tagsDB.length;i++)
                 {
@@ -103,20 +103,20 @@
 
                 }
                  epc.newDes=epc.Post[0].description;
-                 console.log('des:',epc.newDes);
+                 $log.debug('des:',epc.newDes);
                 },
                 function (error) {
-                    console.log("Error in getPostDetail", error);
+                    $log.debug("Error in getPostDetail", error);
                  });
         
 	};
         
-	  console.log('epc.tags:',epc.tags);
+	  $log.debug('epc.tags:',epc.tags);
     epc.submit=function()
     {
          $scope.loadingWheel();
          $ionicScrollDelegate.scrollTop();
-        console.log("inside submit")
+        $log.debug("inside submit")
         var flag=false;
        // var tagFinal=[];
             for (var i = 0; i < epc.tagsDB.length; i++) {
@@ -135,13 +135,6 @@
             epc.FinalChange=
                 {tags:epc.tagFinal,
                  des:epc.newDes};   
-             
-//        console.log('new descriotion(inside submit): ',epc.newDes);
-//                 console.log("final: ",epc.tagFinal);
-//            console.log("data to be passed: ",epc.FinalChange);
-//            $http.post('/',epc.FinalChange).success(function(response){
-//                alert(response);
-//                                });
 
     epc.updatePostDetail = function(){
 		epc.PostDetails = {
@@ -150,9 +143,9 @@
 			description :epc.newDes ,
 			tags : epc.tagFinal
 		};
-                console.log('update:',epc.PostDetails);
+                $log.debug('update:',epc.PostDetails);
                 EditUploadedPicService.updatePostDetail(epc.PostDetails).then(function (response) {
-                    console.log(response.data);
+                    $log.debug(response.data);
                         if (response.data==="success") {
                             $scope.uploadPopup();
                             $scope.toggleGroup1(5);
@@ -162,10 +155,10 @@
                     
                 },
                 function (error) {
-                    console.log("Error in updatePostDetail", error);
+                    $log.debug("Error in updatePostDetail", error);
                  });
 //		$http.post('http://api-ratemymehendi.rhcloud.com/editPic/update',epc.PostDetails).success(function(response){
-//			console.log(response);
+//			$log.debug(response);
 //                        if (response==='success') {
 //                            $location.path('app/MyProfile');
 //                    }

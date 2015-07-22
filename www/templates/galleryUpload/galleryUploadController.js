@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-.controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','cameraUploadService',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,cameraUploadService){
+.controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','cameraUploadService','$log',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,cameraUploadService,$log){
     function setTabClass() {
        angular.element(document.querySelector("#tabUpload")).removeClass("active");
        angular.element(document.querySelector("#tabMyprofile")).addClass("active");
@@ -93,6 +93,7 @@ angular.module('starter.controllers')
                     formData.append("tagName", tagName);
                     galleryUploadService.uploadImage(formData).then(function (response) 
                     {
+                        $log.debug(response.data);
                         $scope.uploadPopup();
                         $scope.loading = false;
                         $ionicLoading.hide();
@@ -110,6 +111,7 @@ angular.module('starter.controllers')
                         }
                     },
                     function (error) {
+                            $log.debug(error);
                             $scope.loading = false;
                             $ionicLoading.hide();
                     });

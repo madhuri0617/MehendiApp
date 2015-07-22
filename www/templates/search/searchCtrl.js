@@ -23,11 +23,11 @@ angular.module('starter.controllers')
 
   return DesignRetriever;
 })
- .controller('SearchDesignsController', function($location,$filter,$ionicLoading,$scope, DesignRetriever,searchService,$ionicScrollDelegate,$rootScope,$localstorage,FullImgService,CommonServiceDate){
+ .controller('SearchDesignsController', function($location,$filter,$ionicLoading,$scope, DesignRetriever,searchService,$ionicScrollDelegate,$rootScope,$localstorage,FullImgService,CommonServiceDate,$log){
 //$scope.loading = true;
      $scope.empty=false;
      $scope.MyId = $localstorage.get('sessionMyID');
-            console.log("MyId in search controller: "+$scope.MyId);
+            $log.debug("MyId in search controller: "+$scope.MyId);
         var tagsAvailable = [{name:"Hand Design"}, {name:"Feet Design"},
             {name:"Indian"},{name:"Pakistani"},{name:"Moghlai"},{name:"Arabic"},
             {name:"Indo-Arabic"},{name:"Bridal"},{name:"Common"}];
@@ -62,14 +62,14 @@ angular.module('starter.controllers')
   };
 
   $scope.doSomething = function(typedthings){
-    console.log("Do something like reload data with this: " + typedthings );
+    $log.debug("Do something like reload data with this: " + typedthings );
     $scope.newdesigns = DesignRetriever.getdesigns(typedthings);
     $scope.newdesigns.then(function(data){
       $scope.designs = data;
     });
     
     var myGreenObject = $filter('filter')(tagsAvailable, { name: typedthings });
-                console.log(typedthings +": ",myGreenObject);
+                $log.debug(typedthings +": ",myGreenObject);
                 
      if (myGreenObject.length!== 0){
         $scope.doSomethingElse(typedthings);
@@ -77,16 +77,16 @@ angular.module('starter.controllers')
         $scope.class="ng-hide";
      }
      if (myGreenObject.length === 0){
-            console.log("empty result");
+            $log.debug("empty result");
             $scope.empty = true;
             $scope.class="ng-show";
-            console.log("empty", $scope.empty);
+            $log.debug("empty", $scope.empty);
      }
   };
 
   $scope.doSomethingElse = function(suggestion){
      // $scope.loadingWheel();
-    console.log("Suggestion selected: " + suggestion );
+    $log.debug("Suggestion selected: " + suggestion );
       $scope.tag = {
 			beg : 0,																// begining of response set used for scroll down
 			tagName : [suggestion],
@@ -104,30 +104,30 @@ angular.module('starter.controllers')
                    // $ionicLoading.hide();
                     if ($scope.searchPosts === 'SUCCESS') {
                             $scope.success = true;
-                            console.log("Success" + $scope.success);
+                            $log.debug("Success" + $scope.success);
                     }
 
-                    console.log("searched : ", $scope.searchPosts);
+                    $log.debug("searched : ", $scope.searchPosts);
                 },
                 function (error) {
-                    console.log("Error in search", error);
+                    $log.debug("Error in search", error);
                  });     
   };
     $scope.getuserid = function(uid) {
             $localstorage.set('sessionUserID',uid);
             $location.path("app/userProfile/"+uid);
-            console.log('userid:',uid);
+            $log.debug('userid:',uid);
         };
     $scope.ClickedLikedSearch = function (post){
-            // console.log("image like clicked ", post);
+             $log.debug("image like clicked ", post);
             var MyID=$localstorage.get('sessionMyID');
 
-            console.log('inide checkLogin() myid:',MyID);
-            console.log('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
+            $log.debug('inide checkLogin() myid:',MyID);
+            $log.debug('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
 
            if(!MyID)
            {
-               console.log(" inside login");
+               $log.debug(" inside login");
                $scope.loginPopup();
            }
            else
@@ -155,7 +155,7 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in unlike", error);
+                        $log.debug("error in unlike", error);
                      });
                      
                 }
@@ -172,7 +172,7 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in like", error);
+                        $log.debug("error in like", error);
                      });
                    
                 }  

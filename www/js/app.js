@@ -11,7 +11,7 @@ var baseURL = 'http://api.mehndistar.com';
 
 var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.controllers','ngCordova','appFilereader','autocomplete','Services','ngStorage','ionic.utils'])
 
-.run(['$rootScope', '$ionicPlatform','OpenFB','$localStorage','$localstorage','$ionicPopup','CordovaService',function($rootScope, $ionicPlatform,OpenFB,$localStorage,$localstorage,$ionicPopup,CordovaService) {
+.run(['$rootScope', '$ionicPlatform','OpenFB','$localStorage','$localstorage','$ionicPopup','$log',function($rootScope, $ionicPlatform,OpenFB,$localStorage,$localstorage,$ionicPopup,$log) {
 //        $localStorage.sessionMyID='55041cadc20ec607edaf772a';
 //    $localstorage.set('sessionMyID', '55388ab0606c800e93237bdd');
 //     $localstorage.set('sessionMyID', '553630d76a45f25309166e05');
@@ -21,10 +21,10 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
         
     $rootScope.sessionMyID=$localstorage.get('sessionMyID');
    
-    console.log("$rootScope.sessionMyID",$rootScope.sessionMyID);
+    $log.debug("$rootScope.sessionMyID",$rootScope.sessionMyID);
 //    console.log("$localstorage.get('sessionMyID')",$localstorage.get('sessionMyID'));
     $rootScope.IsLoggedIn=$localstorage.get('IsLoggedIn');
-        console.log("$rootScope.IsLoggedIn",$rootScope.IsLoggedIn);
+        $log.debug("$rootScope.IsLoggedIn",$rootScope.IsLoggedIn);
     
    // OpenFB.init('633219260143764','http://192.168.2.138:8100/');
 //    OpenFB.init('896457927079961','https://www.facebook.com/connect/login_success.html');
@@ -66,7 +66,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
         }
     }
     window.addEventListener('message', function(event){
-            console.log('Message received:' + JSON.stringify(event.data));
+            $log.debug('Message received:' + JSON.stringify(event.data));
             switch(event.data.action){
                 case 'finishFbAuth':
                     OpenFB.oauthCallback(event.data.params.url);
@@ -116,12 +116,11 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
     }
   }, 100);
 }]);
-app.service('CordovaService', function() {
-
-});
 /*===================================== redireciton =============================== */
-app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$logProvider) {
     $ionicConfigProvider.views.transition('none');
+    $logProvider.debugEnabled(false);
+//angular.reloadWithDebugInfo();
   $stateProvider
 
   .state('app', {

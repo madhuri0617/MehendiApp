@@ -52,15 +52,15 @@ angular.module('starter.controllers')
         };
 })
 
-    .controller('ZoomDesktopController',['$rootScope','$localstorage','$scope',function ZoomDesktopController($rootScope,$localstorage,$scope)
+    .controller('ZoomDesktopController',['$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($rootScope,$localstorage,$scope,$log)
 {
     $rootScope.zoomImagePage = true;
      $localstorage.set('FromPage','app/zoomImage');
 //                $localstorage.set('zoomImagePage',true)
 //                 $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
-                 console.log("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
+                 $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
                  
-                console.log("inside zoomDesktopController "+$rootScope.controlzoom ); 
+                $log.debug("inside zoomDesktopController "+$rootScope.controlzoom ); 
 //                alert($rootScope.imageToZoom);
                 $('#img').attr('src',  $localstorage.get('imageToZoom'));
      $scope.initZoom = function()

@@ -1,8 +1,8 @@
 
 angular.module('Services')
-        .service('FullImgService',function($http){
+        .service('FullImgService',function($http,$log){
         this.getImage = function (PostData) {
-            console.log(" deatils PostData", PostData);
+            $log.debug(" deatils PostData", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,
@@ -10,7 +10,7 @@ angular.module('Services')
             });
 	};
         this.likeClicked = function (PostData) {
-            console.log("", PostData);
+            $log.debug("", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,
@@ -18,7 +18,7 @@ angular.module('Services')
             });
 	};
         this.unlikeClicked = function (PostData) {
-            console.log(" deatils PostData", PostData);
+            $log.debug(" deatils PostData", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,

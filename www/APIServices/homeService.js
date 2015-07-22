@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 angular.module('Services')
-.service('homeService', function ($http) {
+.service('homeService', function ($http,$log) {
 
 //	$rootScope.$on('headerData', function (event, data) {
 //		$rootScope.headerData = data;
 //	});
 	this.popular = function (PostData) {
-		console.log(" popular PostData", PostData);
+		$log.debug(" popular PostData", PostData);
 		return $http({
 			method: 'POST',
 			data: PostData,
@@ -20,7 +20,7 @@ angular.module('Services')
 	};
         
         	this.recent = function (PostData) {
-		console.log(" recent PostData", PostData);
+		$log.debug(" recent PostData", PostData);
 		return $http({
 			method: 'POST',
 			data: PostData,

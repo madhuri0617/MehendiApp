@@ -1,8 +1,8 @@
 angular.module('Services')
-.service('galleryUploadService', function ($http) {
+.service('galleryUploadService', function ($http,$log) {
 
 	this.uploadImage = function (PostData) {
-		console.log(" uploadImage PostData", PostData);
+		$log.debug(" uploadImage PostData", PostData);
                 
             return $http.post( baseURL + '/api/photo', PostData, {
                 transformRequest: angular.identity,

@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-.controller('MyProfileDetailsCtrl', ['$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate', function MyProfileDetailsCtrl($localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate) {
+.controller('MyProfileDetailsCtrl', ['$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
         $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
         $scope.loadingWheel = function() {
@@ -25,7 +25,7 @@ angular.module('starter.controllers')
          setTabClass();
         var mpc = this;
         mpc.MyId = $localstorage.get('sessionMyID');
-        console.log("MyId in userProfile controller: "+mpc.MyId);
+        $log.debug("MyId in userProfile controller: "+mpc.MyId);
         //$rootScope.sessionMyID='55041cadc20ec607edaf772a';
         //alert('login user:'+ $localstorage.get('sessionMyID'));
         
@@ -42,7 +42,7 @@ angular.module('starter.controllers')
     };
     mpc.getCommentClickedImageId = function(imageid)
     {
-        console.log("Comment clicked image id: " +imageid);
+        $log.debug("Comment clicked image id: " +imageid);
 //          $rootScope.sessionCommentClickedImageID = imageid;
         $localstorage.set('commentClickedChk','true');
 //            alert($localstorage.get('commentClicked'));
@@ -54,19 +54,19 @@ angular.module('starter.controllers')
 //            alert(mpc.user.userID);
         mpc.getOwnInfo = function(){
             $scope.loadingWheel();
-            console.log('inside getowninfo',mpc.user);
+            $log.debug('inside getowninfo',mpc.user);
             MyProfileService.getOwnInfo(mpc.user).then(function (response) {
-                    console.log(response.data);
+                    $log.debug(response.data);
                     mpc.OwnInfo = response.data;
                     $localstorage.set('currentPath',mpc.OwnInfo.DPPath);
 //                    alert("DP: "+mpc.OwnInfo.DPPath);
 //                    alert("name: "+mpc.OwnInfo.userName);
 //                    $rootScope.currentPath = mpc.OwnInfo.DPPath;
                     $scope.loadinggetOwninfo = true;
-                    console.log('mydetails:',mpc.OwnInfo);
+                    $log.debug('mydetails:',mpc.OwnInfo);
                 },
                 function (error) {
-                    console.log("Error in getOwnInfo Service", error);
+                    $log.debug("Error in getOwnInfo Service", error);
                  });
 
 	};
@@ -77,10 +77,10 @@ angular.module('starter.controllers')
     $scope.loadMoreData=function()
     {
         $scope.moredesigns = false;
-        console.log("loadmoredata:    @@@@@@: ",mpc.Posts );
+        $log.debug("loadmoredata:    @@@@@@: ",mpc.Posts );
         mpc.Posts.push(mpc.dumy[$scope.counter]);
         $scope.counter += 1;   
-        console.log("mpc.Posts.length @@@@@@ :",mpc.Posts.length,$scope.totalPosts);
+        $log.debug("mpc.Posts.length @@@@@@ :",mpc.Posts.length,$scope.totalPosts);
         if(mpc.Posts.length === $scope.totalPosts)
         {
             $scope.moredata=true;
@@ -91,10 +91,10 @@ angular.module('starter.controllers')
         mpc.getOwnPost = function(){
             $scope.like = false;
             $scope.loadingWheel();
-            console.log("inside getPost");
-            console.log("mpc.user",mpc.user);
+            $log.debug("inside getPost");
+            $log.debug("mpc.user",mpc.user);
             MyProfileService.getOwnPost(mpc.user).then(function (response) {
-                //console.log(response.data);
+                $log.debug(response.data);
 			//mpc.Posts = response.data;
                         if(response.data[0].message)
                         {
@@ -131,10 +131,10 @@ angular.module('starter.controllers')
                         $ionicScrollDelegate.scrollTop();
                         $scope.loading = false;
                         $ionicLoading.hide();
-                        console.log('mpc.Posts posts',mpc.Posts,mpc.Posts.length);
+                        $log.debug('mpc.Posts posts',mpc.Posts,mpc.Posts.length);
             },
             function (error) {
-               console.log("Error in getOwnPost Service", error);
+               $log.debug("Error in getOwnPost Service", error);
             });
 
 	};
@@ -144,7 +144,7 @@ angular.module('starter.controllers')
             $scope.like = true;
             $scope.loadingWheel();
             MyProfileService.getOwnLike(mpc.user).then(function (response) {
-                //console.log(response.data);
+                $log.debug(response.data);
                 if(response.data[0].message)
                 {
                     $scope.noDataPopup("Likes",response.data[0].message);
@@ -178,36 +178,36 @@ angular.module('starter.controllers')
                 $ionicScrollDelegate.scrollTop();
                 $scope.loading = false;
                 $ionicLoading.hide();
-                console.log('mpc.Posts likes',mpc.Posts,mpc.Posts.length);
+                $log.debug('mpc.Posts likes',mpc.Posts,mpc.Posts.length);
             },
             function (error) {
-               console.log("Error in getOwnLikes Service", error);
+               $log.debug("Error in getOwnLikes Service", error);
             });
 
 	};
         mpc.sendimgID = function (imgid){
-         console.log('myprofile page');
-        console.log('img id to be passed:',imgid);
+         $log.debug('myprofile page');
+        $log.debug('img id to be passed:',imgid);
         $localstorage.set('commentClickedChk','false');
 //        $rootScope.sessionImageID= imgid;
         $localstorage.set('sessionImageID',imgid);
         $location.path("app/FullSizeImage/"+imgid);
         };    
         mpc.sendEditimgID = function (imgid){
-        console.log('img id to be passed:',imgid);
+        $log.debug('img id to be passed:',imgid);
 //        $rootScope.sessionImageID= imgid;
         $localstorage.set('sessionImageID',imgid);
         }; 
         $scope.ClickedLikedMyProfile = function (post){          
-            // console.log("image like clicked ", post);
+             $log.debug("image like clicked ", post);
             var MyID=$localstorage.get('sessionMyID');
 
-            console.log('inide checkLogin() myid:',MyID);
-            console.log('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
+            $log.debug('inide checkLogin() myid:',MyID);
+            $log.debug('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
 
            if(!MyID)
            {
-               console.log(" inside login");
+               $log.debug(" inside login");
                $scope.loginPopup();
            }
            else
@@ -240,7 +240,7 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in unlike", error);
+                        $log.debug("error in unlike", error);
                      });
                      
                 }
@@ -257,7 +257,7 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in like", error);
+                        $log.debug("error in like", error);
                      });
                    
                 }  

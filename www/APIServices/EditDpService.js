@@ -1,8 +1,8 @@
 angular.module('Services')
-.service('EditDpService', function ($http) {
+.service('EditDpService', function ($http,$log) {
 
 	this.uploadDp = function (PostData) {
-		console.log(" uploadImage PostData", PostData);
+		$log.debug(" uploadImage PostData", PostData);
                 
             return $http.post( baseURL + '/profilePic/update', PostData, {
                 transformRequest: angular.identity,
@@ -12,7 +12,7 @@ angular.module('Services')
             });
 	};
         this.uploadDpCamera = function (PostData) {
-		console.log(" uploadDpCamera PostData"+ PostData);
+		$log.debug(" uploadDpCamera PostData"+ PostData);
                 
 //            return $http.post( baseURL + '/api/photoCamera', PostData, {   
             return $http.post(baseURL + '/profilePicCamera/updateCamera', PostData).then(function (response) {

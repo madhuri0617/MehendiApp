@@ -1,7 +1,7 @@
 angular.module('Services')
-        .service('EditUploadedPicService',function($http){
+        .service('EditUploadedPicService',function($http,$log){
         this.getPostDetail = function (PostData) {
-            console.log(" deatils PostData", PostData);
+            $log.debug(" deatils PostData", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,
@@ -9,7 +9,7 @@ angular.module('Services')
             });
 	};
         this.updatePostDetail = function (PostData) {
-            console.log("", PostData);
+            $log.debug("", PostData);
             return $http({
                 method: 'POST',
                 data: PostData,

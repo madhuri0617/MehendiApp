@@ -1,13 +1,13 @@
 
 
 angular.module('Services')
-.service('commentsService', function ($http) {
+.service('commentsService', function ($http,$log) {
 
 //	$rootScope.$on('headerData', function (event, data) {
 //		$rootScope.headerData = data;
 //	});
 	this.comments = function (PostData) {
-		console.log(" comments PostData", PostData);
+		$log.debug(" comments PostData", PostData);
 		return $http({
 			method: 'POST',
 			data: PostData,
@@ -17,7 +17,7 @@ angular.module('Services')
 	};
         
         	this.PostcommentService = function (PostData) {
-		console.log(" Postcomment PostData", PostData);
+		$log.debug(" Postcomment PostData", PostData);
 		return $http({
 			method: 'POST',
 			data: PostData,

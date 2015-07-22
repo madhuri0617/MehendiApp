@@ -1,5 +1,5 @@
     angular.module('starter.controllers')
-    .controller('CommentCtrl', ['$http','$scope','$rootScope','commentsService','$localStorage','$ionicLoading','$ionicScrollDelegate','$localstorage','$ionicPopup', function CommentCtrl($http,$scope,$rootScope,commentsService,$localStorage,$ionicLoading,$ionicScrollDelegate,$localstorage,$ionicPopup) {
+    .controller('CommentCtrl', ['$http','$scope','$rootScope','commentsService','$localStorage','$ionicLoading','$ionicScrollDelegate','$localstorage','$ionicPopup','$log', function CommentCtrl($http,$scope,$rootScope,commentsService,$localStorage,$ionicLoading,$ionicScrollDelegate,$localstorage,$ionicPopup,$log) {
         $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
         $scope.loadingWheel = function() {
@@ -27,38 +27,38 @@
 //            postID : $rootScope.sessionCommentClickedImageID
               postID : $localstorage.get('sessionCommentClickedImageID')
         };
-        console.log("post you commented on: " + cmt.posts.postID)
+        $log.debug("post you commented on: " + cmt.posts.postID)
 //        $scope.var={};
         cmt.PostsResult=[];
-        console.log("called");
+        $log.debug("called");
         commentsService.comments(cmt.posts).then(function (response) {
             cmt.PostsResult = response.data;
             $scope.loading = false;
             $ionicLoading.hide();
-            console.log("comments", cmt.PostsResult);
+            $log.debug("comments", cmt.PostsResult);
         },
         function (error) {
-            console.log("Error comments", error);
+            $log.debug("Error comments", error);
          });
         
         	cmt.getComments = function(){
                     $scope.loadingWheel();
-                    console.log("inside comments page : " +$localstorage.get('sessionCommentClickedImageID'))
+                    $log.debug("inside comments page : " +$localstorage.get('sessionCommentClickedImageID'))
                     cmt.posts = 
                             {
                                 postID : $localstorage.get('sessionCommentClickedImageID')
                             };
-		console.log("I recieve POST ID : " + $localstorage.get('sessionCommentClickedImageID'));
+		$log.debug("I recieve POST ID : " + $localstorage.get('sessionCommentClickedImageID'));
 
         commentsService.comments(cmt.posts).then(function (response) {
             cmt.PostsResult = response.data;
             $ionicScrollDelegate.scrollTop();
             $scope.loading = false;
             $ionicLoading.hide();
-            console.log("comments", cmt.PostsResult);
+            $log.debug("comments", cmt.PostsResult);
         },
         function (error) {
-            console.log("Error comments", error);
+            $log.debug("Error comments", error);
          });
 
 	};       
@@ -68,9 +68,9 @@
                     cmt.posts.userID = $localstorage.get('sessionMyID');
                     cmt.posts.comment = cmt.comment;
                     
-		console.log("POST ID : " + cmt.posts.postID);
-		console.log("USER ID : " + cmt.posts.userID);
-		console.log("Comments : " + cmt.posts.comment);
+		$log.debug("POST ID : " + cmt.posts.postID);
+		$log.debug("USER ID : " + cmt.posts.userID);
+		$log.debug("Comments : " + cmt.posts.comment);
         if(!cmt.posts.comment)
         {
             $scope.errorPopup();
@@ -83,12 +83,12 @@
                     cmt.PostsResult = response.data;
                     $scope.loading = false;
 //            $ionicLoading.hide();
-                    console.log("comments", cmt.PostsResult);
+                    $log.debug("comments", cmt.PostsResult);
                     cmt.getComments();
                     cmt.comment = "";
                 },
                 function (error) {
-                    console.log("Error comments", error);
+                    $log.debug("Error comments", error);
                 });
         }
 	};

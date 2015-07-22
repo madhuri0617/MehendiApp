@@ -1,11 +1,11 @@
     angular.module('starter.controllers')
-    .controller('uploaderCtrl', ['$http','$scope','$rootScope','userProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$location','$localstorage','FullImgService','CommonServiceDate', function uploaderCtrl($http,$scope,$rootScope,userProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$location,$localstorage,FullImgService,CommonServiceDate) {
+    .controller('uploaderCtrl', ['$http','$scope','$rootScope','userProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$location','$localstorage','FullImgService','CommonServiceDate','$log', function uploaderCtrl($http,$scope,$rootScope,userProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$location,$localstorage,FullImgService,CommonServiceDate,$log) {
         $scope.loading = true;
         $rootScope.zoomImagePage = false;
 
 //        $localstorage.set('zoomImagePage',false);
 //       $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
-                 console.log("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
+                 $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
         $scope.loadingWheel = function() {
             $ionicLoading.show({
                 template: '<ion-spinner icon="circles"/>'
@@ -33,34 +33,34 @@
         };
         var uc = this;
                 uc.MyId = $localstorage.get('sessionMyID');
-                    console.log("MyId in userProfile controller: "+uc.MyId);
+                    $log.debug("MyId in userProfile controller: "+uc.MyId);
         uc.Posts=[];
         $scope.postLikesAvailable = false;
 //        $rootScope.state='app/uploaderProfile';
 
-       console.log("User ID: " +$localstorage.get('sessionUserID'));
-//       console.log("My ID: " +$rootScope.sessionMyID);
-       console.log("My ID: " +$localstorage.get('sessionMyID'));
+       $log.debug("User ID: " +$localstorage.get('sessionUserID'));
+//       $log.debug("My ID: " +$rootScope.sessionMyID);
+       $log.debug("My ID: " +$localstorage.get('sessionMyID'));
         uc.user={};
 //        uc.user.userID=$rootScope.sessionUserID;
         uc.user.userID = $localstorage.get('sessionUserID');
 //        uc.user.sessionID=$rootScope.sessionMyID;
         uc.user.sessionID=$localstorage.get('sessionMyID');
-        //console.log('uis from home page',uc.user.uid);
+        //$log.debug('uis from home page',uc.user.uid);
         
         uc.getUserInfo = function(){
             userProfileService.getUserInfo(uc.user).then(function (response) {
-                    console.log('response of getUserInfo',response.data);
+                    $log.debug('response of getUserInfo',response.data);
                     uc.Profile = response.data;
                     $scope.profilePhoto = uc.Profile.DPPath;
                     $scope.loadinggetOwninfo = true;
-                    console.log('uc.Profile',uc.Profile);
+                    $log.debug('uc.Profile',uc.Profile);
                 },
                 function (error) {
-                    console.log("Error in getUserInfo Service", error);
+                    $log.debug("Error in getUserInfo Service", error);
                  });
 //		$http.post('http://api-ratemymehendi.rhcloud.com/userProfile',uc.user).success(function(response){
-//			//console.log(response);
+//			//$log.debug(response);
 //			uc.Profile = response;
 //		});
 	};
@@ -70,10 +70,10 @@
         $scope.loadMoreData=function()
         {
             $scope.moredesigns = false;
-            console.log("loadmoredata: ",uc.Posts );
+            $log.debug("loadmoredata: ",uc.Posts );
             uc.Posts.push(uc.dumy[$scope.counter]);
             $scope.counter += 1;   
-            console.log("uc.Posts.length: ",uc.Posts.length,$scope.totalPosts);
+            $log.debug("uc.Posts.length: ",uc.Posts.length,$scope.totalPosts);
             if(uc.Posts.length === $scope.totalPosts)
             {
                 $scope.moredata=true;
@@ -110,14 +110,14 @@
                     $ionicScrollDelegate.scrollTop();
                     $scope.loading = false;
                     $ionicLoading.hide();
-                    console.log('uc.Posts posts',uc.Posts,uc.Posts.length);
+                    $log.debug('uc.Posts posts',uc.Posts,uc.Posts.length);
                 },
                 function (error) {
-                    console.log("Error in getUserPost Service", error);
+                    $log.debug("Error in getUserPost Service", error);
                  });
                  
 //		$http.post('http://api-ratemymehendi.rhcloud.com/userProfile/post',uc.user).success(function(response){
-//			console.log(response);
+//			$log.debug(response);
 //			uc.Posts = response;
 //		});
 	};
@@ -125,7 +125,7 @@
         uc.getUserLike = function(){
             $scope.loadingWheel();
 		userProfileService.getUserLike(uc.user).then(function (response) {
-                        //console.log("response likes", response.data);
+                        //$log.debug("response likes", response.data);
                 if(response.data[0].message)
                 {
                     $scope.noDataPopup("Likes","No likes found");
@@ -160,14 +160,14 @@
                     $ionicScrollDelegate.scrollTop();
                     $scope.loading = false;
                     $ionicLoading.hide();
-                    console.log('uc.Posts likes',uc.Posts,uc.Posts.length);
+                    $log.debug('uc.Posts likes',uc.Posts,uc.Posts.length);
                 },
                 function (error) {
-                    console.log("Error in getUserLike Service", error);
+                    $log.debug("Error in getUserLike Service", error);
                  });
                  
 //		$http.post('http://api-ratemymehendi.rhcloud.com/userProfile/like',uc.user).success(function(response){
-//			console.log('like response:',response);
+//			$log.debug('like response:',response);
 //                        uc.Posts = response;
 //			// uc.Likes = response;
 //		});
@@ -184,15 +184,15 @@
 //        };
         
     uc.getpostid=function(pid){
-            console.log('user profile page');
+            $log.debug('user profile page');
             $localstorage.set('commentClickedChk','false');
-        console.log('postid to be passed:',pid);
+        $log.debug('postid to be passed:',pid);
 //        $rootScope.sessionImageID=pid;
           $location.path("app/FullSizeImage/"+pid);
     };
     uc.getCommentClickedImageId = function(imageid)
     {
-        console.log("Comment clicked image id: " +imageid);
+        $log.debug("Comment clicked image id: " +imageid);
 //          $rootScope.sessionCommentClickedImageID = imageid;
         $localstorage.set('commentClickedChk','true');
 //            alert($localstorage.get('commentClicked'));
@@ -200,22 +200,22 @@
     };
     uc.zoomProfile = function()
     {
-        console.log("zoomProfile");
+        $log.debug("zoomProfile");
 //                    alert($scope.profilePhoto);
 //        $rootScope.imageToZoom = $scope.profilePhoto;
         $localstorage.set('imageToZoom',$scope.profilePhoto);
         $location.path('app/zoomImage');
     };
     $scope.ClickedLikedUserProfile = function (post){
-            // console.log("image like clicked ", post);
+            // $log.debug("image like clicked ", post);
             var MyID=$localstorage.get('sessionMyID');
 
-            console.log('inide checkLogin() myid:',MyID);
-            console.log('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
+            $log.debug('inide checkLogin() myid:',MyID);
+            $log.debug('inide checkLogin() $rootScope.sessionMyID:)',$rootScope.sessionMyID);
 
            if(!MyID)
            {
-               console.log(" inside login");
+               $log.debug(" inside login");
                $scope.loginPopup();
            }
            else
@@ -243,7 +243,7 @@
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in unlike", error);
+                        $log.debug("error in unlike", error);
                      });
                      
                 }
@@ -260,16 +260,12 @@
                         $ionicLoading.hide();
                     },
                     function (error) {
-                        console.log("error in like", error);
+                        $log.debug("error in like", error);
                      });
                    
                 }  
            }
-        };
-//    hm.msg = function () {
-//        console.log(hm.message);
-//    };
-    
+        };   
 }]);
 
 

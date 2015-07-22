@@ -4793,7 +4793,10 @@ ionic.views.Scroll = ionic.views.View.inherit({
       if (!self.options.freeze && scrollParent === self.__container) {
 
         self.hintResize();
-        self.scrollBy(
+        
+        var browser=(/Firefox/i.test(navigator.userAgent));
+        if(!browser){
+         self.scrollBy(
           (e.wheelDeltaX || e.deltaX || 0) / self.options.wheelDampen,
           (-e.wheelDeltaY || e.deltaY || 0) / self.options.wheelDampen
         );
@@ -4802,9 +4805,46 @@ ionic.views.Scroll = ionic.views.View.inherit({
         clearTimeout(self.__wheelHideBarTimeout);
         self.__wheelHideBarTimeout = setTimeout(function() {
           self.__fadeScrollbars('out');
-        }, 100);
-      }
-    });
+        }, 100); 
+        }
+        else{
+            var positionY = (e.detail)?-e.detail*(-120):e.wheelDeltaY;
+
+        self.scrollBy(
+          e.wheelDeltaX/self.options.wheelDampen,// this may be wrong when scroll horizontal
+          positionY/self.options.wheelDampen 
+        );                      
+
+
+      self.__fadeScrollbars('in');
+      clearTimeout(self.__wheelHideBarTimeout);
+      self.__wheelHideBarTimeout = setTimeout(function() {
+        self.__fadeScrollbars('out');
+      }, 100);
+        }
+    }
+  });
+ // var browser=(/Firefox/i.test(navigator.userAgent));
+  
+  var mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+ //console.log('mousewheelevt::',mousewheelevt);
+ container.addEventListener("mousedown", self.mouseDown, false);
+  document.addEventListener("mousemove", self.mouseMove, false);
+  document.addEventListener("mouseup", self.mouseUp, false);
+  document.addEventListener(mousewheelevt, self.mouseWheel, false);
+        
+//        self.scrollBy(
+//          (e.wheelDeltaX || e.deltaX || 0) / self.options.wheelDampen,
+//          (-e.wheelDeltaY || e.deltaY || 0) / self.options.wheelDampen
+//        );
+//
+//        self.__fadeScrollbars('in');
+//        clearTimeout(self.__wheelHideBarTimeout);
+//        self.__wheelHideBarTimeout = setTimeout(function() {
+//          self.__fadeScrollbars('out');
+//        }, 100);
+//      }
+//    });
 
     if ('ontouchstart' in window) {
       // Touch Events

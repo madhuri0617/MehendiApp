@@ -1,6 +1,9 @@
 angular.module('starter.controllers', ['ionic'])
-.controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService) {
-    $rootScope.zoomImagePage = false;
+.controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log) {
+    
+    
+            $log.debug("inside controller");
+            $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
     $scope.blank="";
     $scope.mobile = localStorage.getItem("mobile");
@@ -38,7 +41,7 @@ angular.module('starter.controllers', ['ionic'])
         });
         confirmPopup.then(function(res) {
           if(res) {
-//            console.log('You are sure');
+            $log.debug('You are sure');
             angular.element(document.querySelector("#tabMyprofile")).addClass("active");
             angular.element(document.querySelector("#tabUpload")).removeClass("active");
             angular.element(document.querySelector("#tabCamera")).removeClass("active");
@@ -47,7 +50,7 @@ angular.module('starter.controllers', ['ionic'])
             $location.path('app/login');
 
           } else {
-//            console.log('You are not sure');
+            $log.debug('You are not sure');
           }
         });
     };
@@ -69,7 +72,7 @@ angular.module('starter.controllers', ['ionic'])
     $scope.totalPosts = 0;
     $scope.getPopular1 = function(tagNm)
     {
-//            console.log("tag",tagNm);
+            $log.debug("tag",tagNm);
     };
     $scope.getPopular = function(tagNm)
     {
@@ -112,10 +115,10 @@ angular.module('starter.controllers', ['ionic'])
             $ionicScrollDelegate.scrollTop();
             $scope.loading = false;
             $ionicLoading.hide();
-            //console.log("popular", $scope.Posts,$scope.Posts.length);
+            $log.debug("popular", $scope.Posts,$scope.Posts.length);
         },
         function (error) {
-//            console.log("Error popular", error);
+            $log.debug("Error popular", error);
          });
     };
     $scope.filterEvenStartFrom = function (index) {
@@ -128,10 +131,10 @@ angular.module('starter.controllers', ['ionic'])
     $scope.loadMoreData=function()
     {
         $scope.moredesigns = false;
-//        console.log("loadmoredata: ",$scope.Posts );
+        $log.debug("loadmoredata: ",$scope.Posts );
         $scope.Posts.push($scope.dumy[$scope.counter]);
         $scope.counter += 1;   
-//        console.log("$scope.Posts.length: ",$scope.Posts.length,$scope.totalPosts);
+        $log.debug("$scope.Posts.length: ",$scope.Posts.length,$scope.totalPosts);
         if($scope.Posts.length === $scope.totalPosts)
         {
             $scope.moredata=true;
@@ -235,10 +238,10 @@ angular.module('starter.controllers', ['ionic'])
             $ionicScrollDelegate.scrollTop();
             $scope.loading = false;
             $ionicLoading.hide();
-//                console.log("$scope.Posts",$scope.Posts,$scope.Posts.length);
+                $log.debug("$scope.Posts",$scope.Posts,$scope.Posts.length);
         },
         function (error) {
-//                console.log("Error recent", error);
+                $log.debug("Error recent", error);
         });
     };
     $scope.getuid = function(uid) {
@@ -302,7 +305,7 @@ angular.module('starter.controllers', ['ionic'])
 //                    $ionicLoading.hide();
                 },
                 function (error) {
-        //                        console.log("error in unlike", error);
+                                $log.debug("error in unlike", error);
                  });                    
             }
             else
@@ -320,14 +323,14 @@ angular.module('starter.controllers', ['ionic'])
 //                    $ionicLoading.hide();
                 },
                 function (error) {
-//                        console.log("error in like", error);
+                        $log.debug("error in like", error);
                 });
             }  
            }
         };
 })
 
-.controller('MyProfileCtrl', function($scope, $ionicModal, $ionicPopup,OpenFB) {
+.controller('MyProfileCtrl', function($scope, $ionicModal, $ionicPopup,OpenFB,$log) {
     $scope.IsPostTabActive=true;
     $ionicModal.fromTemplateUrl('EditProfilePicModal.html', {
         id: '1', // We need to use and ID to identify the modal that is firing the event!
@@ -357,11 +360,11 @@ angular.module('starter.controllers', ['ionic'])
     };
      /* Listen for broadcasted messages */
     $scope.$on('modal.shown', function(event, modal) {
-      console.log('Modal ' + modal.id + ' is shown!');
+      $log.debug('Modal ' + modal.id + ' is shown!');
     });
 
     $scope.$on('modal.hidden', function(event, modal) {
-      console.log('Modal ' + modal.id + ' is hidden!');
+      $log.debug('Modal ' + modal.id + ' is hidden!');
     });
 //    confirm dilog on delete
     $scope.showDeletePost = function() {
@@ -377,9 +380,9 @@ angular.module('starter.controllers', ['ionic'])
      });
      confirmPopup.then(function(res) {
        if(res) {
-//         console.log('You are sure');
+         $log.debug('You are sure');
        } else {
-//         console.log('You are not sure');
+         $log.debug('You are not sure');
        }
      });
    };
@@ -473,11 +476,11 @@ angular.module('starter.controllers', ['ionic'])
 .controller('PersonCtrl', function ($scope, $stateParams, OpenFB) {
     OpenFB.get('/' + $stateParams.personId).success(function (user) {
         $scope.user = user;
-        console.log('details '+user);
+//        $log.debug('details '+user);
     });
 })
     /*================================== share post on fb ===============================*/
-.controller("ShareController", function($ionicPopup,OpenFB,$localstorage,$ionicLoading,$scope, $cordovaSocialSharing) {
+.controller("ShareController", function($ionicPopup,OpenFB,$localstorage,$ionicLoading,$scope, $cordovaSocialSharing,$log) {
         $scope.sharePopup = function() {
             $ionicPopup.alert({
               title: 'Success',
@@ -487,7 +490,7 @@ angular.module('starter.controllers', ['ionic'])
     };
     //SHARE ON facebbok
     $scope.shareOnFacebook = function (postDetails) {
-//      console.log("postdetails: ",postDetails);
+      $log.debug("postdetails: ",postDetails);
       var MyID=$localstorage.get('sessionMyID');
       if(!MyID)
       {
@@ -499,7 +502,7 @@ angular.module('starter.controllers', ['ionic'])
          .success(function (user) {
 //                   alert("token refreshed");
         });
-//         console.log('MyID:',$localstorage.get('sessionMyID'));
+         $log.debug('MyID:',$localstorage.get('sessionMyID'));
           $scope.item = {
               picture: postDetails.imagePath,
               link: 'http://mehndistar.com/#/app/FullSizeFb/'+ postDetails._id

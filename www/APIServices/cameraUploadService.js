@@ -1,8 +1,8 @@
 angular.module('Services')
-.service('cameraUploadService', function ($http) {
+.service('cameraUploadService', function ($http,$log) {
 
 	this.uploadCameraImage = function (PostData) {
-		console.log(" uploadCameraImage PostData", PostData);
+		$log.debug(" uploadCameraImage PostData", PostData);
                 
 //            return $http.post( baseURL + '/api/photoCamera', PostData, {   
             return $http.post(baseURL + '/apiCamera/photoCamera', PostData).then(function (response) {

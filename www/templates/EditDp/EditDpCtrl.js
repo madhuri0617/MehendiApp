@@ -53,7 +53,7 @@
             });
         };      
         $scope.uploadCamera = function () {         
-            if(!$scope.fileUpload)
+            if(!$scope.fileUpload || $scope.fileUpload === $localstorage.get('currentPath'))
             {
                     $scope.msg="You have to Capture Picture";
                     $scope.errorPopup($scope.msg);

@@ -1,12 +1,5 @@
 
 angular.module('starter.controllers')
-//var myApp = angular.module('myApp', []);
-
-
-//function MyCtrl($scope) {
-//  // controller code here
-//}
-
 .directive('ngMouseWheelUp', function() {
         return function(scope, element, attrs) {
             element.bind("DOMMouseScroll mousewheel onmousewheel", function(event) {
@@ -28,8 +21,6 @@ angular.module('starter.controllers')
             });
         };
 })
-
-
 .directive('ngMouseWheelDown', function() {
         return function(scope, element, attrs) {
             element.bind("DOMMouseScroll mousewheel onmousewheel", function(event) {
@@ -52,39 +43,38 @@ angular.module('starter.controllers')
         };
 })
 
-    .controller('ZoomDesktopController',['$rootScope','$localstorage','$scope',function ZoomDesktopController($rootScope,$localstorage,$scope)
+.controller('ZoomDesktopController',['$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($rootScope,$localstorage,$scope,$log)
 {
     $rootScope.zoomImagePage = true;
-     $localstorage.set('FromPage','app/zoomImage');
-//                $localstorage.set('zoomImagePage',true)
-//                 $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
-                 console.log("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
-                 
-                console.log("inside zoomDesktopController "+$rootScope.controlzoom ); 
-//                alert($rootScope.imageToZoom);
-                $('#img').attr('src',  $localstorage.get('imageToZoom'));
-     $scope.initZoom = function()
-     {
-         $scope.zoomWidth = 600;
-         $scope.imgStyle = {width:'600px'};
-     };
-     $scope.zoomDown = function()
-     {
-         if($scope.zoomWidth>600)
-         {
-         $scope.zoomWidth = $scope.zoomWidth - 20;
-         }
-         else
-         {
-            $scope.zoomWidth = 600; 
-         }
-         $scope.imgStyle.width = $scope.zoomWidth  +'px';
-     };
-     $scope.zoomUp  = function()
-     {
-         $scope.zoomWidth = $scope.zoomWidth + 20; 
-         $scope.imgStyle.width = $scope.zoomWidth +'px'; 
-     };                
+    $localstorage.set('FromPage','app/zoomImage');
+//  $localstorage.set('zoomImagePage',true)
+//  $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
+    $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);                
+    $log.debug("inside zoomDesktopController "+$rootScope.controlzoom ); 
+//  alert($rootScope.imageToZoom);
+    $('#img').attr('src',  $localstorage.get('imageToZoom'));
+    $scope.initZoom = function()
+    {
+        $scope.zoomWidth = 600;
+        $scope.imgStyle = {width:'600px'};
+    };
+    $scope.zoomDown = function()
+    {
+        if($scope.zoomWidth>600)
+        {
+        $scope.zoomWidth = $scope.zoomWidth - 20;
+        }
+        else
+        {
+           $scope.zoomWidth = 600; 
+        }
+        $scope.imgStyle.width = $scope.zoomWidth  +'px';
+    };
+    $scope.zoomUp  = function()
+    {
+        $scope.zoomWidth = $scope.zoomWidth + 20; 
+        $scope.imgStyle.width = $scope.zoomWidth +'px'; 
+    };                
 }]);
 
 

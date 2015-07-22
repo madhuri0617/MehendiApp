@@ -1,30 +1,29 @@
 angular.module('Services')
-        .service('userProfileService',function($http){
-        this.getUserInfo = function (PostData) {
-            console.log("getOwnInfo sendData", PostData);
-            return $http({
-                method: 'POST',
-                data: PostData,
-                url: baseURL + '/userProfile'
-            });
-	};
-        this.getUserPost = function (PostData) {
-            console.log("", PostData);
-            return $http({
-                method: 'POST',
-                data: PostData,
-                url: baseURL + '/userProfile/post'
-            });
-	};
-        this.getUserLike = function (PostData) {
-            console.log(" PostData", PostData);
-            return $http({
-                method: 'POST',
-                data: PostData,
-                url: baseURL + '/userProfile/like'
-            });
-	};
-            
+.service('userProfileService',function($http,$log){
+    this.getUserInfo = function (PostData) {
+        $log.debug("getOwnInfo sendData", PostData);
+        return $http({
+            method: 'POST',
+            data: PostData,
+            url: baseURL + '/userProfile'
+        });
+    };
+    this.getUserPost = function (PostData) {
+        $log.debug("", PostData);
+        return $http({
+            method: 'POST',
+            data: PostData,
+            url: baseURL + '/userProfile/post'
+        });
+    };
+    this.getUserLike = function (PostData) {
+        $log.debug(" PostData", PostData);
+        return $http({
+            method: 'POST',
+            data: PostData,
+            url: baseURL + '/userProfile/like'
+        });
+    };         
 });
 
 

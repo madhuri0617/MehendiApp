@@ -75,7 +75,7 @@ angular.module('starter.controllers')
         $cordovaCamera.getPicture(options).then(function (imageData) {
             $('#Selectedimage').show();
             $('#Selectedimage').attr('src', "data:image/jpeg;base64,"+imageData);
-            alert(imageData);
+//            alert(imageData);
             $scope.fileUpload = "data:image/jpeg;base64," + imageData;
         }, function (err) {
             var msg = "An error occured: " + err;

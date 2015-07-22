@@ -4,21 +4,15 @@
  * and open the template in the editor.
  */
 angular.module('Services')
-.service('searchService', function ($http) {
-
-//	$rootScope.$on('headerData', function (event, data) {
-//		$rootScope.headerData = data;
-//	});
-	this.search = function (PostData) {
-		console.log(" search PostData", PostData);
-		return $http({
-			method: 'POST',
-			data: PostData,
-			url: baseURL + '/search'
-			
-		});
-	};
-        
-    });
+.service('searchService', function ($http,$log) {
+    this.search = function (PostData) {
+        $log.debug(" search PostData", PostData);
+        return $http({
+                method: 'POST',
+                data: PostData,
+                url: baseURL + '/search'			
+        });
+    };       
+});
 
 

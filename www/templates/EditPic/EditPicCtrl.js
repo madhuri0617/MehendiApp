@@ -2,6 +2,7 @@
  .controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage','$log', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage,$log) {
         $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
+$scope.mobile = localStorage.getItem("mobile");
         $scope.loadingWheel = function() {
             $ionicLoading.show({
                 template: '<ion-spinner icon="circles"/>'

@@ -4,6 +4,7 @@
        //change dp:
 //       $localstorage.set('zoomImagePage',false);
         $scope.fileUpload = $localstorage.get('currentPath');
+        $scope.mobile = localStorage.getItem("mobile");
        $('#Selectedimage').attr('src',$localstorage.get('currentPath'));
 //       $('#Selectedimage').attr('src', $rootScope.currentPath);
        $scope.loadingWheel = function() {

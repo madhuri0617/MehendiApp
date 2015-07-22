@@ -143,7 +143,7 @@ angular.module('starter.controllers')
         if($scope.validateImage(ev.target.files[0]))
         {
             $scope.fileType = ev.target.files[0].type;
-            alert($scope.fileType);
+//            alert($scope.fileType);
             if(ev.target.files[0])
             {
             $scope.fileUpload = ev.target.files[0];

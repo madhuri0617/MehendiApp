@@ -1,9 +1,7 @@
 angular.module('starter.controllers', ['ionic'])
-.controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log) {
-    
-    
-            $log.debug("inside controller");
-            $rootScope.zoomImagePage = false;
+.controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log) {   
+    $log.debug("inside controller");
+    $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
     $scope.blank="";
     $scope.mobile = localStorage.getItem("mobile");
@@ -20,8 +18,6 @@ angular.module('starter.controllers', ['ionic'])
     setTabClass();
     $localstorage.set('FromPage','app/home');
     $scope.MyId ;
-
-
     if ((typeof $localstorage.get('sessionMyID'))=== 'undefined') {
         $scope.MyId='';
     }
@@ -351,39 +347,39 @@ angular.module('starter.controllers', ['ionic'])
 //    });
 
     $scope.openModal = function(index) {
-      if(index === 1) $scope.oModal1.show();
-      else $scope.oModal2.show();
+        if(index === 1) $scope.oModal1.show();
+        else $scope.oModal2.show();
     };
     $scope.closeModal = function(index) {
-      if(index === 1) $scope.oModal1.hide();
-      else $scope.oModal2.hide();
+        if(index === 1) $scope.oModal1.hide();
+        else $scope.oModal2.hide();
     };
      /* Listen for broadcasted messages */
     $scope.$on('modal.shown', function(event, modal) {
-      $log.debug('Modal ' + modal.id + ' is shown!');
+        $log.debug('Modal ' + modal.id + ' is shown!');
     });
 
     $scope.$on('modal.hidden', function(event, modal) {
-      $log.debug('Modal ' + modal.id + ' is hidden!');
+        $log.debug('Modal ' + modal.id + ' is hidden!');
     });
 //    confirm dilog on delete
     $scope.showDeletePost = function() {
      var confirmPopup = $ionicPopup.confirm({
-       title: 'Delete Post',
-       //template: 'Are you sure you want to delete this Post?',
-       templateUrl:'PopUps/DeletePost.html',
-       cssClass: '', // String, The custom CSS class name
-       cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
-       cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
-       okText: '', // String (default: 'OK'). The text of the OK button.
-       okType: ' button-assertive' // String (default: 'button-positive'). The type of the OK button.
+        title: 'Delete Post',
+        //template: 'Are you sure you want to delete this Post?',
+        templateUrl:'PopUps/DeletePost.html',
+        cssClass: '', // String, The custom CSS class name
+        cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
+        cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
+        okText: '', // String (default: 'OK'). The text of the OK button.
+        okType: ' button-assertive' // String (default: 'button-positive'). The type of the OK button.
      });
      confirmPopup.then(function(res) {
-       if(res) {
-         $log.debug('You are sure');
-       } else {
-         $log.debug('You are not sure');
-       }
+        if(res) {
+            $log.debug('You are sure');
+        } else {
+            $log.debug('You are not sure');
+        }
      });
    };
    //geting details from facebook profile..

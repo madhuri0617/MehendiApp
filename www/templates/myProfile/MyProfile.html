@@ -30,7 +30,7 @@
         <!--desktop-->
         <div class="row" style=" overflow:auto;" ng-if="(mobile == 'false')">
             <div class="col col-50 leftDiv">
-                <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts | filter:filterEvenStartFrom(1)" ng-if="(loading === false && loadinggetOwninfo=== true &&  postLikesAvailable === true)">
+                <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts | filter:filterEvenStartFrom(1)" ng-if="(loadinggetOwninfo=== true &&  postLikesAvailable === true)" ng-show="!loading">
                     <div class="headerformat item item-avatar myProfile-header">
                         <a href ng-click="getuid('{{posts.uid}}')" ng-if="mpc.MyId!==posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="col col-50 rightDiv">
-                <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts | filter:filterEvenStartFrom(0)" ng-if="(loading === false && loadinggetOwninfo=== true &&  postLikesAvailable === true)">
+                <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts | filter:filterEvenStartFrom(0)" ng-if="(loadinggetOwninfo=== true &&  postLikesAvailable === true)" ng-show="!loading">
                     <div class="headerformat item item-avatar myProfile-header">
                         <a href ng-click="getuid('{{posts.uid}}')" ng-if="mpc.MyId!==posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>

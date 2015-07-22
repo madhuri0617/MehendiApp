@@ -17,7 +17,7 @@ angular.module('ionic.utils', [])
     remove: function(key) {
       delete $window.localStorage[key];
     }
-  }
+  };
 }]);
 
 

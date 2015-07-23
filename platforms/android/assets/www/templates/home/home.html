@@ -28,12 +28,12 @@
                         <a href  ng-click="getuid('{{Post.uploader._id}}')" ng-if="MyId!==Post.uploader._id">
                             <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                             <h2>{{Post.uploader.userName}}</h2>
-                            <small> {{Post.uploadDate}}</small>
+                            <small>Posted {{Post.uploadDate}}</small>
                         </a>
                         <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
                             <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
-                            <small> {{Post.uploadDate}}</small>
+                            <small>Posted {{Post.uploadDate}}</small>
                         </a>
                     </div>
                     <div class="bodyformat item item-body" ng-click="getimageid('{{Post._id}}')">
@@ -65,12 +65,12 @@
                     <a href  ng-click="getuid('{{Post.uploader._id}}')" ng-if="MyId!==Post.uploader._id">
                         <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2>{{Post.uploader.userName}}</h2>
-                        <small> {{Post.uploadDate}}</small>
+                        <small>Posted {{Post.uploadDate}}</small>
                     </a>
                     <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
                         <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
-                        <small> {{Post.uploadDate}}</small>
+                        <small>Posted {{Post.uploadDate}}</small>
                     </a>
                 </div>
                 <div class="bodyformat item item-body" ng-click="getimageid('{{Post._id}}')">
@@ -113,12 +113,12 @@
                     <a href  ng-click="getuid('{{Post.uploader._id}}')" ng-if="MyId!==Post.uploader._id">
                         <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2>{{Post.uploader.userName}}</h2>
-                        <small> {{Post.uploadDate}}</small>
+                        <small>Posted {{Post.uploadDate}}</small>
                     </a>
                     <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
                         <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
-                        <small> {{Post.uploadDate}}</small>
+                        <small>Posted {{Post.uploadDate}}</small>
                     </a>
                 </div>
                 <div class="bodyformat item item-body" ng-click="getimageid('{{Post._id}}')">

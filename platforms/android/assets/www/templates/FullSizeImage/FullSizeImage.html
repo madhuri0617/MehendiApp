@@ -15,12 +15,12 @@
         <a href ng-click="getuid(fsc.ImgDetails.uid)" ng-if="fsc.MyId!==fsc.ImgDetails.uid">
             <img ng-src="{{fsc.ImgDetails.DPPath}}" alt=""/>
             <h2>{{fsc.ImgDetails.userName}}</h2>
-            <small>Posted on {{ fsc.ImgDetails.uploadDate}}</small>
+            <small>Posted {{ fsc.ImgDetails.uploadDate}}</small>
         </a>
         <a href="#/app/MyProfile" ng-if="fsc.MyId===fsc.ImgDetails.uid">
             <img ng-src="{{fsc.ImgDetails.DPPath}}" alt=""/>
             <h2  class="fontcolor">{{fsc.ImgDetails.userName}}</h2>
-            <small>Posted on {{ fsc.ImgDetails.uploadDate}}</small>
+            <small>Posted {{ fsc.ImgDetails.uploadDate}}</small>
             <!--<p> {{posts.imageId}}</p>-->
         </a>
     </div>
@@ -64,14 +64,14 @@
                 <a href  ng-click="getuid('{{Post.uid}}')" ng-if="fsc.MyId!==Post.uid">    
                     <img ng-src="{{Post.UserInfo.DPPath}}" alt=""/>
                     <h2 style="float:left;">{{Post.UserInfo.userName}}</h2>
-                    <small style="float:right;"> {{Post.uploadDate}}</small>
+                    <small style="float:right;">{{Post.uploadDate}}</small>
                     <br>
                     <p style="">{{Post.comment}}</p>
                 </a>
             <a href="#/app/MyProfile" ng-if="fsc.MyId===Post.uid">    
                     <img ng-src="{{Post.UserInfo.DPPath}}" alt=""/>
                     <h2 style="float:left;">{{Post.UserInfo.userName}}</h2>
-                    <small style="float:right;"> {{Post.uploadDate}}</small>
+                    <small style="float:right;">{{Post.uploadDate}}</small>
                     <br>
                     <p style="">{{Post.comment}}</p>
             </a>

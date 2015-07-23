@@ -563,7 +563,7 @@ ion-content#menus
 /*.item.item-stable*/
 .tagsByStyle
 {
-    
+    position: relative;
     background:url("../img/bg-body.jpg") no-repeat fixed 100% 100%;
 
 }
@@ -582,7 +582,10 @@ ion-content#menus
     padding: 10px 5px 0px 5px;
     background-color: #726464;
     color:#fff;
-    margin: -10px 10px 0px 0px;
+    position: absolute;
+    top:0px;
+    right:10px;
+    /*margin: -10px 10px 0px 0px;*/
 }
 ion-item.item
 {

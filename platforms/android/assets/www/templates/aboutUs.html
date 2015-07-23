@@ -11,6 +11,13 @@
     <p>All rights reserved.</p>
   </ion-content>
 </ion-view>
-<!--<script>
-    
-</script>-->
+<script>
+    function setTabClass() {
+           angular.element(document.querySelector("#tabHome")).removeClass("active");
+           angular.element(document.querySelector("#tabSearch")).removeClass("active");
+           angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
+           angular.element(document.querySelector("#tabCamera")).removeClass("active");
+           angular.element(document.querySelector("#tabUpload")).removeClass("active");
+        };
+        setTabClass();
+</script>

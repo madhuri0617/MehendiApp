@@ -4,6 +4,7 @@ angular.module('starter.controllers')
         angular.element(document.querySelector("#tabCamera")).removeClass("active");
         angular.element(document.querySelector("#tabMyprofile")).addClass("active");
     };
+    angular.element(document.querySelector("#tabCamera")).addClass("active");
     angular.element(document.querySelector("#tabHome")).removeClass("active");
     angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
     $scope.form={};

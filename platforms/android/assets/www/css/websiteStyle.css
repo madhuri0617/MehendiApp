@@ -237,7 +237,7 @@ a{
 /* ========================== space at bottom ================================== */
 .space
 {
-    padding-bottom:80px;
+    padding-bottom:20px;
 }
 /*=============================== login nd signUp Screen =============================================*/
 #buttonFormatting
@@ -603,9 +603,8 @@ ion-content#menus
 /*.item.item-stable*/
 .tagsByStyle
 {
-    
+    position:relative;
     background:url("../img/bg-body.jpg") no-repeat fixed 100% 100%;
-
 }
 .gradient
 {
@@ -622,7 +621,10 @@ ion-content#menus
     padding: 10px 5px 0px 5px;
     background-color: #726464;
     color:#fff;
-    margin: -10px 10px 0px 0px;
+    position: absolute;
+    top:0px;
+    right:10px;
+    /*margin: -10px 10px 0px 0px;*/
 }
 ion-item.item
 {
@@ -836,7 +838,7 @@ ion-item
 }
 #searchResultDiv
 {
-   margin-top: 60px;
+   margin-top: 55px;
 }
 #searchDiv .item
 {
@@ -857,6 +859,9 @@ ion-item
     padding: 10px;
     padding-bottom: 0px;
     min-height: 60px;
+}
+.searchCard:first-child{
+    margin-top: 0px !important;
 }
 /*================================ Comment ====================================== */
 #commentsDiv

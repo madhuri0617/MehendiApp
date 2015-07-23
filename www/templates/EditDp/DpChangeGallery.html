@@ -15,7 +15,7 @@
                 
                     <div class="fileUpload">
                         <button class="button uploadbutton"><i class="icon ion-social-dropbox"></i> Select image from Gallery</button>
-                        <input name="userPhoto" type="file" class="upload" onchange="angular.element(this).scope().filechange(event,this)"/>
+                        <input name="userPhoto" type="file" class="upload" onchange="angular.element(this).scope().filechange(event,this)" accept="image/*" multiple app-filereader/>
                     </div>
                     
                 <img id="Selectedimage" alt="Select image" src=""/>

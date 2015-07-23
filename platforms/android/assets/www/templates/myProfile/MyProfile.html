@@ -130,7 +130,7 @@
         
         <!--mobile-->
         <div  ng-if="(mobile == 'true')">
-            <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts" ng-if="(loading === false && loadinggetOwninfo=== true &&  postLikesAvailable === true)">
+            <div id="PostDetails" class="list card desktop" ng-repeat="posts in mpc.Posts" ng-if="(loadinggetOwninfo=== true &&  postLikesAvailable === true)" ng-show="!loading">
                 <div class="headerformat item item-avatar myProfile-header">
                     <a href ng-click="getuid('{{posts.uid}}')" ng-if="mpc.MyId!==posts.uid">
                         <img ng-src="{{posts.DPPath}}" alt=""/>
@@ -196,4 +196,3 @@
         </ion-content>
  </ion-modal-view>
 </script>
-          

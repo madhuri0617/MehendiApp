@@ -7,6 +7,7 @@
             template: '<ion-spinner icon="circles"/>'
         });
     };
+    $scope.mobile = localStorage.getItem("mobile");
     $localstorage.set('FromPage','app/EditUploadedPicDetails');
     $scope.loadingWheel();
     $scope.uploadPopup = function() {

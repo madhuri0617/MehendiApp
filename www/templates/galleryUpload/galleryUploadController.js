@@ -4,6 +4,7 @@ angular.module('starter.controllers')
        angular.element(document.querySelector("#tabUpload")).removeClass("active");
        angular.element(document.querySelector("#tabMyprofile")).addClass("active");
      };
+    angular.element(document.querySelector("#tabUpload")).addClass("active")
     angular.element(document.querySelector("#tabHome")).removeClass("active");
     angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
     $scope.form={};

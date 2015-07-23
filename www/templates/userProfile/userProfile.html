@@ -28,13 +28,12 @@
         <div  class="tabs">
             <a class="tab-item" 
                ng-class="{'active':IsPostTabActive}"
-               ng-click="IsPostTabActive=true;IsLikeTabActive=false; uc.getUserPost();"
-               data-ng-init="IsPostTabActive=true;IsLikeTabActive=false; uc.getUserPost();">
+               ng-click="uc.getDesignsPosts();">
               Posts
             </a>
             <a class="tab-item"
                ng-class="{'active':IsLikeTabActive}"
-               ng-click="IsLikeTabActive=true;IsPostTabActive=false; uc.getUserLike();">
+               ng-click="uc.getDesignsLikes();">
               Likes
             </a>
         </div>
@@ -50,7 +49,7 @@
                             <h2>{{Post.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
                         </a>
-                        <a href="#/app/MyProfile"  ng-if="uc.MyId===Post.uid">
+                        <a href="#/app/MyProfile/posts"  ng-if="uc.MyId===Post.uid">
                             <img ng-src="{{Post.DPPath}}" alt=""/>
                             <h2>{{Post.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
@@ -89,7 +88,7 @@
                             <h2>{{Post.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
                         </a>
-                        <a href="#/app/MyProfile"  ng-if="uc.MyId===Post.uid">
+                        <a href="#/app/MyProfile/posts"  ng-if="uc.MyId===Post.uid">
                             <img ng-src="{{Post.DPPath}}" alt=""/>
                             <h2>{{Post.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
@@ -136,7 +135,7 @@
                         <h2>{{Post.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>
                     </a>
-                    <a href="#/app/MyProfile"  ng-if="uc.MyId===Post.uid">
+                    <a href="#/app/MyProfile/posts"  ng-if="uc.MyId===Post.uid">
                         <img ng-src="{{Post.DPPath}}" alt=""/>
                         <h2>{{Post.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>

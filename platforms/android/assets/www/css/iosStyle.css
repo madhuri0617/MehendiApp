@@ -820,6 +820,9 @@ ion-item
     padding-bottom: 0px;
     min-height: 60px;
 }
+.searchCard:first-child{
+    margin-top: 0px !important;
+}
 /*================================ Comment ====================================== */
 #commentsDiv
 {

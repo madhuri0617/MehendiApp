@@ -31,7 +31,7 @@
                             <small>Posted {{ Post.uploadDate}}</small>
                             <!--<p> {{Post.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                        <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                             <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                             <small>Posted {{ Post.uploadDate}}</small>
@@ -74,7 +74,7 @@
                             <small>Posted{{ Post.uploadDate}}</small>
                             <!--<p> {{Post.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                        <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                             <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                             <small>Posted {{ Post.uploadDate}}</small>
@@ -124,7 +124,7 @@
                         <small>Posted {{ Post.uploadDate}}</small>
                         <!--<p> {{Post.imageId}}</p>-->
                     </a>
-                    <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                    <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                         <img ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                         <small>Posted {{ Post.uploadDate}}</small>

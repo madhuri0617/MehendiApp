@@ -156,7 +156,7 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
     })
     .state('app.MyProfile', {
         cache:false,
-        url: "/MyProfile",
+        url: "/MyProfile/:myPostsLikes",
         views: {
           'menuContent': {
                 templateUrl: "templates/myProfile/MyProfile.html",
@@ -196,7 +196,7 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
     })
     .state('app.home', {
         cache:false,
-        url: "/home/:tagNm",
+        url: "/home/:tagNm/:category",
         views: {
           'menuContent': {
                 templateUrl: "templates/home/home.html",
@@ -246,7 +246,7 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
     })
     .state('app.userProfile', {
         cache:false,
-        url: "/userProfile/:uid",
+        url: "/userProfile/:uid/:PostsLikes",
         views: {
           'menuContent': {
                 templateUrl: "templates/userProfile/userProfile.html",
@@ -264,6 +264,6 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
         }
     });
   // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/home/Common');
+    $urlRouterProvider.otherwise('/app/home/Common/popular');
 });
 

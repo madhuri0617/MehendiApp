@@ -15,13 +15,12 @@
         <div  class="tabs">
       <a class="tab-item"
          ng-class="{'active':IsPostTabActive}"
-         ng-click="IsPostTabActive=true;IsLikeTabActive=false; mpc.getOwnPost();"
-         data-ng-init="IsPostTabActive=true;IsLikeTabActive=false;">
+         ng-click="mpc.getDesignsOwnPosts();">
         Posts
       </a>
       <a class="tab-item"
          ng-class="{'active':IsLikeTabActive}"
-         ng-click="IsLikeTabActive=true;IsPostTabActive=false; mpc.getOwnLike();">
+         ng-click="mpc.getDesignsOwnLikes();">
         Likes
       </a>
     </div>
@@ -38,7 +37,7 @@
                             <small>Posted {{ posts.uploadDate}}</small>
                             <!--<p> {{posts.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                        <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{posts.userName}}</h2>
                             <small>Posted {{ posts.uploadDate}}</small>
@@ -84,7 +83,7 @@
                             <small>Posted {{ posts.uploadDate}}</small>
                             <!--<p> {{posts.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                        <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{posts.userName}}</h2>
                             <small>Posted {{ posts.uploadDate}}</small>
@@ -138,7 +137,7 @@
                         <small>Posted {{ posts.uploadDate}}</small>
                         <!--<p> {{posts.imageId}}</p>-->
                     </a>
-                    <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                    <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                         <img ng-src="{{posts.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{posts.userName}}</h2>
                         <small>Posted {{ posts.uploadDate}}</small>

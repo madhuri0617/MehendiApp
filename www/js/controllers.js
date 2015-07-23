@@ -3,9 +3,12 @@ angular.module('starter.controllers', ['ionic'])
     $log.debug("inside controller");
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
+    $scope.categoryFromURL = $stateParams.category;
+            console.log($scope.categoryFromURL);
     $scope.blank="";
     $scope.mobile = localStorage.getItem("mobile");
     $scope.loading = true;
+    
     $scope.loadingWheel = function() {
         $ionicLoading.show({
             template: '<ion-spinner icon="circles"/>'
@@ -70,11 +73,19 @@ angular.module('starter.controllers', ['ionic'])
     {
             $log.debug("tag",tagNm);
     };
+    $scope.getDesignsPopular = function(tagNm)
+    {
+        $location.path("app/home/"+ tagNm + "/popular");
+    };
+    $scope.getDesignsRecent = function(tagNm)
+    {
+        $location.path("app/home/"+ tagNm + "/recent");
+    };
     $scope.getPopular = function(tagNm)
     {
         $scope.populartab = true;
         $scope.loadingWheel();
-        $location.path("app/home/"+tagNm);
+//        $location.path("app/home/"+tagNm + "/" + $scope.categoryFromURL);
         angular.element(document.querySelector("#tabUpload")).removeClass("active");
         angular.element(document.querySelector("#tabCamera")).removeClass("active");
         angular.element(document.querySelector("#tabSearch")).removeClass("active");
@@ -117,6 +128,7 @@ angular.module('starter.controllers', ['ionic'])
             $log.debug("Error popular", error);
          });
     };
+
     $scope.filterEvenStartFrom = function (index) {
         return function (item) {
             return index++ % 2 === 1;
@@ -194,7 +206,7 @@ angular.module('starter.controllers', ['ionic'])
            }
            else
            {
-               $location.path("app/MyProfile");
+               $location.path("app/MyProfile/posts");
            }
         }
         initTabs();
@@ -205,6 +217,7 @@ angular.module('starter.controllers', ['ionic'])
     $scope.getRecent = function(tagNm){
         $scope.populartab = false;
         $scope.loadingWheel();
+//        $location.path("app/home/"+tagNm + "/" + category);
         $scope.recent = {
                 beg : 0,																// begining of response set used for scroll down
                 tagName : tagNm,
@@ -242,9 +255,22 @@ angular.module('starter.controllers', ['ionic'])
                 $log.debug("Error recent", error);
         });
     };
+    if($scope.categoryFromURL === 'popular')
+    {
+        $scope.getPopular($scope.tagFromURL);
+        $scope.IsPopularTabActive = true;
+        $scope.IsRecentTabActive = false;  
+    }
+    else
+    {
+        $scope.getRecent($scope.tagFromURL);
+        $scope.IsRecentTabActive = true;
+        $scope.IsPopularTabActive = false;
+    }
+    
     $scope.getuid = function(uid) {
         $localstorage.set('sessionUserID',uid);
-        $location.path("app/userProfile/"+uid);
+        $location.path("app/userProfile/"+uid+'/posts');
     };
     $scope.getimageid = function(imageid) {
         $localstorage.set('sessionImageID',imageid);
@@ -398,7 +424,7 @@ angular.module('starter.controllers', ['ionic'])
     {
         $localstorage.set('IsLoggedIn','true');
         $rootScope.IsLoggedIn=$localstorage.get('IsLoggedIn');;
-        $location.path('app/MyProfile');
+        $location.path('app/MyProfile/posts');
     }
     if(!$localstorage.get('sessionMyID'))
     {

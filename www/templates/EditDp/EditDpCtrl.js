@@ -21,7 +21,7 @@
             });
             alertPopup.then(function(res) {
                 $scope.fileUpload = "";
-                $location.path('app/MyProfile');
+                $location.path('app/MyProfile/posts');
             });
         };
         $scope.errorPopup = function(msg) {

@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-.controller('MyProfileDetailsCtrl', ['$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
+.controller('MyProfileDetailsCtrl', ['$stateParams','$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($stateParams,$localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
     $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
     $scope.loadingWheel = function() {
@@ -8,6 +8,7 @@ angular.module('starter.controllers')
             template: '<ion-spinner icon="circles"/>'
         });
     };
+    $scope.myPostsLikesFromURL = $stateParams.myPostsLikes;
     $localstorage.set('FromPage','app/MyProfile');
     $scope.noDataPopup = function(msg1,msg2) {
         $ionicPopup.alert({
@@ -78,7 +79,20 @@ angular.module('starter.controllers')
         }
         $scope.$broadcast('scroll.infiniteScrollComplete');
     };
-        
+    mpc.getDesignsOwnPosts = function()
+    {
+        $localstorage.set('FromPage','app/MyProfile/posts');
+        $location.path("app/MyProfile/posts");
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    };
+    mpc.getDesignsOwnLikes = function()
+    {
+        $localstorage.set('FromPage','app/MyProfile/likes');
+        $location.path("app/MyProfile/likes");
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
+    };   
     mpc.getOwnPost = function(){
         $scope.like = false;
         $scope.loadingWheel();
@@ -129,7 +143,7 @@ angular.module('starter.controllers')
                $log.debug("Error in getOwnPost Service", error);
             });
     };
-    mpc.getOwnPost();
+//    mpc.getOwnPost();
     mpc.getOwnLike = function(){
         $scope.like = true;
         $scope.loadingWheel();
@@ -174,6 +188,20 @@ angular.module('starter.controllers')
            $log.debug("Error in getOwnLikes Service", error);
         });
     };
+    if($scope.myPostsLikesFromURL === 'posts')
+    {
+        mpc.getOwnPost(); 
+        $localstorage.set('FromPage','app/MyProfile/posts');
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    }
+    else
+    {
+        mpc.getOwnLike();
+        $localstorage.set('FromPage','app/MyProfile/likes');
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
+    }
     mpc.sendimgID = function (imgid){
         $log.debug('myprofile page');
         $log.debug('img id to be passed:',imgid);

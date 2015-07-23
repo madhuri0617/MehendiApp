@@ -998,5 +998,14 @@ img[alt="aboutuslogo"]
     width:98%;
     margin-top: 5px;
 }
+#uploadtags textArea
+{
+    width:95%;
+    margin-right: 0px;
+}
+img[alt="logo"]
+{
+    margin-right:1%;
+}
 }
 

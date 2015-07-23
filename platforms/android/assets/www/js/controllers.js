@@ -157,6 +157,7 @@ angular.module('starter.controllers', ['ionic'])
     $scope.setActiveTab = function (tabNum) {
         if(tabNum === 2)
         {
+           $localstorage.set('FromPage','app/galleryUpload');
            var MyID=$localstorage.get('sessionMyID');
            if(!MyID)
            {
@@ -170,6 +171,7 @@ angular.module('starter.controllers', ['ionic'])
         }
         if(tabNum === 3)
         {
+           $localstorage.set('FromPage','app/camera');
            var MyID=$localstorage.get('sessionMyID');
            if(!MyID)
            {

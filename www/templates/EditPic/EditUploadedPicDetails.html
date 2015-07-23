@@ -36,6 +36,9 @@
               <!--<textarea class="item-input" rows="3" ng-bind="epc.editDes" ng-model="epc.newDes"></textarea>-->
           </div>
         </div>
-            <div class="space"></div>
+           <div class="" ng-class="{space: mobile=='true'}"></div>
+                  <div ng-if="(mobile == 'false')">
+                <div style="padding: 1%;"></div>
+            </div>
     </ion-content>
 </ion-view>

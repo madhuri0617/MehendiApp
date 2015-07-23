@@ -38,7 +38,10 @@
             <div class="chat-box"></div>
         </div>
       </form>
-      <div class="space"></div>
+      <div class="" ng-class="{space: mobile=='true'}"></div>
+                  <div ng-if="(mobile == 'false')">
+                <div style="padding: 1%;"></div>
+            </div>
 
 </ion-content>
 

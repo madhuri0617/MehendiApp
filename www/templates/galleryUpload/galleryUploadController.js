@@ -8,6 +8,7 @@ angular.module('starter.controllers')
     angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
     $scope.form={};
     $scope.loading = true;
+    $scope.mobile = localStorage.getItem("mobile");
     $localstorage.set('FromPage','app/galleryUpload');
     $scope.loadingWheel = function() {
         $ionicLoading.show({

@@ -4,11 +4,13 @@
        //change dp:
 //       $localstorage.set('zoomImagePage',false);
         $scope.fileUpload = $localstorage.get('currentPath');
-        $('#Selectedimage').attr('src',$localstorage.get('currentPath'));
-        $scope.loadingWheel = function() {
-             $ionicLoading.show({
-                 template: '<ion-spinner icon="circles"/>'
-             });
+        $scope.mobile = localStorage.getItem("mobile");
+       $('#Selectedimage').attr('src',$localstorage.get('currentPath'));
+//       $('#Selectedimage').attr('src', $rootScope.currentPath);
+       $scope.loadingWheel = function() {
+            $ionicLoading.show({
+                template: '<ion-spinner icon="circles"/>'
+            });
         };
         $localstorage.set('FromPage','app/DpChangeGallery');
         $scope.uploadPopup = function() {

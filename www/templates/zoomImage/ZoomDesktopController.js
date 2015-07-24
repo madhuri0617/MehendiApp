@@ -42,7 +42,7 @@ angular.module('starter.controllers')
         };
 })
 
-.controller('ZoomDesktopController',['$ionicPopup','$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($ionicPopup,$rootScope,$localstorage,$scope,$log)
+.controller('ZoomDesktopController',['$location','$ionicPopup','$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($location,$ionicPopup,$rootScope,$localstorage,$scope,$log)
 {
     $scope.imagetoZoom = $localstorage.get('imageToZoom');
     if(!$scope.imagetoZoom)

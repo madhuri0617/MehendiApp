@@ -4,7 +4,7 @@ angular.module('starter.controllers', ['ionic'])
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
     $scope.categoryFromURL = $stateParams.category;
-            console.log($scope.categoryFromURL);
+    $log.debug($scope.categoryFromURL);
     $scope.blank="";
     $scope.mobile = localStorage.getItem("mobile");
     $scope.loading = true;

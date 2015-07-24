@@ -1,5 +1,38 @@
 angular.module('starter.controllers')
 .controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','cameraUploadService','$log',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,cameraUploadService,$log){
+    $scope.loginPopup = function() {
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login',
+          //template: 'Are you sure you want to delete this Post?',
+          templateUrl:'PopUps/LoginPopUp.html',
+          cssClass: '', // String, The custom CSS class name
+          cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
+          cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
+          okText: '', // String (default: 'OK'). The text of the OK button.
+          okType: ' button-upload' // String (default: 'button-positive'). The type of the OK button.
+        });
+        alertPopup.then(function(res) {
+          if(res) {
+            $log.debug('You are sure');
+            angular.element(document.querySelector("#tabMyprofile")).addClass("active");
+            angular.element(document.querySelector("#tabUpload")).removeClass("active");
+            angular.element(document.querySelector("#tabCamera")).removeClass("active");
+            angular.element(document.querySelector("#tabSearch")).removeClass("active");
+            angular.element(document.querySelector("#tabHome")).removeClass("active");
+            $location.path('app/login');
+
+          } else {
+            $log.debug('You are not sure');
+          }
+        });
+    };
+    $localstorage.set('FromPage','app/galleryUpload');
+    $scope.MyID=$localstorage.get('sessionMyID');
+    if(!$scope.MyID)
+    {
+        $scope.loginPopup();
+//        angular.element(document.querySelector("#tabHome")).removeClass("active");
+    }
     function setTabClass() {
        angular.element(document.querySelector("#tabUpload")).removeClass("active");
        angular.element(document.querySelector("#tabMyprofile")).addClass("active");
@@ -10,6 +43,7 @@ angular.module('starter.controllers')
     angular.element(document.querySelector("#tabUpload")).addClass("active");
     angular.element(document.querySelector("#tabCamera")).removeClass("active");
     $scope.form={};
+    
     $scope.loading = true;
     $scope.mobile = localStorage.getItem("mobile");
     $localstorage.set('FromPage','app/galleryUpload');
@@ -59,14 +93,21 @@ angular.module('starter.controllers')
     };
     $scope.check = function(tag)
     {
-       if(tag.check===false)
-       {
-           tag.check = true;
-       }
-       else if(tag.check=== true)
-       {
-           tag.check = false;
-       }
+        if(tag.name === 'Common')
+        {
+            tag.check = true;
+        }
+        else
+        {
+            if(tag.check===false)
+            {
+                tag.check = true;
+            }
+            else if(tag.check=== true)
+            {
+                tag.check = false;
+            }
+        }
     };
     var _upload = function (photo) 
     {

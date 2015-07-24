@@ -1,4 +1,3 @@
-
 angular.module('starter.controllers')
 .directive('ngMouseWheelUp', function() {
         return function(scope, element, attrs) {
@@ -45,37 +44,43 @@ angular.module('starter.controllers')
 
 .controller('ZoomDesktopController',['$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($rootScope,$localstorage,$scope,$log)
 {
-    $rootScope.zoomImagePage = true;
-    $localstorage.set('FromPage','app/zoomImage');
-//  $localstorage.set('zoomImagePage',true)
-//  $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
-    $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);                
-    $log.debug("inside zoomDesktopController "+$rootScope.controlzoom ); 
-//  alert($rootScope.imageToZoom);
-    $('#img').attr('src',  $localstorage.get('imageToZoom'));
-    $scope.initZoom = function()
+    $scope.imagetoZoom = $localstorage.get('imageToZoom');
+    if(!$scope.imagetoZoom)
     {
-        $scope.zoomWidth = 600;
-        $scope.imgStyle = {width:'600px'};
-    };
-    $scope.zoomDown = function()
+        $location.path('app/home/Common/popular');
+    }
+    else
     {
-        if($scope.zoomWidth>600)
+        $rootScope.zoomImagePage = true;
+        $localstorage.set('FromPage','app/zoomImage');
+    //  $localstorage.set('zoomImagePage',true)
+    //  $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
+        $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);                
+        $log.debug("inside zoomDesktopController "+$rootScope.controlzoom ); 
+    //  alert($rootScope.imageToZoom);
+        $('#img').attr('src',  $localstorage.get('imageToZoom'));
+        $scope.initZoom = function()
         {
-        $scope.zoomWidth = $scope.zoomWidth - 20;
-        }
-        else
+            $scope.zoomWidth = 600;
+            $scope.imgStyle = {width:'600px'};
+        };
+        $scope.zoomDown = function()
         {
-           $scope.zoomWidth = 600; 
-        }
-        $scope.imgStyle.width = $scope.zoomWidth  +'px';
-    };
-    $scope.zoomUp  = function()
-    {
-        $scope.zoomWidth = $scope.zoomWidth + 20; 
-        $scope.imgStyle.width = $scope.zoomWidth +'px'; 
-    };                
+            if($scope.zoomWidth>600)
+            {
+            $scope.zoomWidth = $scope.zoomWidth - 20;
+            }
+            else
+            {
+               $scope.zoomWidth = 600; 
+            }
+            $scope.imgStyle.width = $scope.zoomWidth  +'px';
+        };
+        $scope.zoomUp  = function()
+        {
+            $scope.zoomWidth = $scope.zoomWidth + 20; 
+            $scope.imgStyle.width = $scope.zoomWidth +'px'; 
+        }; 
+    }
 }]);
-
-
 

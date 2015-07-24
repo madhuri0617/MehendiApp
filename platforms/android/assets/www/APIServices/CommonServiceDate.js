@@ -8,7 +8,7 @@ angular.module('Services',[])
         
         var month = date.getMonth()+1;
         var days =  Math.floor(abc / (1000 * 60 * 60 * 24));
-        $log.debug(days);
+//        $log.debug(days);
         switch (month) {
             case 1:
                 mon = "Jan";

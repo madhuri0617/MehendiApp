@@ -247,12 +247,12 @@ angular.module('starter.controllers')
             }
             if($scope.commentClick === 'true')
             {
-                $scope.commentClickChk = true;
-                $scope.$on('$ionicView.afterEnter', function(){
-                    $ionicScrollDelegate.scrollBottom(true);
-                });
-//                 $timeout(function(){
+//                $scope.commentClickChk = true;
+//                $scope.$on('$ionicView.afterEnter', function(){
 //                    $ionicScrollDelegate.scrollBottom(true);
+//                });
+//                 $timeout(function(){
+                    $ionicScrollDelegate.scrollBottom(true);
 //                });
             }
             $scope.loading = false;

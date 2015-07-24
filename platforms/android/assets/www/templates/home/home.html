@@ -1,4 +1,5 @@
-<ion-view data-ng-init="getPopular(tagFromURL)">
+<ion-view>
+    <!--data-ng-init="getPopular(tagFromURL)"-->
 
     <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -9,13 +10,12 @@
     </ion-nav-buttons>
     <div class="tabs-striped tabs-top tabs-background-stable ">
         <div class="tabs">
-            <a class="tab-item active fontcolor"  ng-class="{'active':IsPopularTabActive}"
-               ng-click="IsPopularTabActive=true;IsRecentTabActive=false; getPopular(tagFromURL);"
-         data-ng-init="IsPopularTabActive=true;IsRecentabActive=false;">
+            <a class="tab-item fontcolor"  ng-class="{'active':IsPopularTabActive}"
+               ng-click="getDesignsPopular(tagFromURL);">
             Popular
           </a>
           <a class="tab-item fontcolor" ng-class="{'active':IsRecentTabActive}"
-         ng-click="IsRecentTabActive=true;IsPopularTabActive=false;getRecent(tagFromURL);">
+         ng-click="getDesignsRecent(tagFromURL);">
             Recent
           </a>
         </div>
@@ -30,7 +30,7 @@
                             <h2>{{Post.uploader.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
                         </a>
-                        <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                        <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                             <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                             <small>Posted {{Post.uploadDate}}</small>
@@ -67,7 +67,7 @@
                         <h2>{{Post.uploader.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>
                     </a>
-                    <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                    <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                         <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>
@@ -115,7 +115,7 @@
                         <h2>{{Post.uploader.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>
                     </a>
-                    <a href="#/app/MyProfile" ng-if="MyId===Post.uploader._id">
+                    <a href="#/app/MyProfile/posts" ng-if="MyId===Post.uploader._id">
                         <img ng-click="getuid('{{Post.uploader._id}}')" ng-src="{{Post.uploader.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{Post.uploader.userName}}</h2>
                         <small>Posted {{Post.uploadDate}}</small>
@@ -148,7 +148,7 @@
             </div>
             <ion-infinite-scroll distance="2"
                          on-infinite="loadMoreData()"
-                         ng-if="!moredata && !loading"  ng-show="moredesigns"
+                         ng-if="!moredata && !loading"
             ></ion-infinite-scroll>
             <div class="space"></div>
         </div>

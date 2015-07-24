@@ -5,13 +5,13 @@
         </button>
         <h1 class="title">My Profile</h1>
     </ion-nav-buttons>
-    <div ng-controller="MyProfileCtrl" class="MyDetails list">
+    <div ng-controller="MyProfileCtrl" class="MyDetails list"  ng-hide="!MyID">
         <div class="item item-avatar" id="MyProfileHeader">
             <img ng-src="{{mpc.OwnInfo.DPPath}}" alt=""  ng-click="openModal(1)" style="cursor:pointer"/>
             <h2 style="cursor:pointer">{{mpc.OwnInfo.userName}}</h2>
         </div>
     </div>
-    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable ">
+    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable "  ng-hide="!MyID">
         <div  class="tabs">
       <a class="tab-item"
          ng-class="{'active':IsPostTabActive}"
@@ -25,7 +25,7 @@
       </a>
     </div>
     </div>
-    <ion-content class="MyDetailsBody padding">
+    <ion-content class="MyDetailsBody padding"  ng-hide="!MyID">
         <!--desktop-->
         <div class="row" style=" overflow:auto;" ng-if="(mobile == 'false')">
             <div class="col col-50 leftDiv">

@@ -23,7 +23,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             if(navigator.connection.type === Connection.NONE) {
                 var alertPopup = $ionicPopup.alert({
                     title: "Internet Disconnected",
-                    content: "No Internet is found on your device.",
+                    content: "No Internet Connection is found on your device.",
                     okType: ' button-upload' 
                 });
                 alertPopup.then(function(result) {         
@@ -95,8 +95,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
 /*===================================== redireciton =============================== */
 app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$logProvider) {
     $ionicConfigProvider.views.transition('none');
-//    $logProvider.debugEnabled(false);
-    $logProvider.debugEnabled(true);
+    $logProvider.debugEnabled(false);
+//    $logProvider.debugEnabled(true);
     $stateProvider
     .state('app', {
         url: "/app",

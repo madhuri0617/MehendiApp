@@ -1,5 +1,40 @@
 angular.module('starter.controllers')
-.controller('MyProfileDetailsCtrl', ['$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
+.controller('MyProfileDetailsCtrl', ['$stateParams','$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($stateParams,$localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
+    $scope.loginPopup = function() {
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login',
+          //template: 'Are you sure you want to delete this Post?',
+          templateUrl:'PopUps/LoginPopUp.html',
+          cssClass: '', // String, The custom CSS class name
+          cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
+          cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
+          okText: '', // String (default: 'OK'). The text of the OK button.
+          okType: ' button-upload' // String (default: 'button-positive'). The type of the OK button.
+        });
+        alertPopup.then(function(res) {
+          if(res) {
+            $log.debug('You are sure');
+            angular.element(document.querySelector("#tabMyprofile")).addClass("active");
+            angular.element(document.querySelector("#tabUpload")).removeClass("active");
+            angular.element(document.querySelector("#tabCamera")).removeClass("active");
+            angular.element(document.querySelector("#tabSearch")).removeClass("active");
+            angular.element(document.querySelector("#tabHome")).removeClass("active");
+            $location.path('app/login');
+
+          } else {
+            $log.debug('You are not sure');
+          }
+        });
+    };
+    $localstorage.set('FromPage','app/MyProfile/posts');
+    $scope.MyID=$localstorage.get('sessionMyID');
+    if(!$scope.MyID)
+    {
+        $scope.loginPopup();
+//        angular.element(document.querySelector("#tabHome")).removeClass("active");
+    }
+    else
+    {
     $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
     $scope.loadingWheel = function() {
@@ -8,7 +43,8 @@ angular.module('starter.controllers')
             template: '<ion-spinner icon="circles"/>'
         });
     };
-    $localstorage.set('FromPage','app/MyProfile');
+    $scope.myPostsLikesFromURL = $stateParams.myPostsLikes;
+    $localstorage.set('FromPage','app/MyProfile/posts');
     $scope.noDataPopup = function(msg1,msg2) {
         $ionicPopup.alert({
             title: msg1,
@@ -78,7 +114,20 @@ angular.module('starter.controllers')
         }
         $scope.$broadcast('scroll.infiniteScrollComplete');
     };
-        
+    mpc.getDesignsOwnPosts = function()
+    {
+        $localstorage.set('FromPage','app/MyProfile/posts');
+        $location.path("app/MyProfile/posts");
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    };
+    mpc.getDesignsOwnLikes = function()
+    {
+        $localstorage.set('FromPage','app/MyProfile/likes');
+        $location.path("app/MyProfile/likes");
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
+    };   
     mpc.getOwnPost = function(){
         $scope.like = false;
         $scope.loadingWheel();
@@ -129,7 +178,7 @@ angular.module('starter.controllers')
                $log.debug("Error in getOwnPost Service", error);
             });
     };
-    mpc.getOwnPost();
+//    mpc.getOwnPost();
     mpc.getOwnLike = function(){
         $scope.like = true;
         $scope.loadingWheel();
@@ -174,6 +223,20 @@ angular.module('starter.controllers')
            $log.debug("Error in getOwnLikes Service", error);
         });
     };
+    if($scope.myPostsLikesFromURL === 'posts')
+    {
+        mpc.getOwnPost(); 
+        $localstorage.set('FromPage','app/MyProfile/posts');
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    }
+    else
+    {
+        mpc.getOwnLike();
+        $localstorage.set('FromPage','app/MyProfile/likes');
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
+    }
     mpc.sendimgID = function (imgid){
         $log.debug('myprofile page');
         $log.debug('img id to be passed:',imgid);
@@ -238,4 +301,5 @@ angular.module('starter.controllers')
             }  
         }
     };
+    }
 }]);

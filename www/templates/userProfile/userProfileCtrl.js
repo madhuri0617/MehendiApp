@@ -198,7 +198,13 @@ angular.module('starter.controllers')
     {
         $log.debug("zoomProfile");
         $localstorage.set('imageToZoom',$scope.profilePhoto);
+//        $location.path('app/zoomImage');
+        $rootScope.controlzoom = localStorage.getItem("controlZoom");
+//            alert($rootScope.controlzoom);
+        if($rootScope.controlzoom === 'zoomImageController')
         $location.path('app/zoomImage');
+        if($rootScope.controlzoom === 'ZoomDesktopController')
+        $location.path('app/ZoomDesktop');
     };
     $scope.ClickedLikedUserProfile = function (post){
             // $log.debug("image like clicked ", post);

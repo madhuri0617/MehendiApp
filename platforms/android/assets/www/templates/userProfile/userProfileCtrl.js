@@ -1,7 +1,10 @@
 angular.module('starter.controllers')
-.controller('uploaderCtrl', ['$http','$scope','$rootScope','userProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$location','$localstorage','FullImgService','CommonServiceDate','$log', function uploaderCtrl($http,$scope,$rootScope,userProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$location,$localstorage,FullImgService,CommonServiceDate,$log) {
+.controller('uploaderCtrl', ['$stateParams','$http','$scope','$rootScope','userProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$location','$localstorage','FullImgService','CommonServiceDate','$log', function uploaderCtrl($stateParams,$http,$scope,$rootScope,userProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$location,$localstorage,FullImgService,CommonServiceDate,$log) {
     $scope.loading = true;
     $rootScope.zoomImagePage = false;
+    $scope.UserIDFromURL = $stateParams.uid;
+    $scope.PostsLikesFromURL = $stateParams.PostsLikes;
+    console.log($scope.PostsLikesFromURL);
 //        $localstorage.set('zoomImagePage',false);
 //       $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
                  $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
@@ -10,7 +13,7 @@ angular.module('starter.controllers')
             template: '<ion-spinner icon="circles"/>'
         });
     };
-    $localstorage.set('FromPage','app/userProfile');
+    
     $scope.loadingWheel();
     $scope.noDataPopup = function(msg1,msg2) {
         $ionicPopup.alert({
@@ -67,6 +70,22 @@ angular.module('starter.controllers')
             $scope.moredata=true;
         }
         $scope.$broadcast('scroll.infiniteScrollComplete');
+    };
+    uc.getDesignsPosts = function()
+    {
+        $scope.loadingWheel();
+        $localstorage.set('FromPage','app/userProfile/'+ $scope.UserIDFromURL+'/posts');
+        $location.path("app/userProfile/"+$scope.UserIDFromURL+'/posts');
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    };
+    uc.getDesignsLikes = function()
+    {
+        $scope.loadingWheel();
+        $localstorage.set('FromPage','app/userProfile/'+ $scope.UserIDFromURL+'/likes');
+        $location.path("app/userProfile/"+$scope.UserIDFromURL+'/likes');
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
     };
     uc.getUserPost = function(){
         $scope.loadingWheel();
@@ -146,7 +165,23 @@ angular.module('starter.controllers')
         function (error) {
             $log.debug("Error in getUserLike Service", error);
         });               
-    };      
+    };     
+    if($scope.PostsLikesFromURL === 'posts')
+    {
+        $scope.loadingWheel();
+        uc.getUserPost(); 
+        $localstorage.set('FromPage','app/userProfile/'+ $scope.UserIDFromURL+'/posts');
+        $scope.IsPostTabActive = true;
+        $scope.IsLikeTabActive = false; 
+    }
+    else
+    {
+        $scope.loadingWheel();
+        uc.getUserLike();
+        $localstorage.set('FromPage','app/userProfile/'+ $scope.UserIDFromURL+'/likes');
+        $scope.IsLikeTabActive = true;
+        $scope.IsPostTabActive = false;
+    }
     uc.getpostid=function(pid){
             $log.debug('user profile page');
             $localstorage.set('commentClickedChk','false');
@@ -163,7 +198,13 @@ angular.module('starter.controllers')
     {
         $log.debug("zoomProfile");
         $localstorage.set('imageToZoom',$scope.profilePhoto);
+//        $location.path('app/zoomImage');
+        $rootScope.controlzoom = localStorage.getItem("controlZoom");
+//            alert($rootScope.controlzoom);
+        if($rootScope.controlzoom === 'zoomImageController')
         $location.path('app/zoomImage');
+        if($rootScope.controlzoom === 'ZoomDesktopController')
+        $location.path('app/ZoomDesktop');
     };
     $scope.ClickedLikedUserProfile = function (post){
             // $log.debug("image like clicked ", post);

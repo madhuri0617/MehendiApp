@@ -1,5 +1,45 @@
  angular.module('starter.controllers')
-.controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage','$log', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage,$log) {
+.controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage','$log', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage,$log) {  
+    $scope.loginPopup = function() {
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login',
+          //template: 'Are you sure you want to delete this Post?',
+          templateUrl:'PopUps/LoginPopUp.html',
+          cssClass: '', // String, The custom CSS class name
+          cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
+          cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
+          okText: '', // String (default: 'OK'). The text of the OK button.
+          okType: ' button-upload' // String (default: 'button-positive'). The type of the OK button.
+        });
+        alertPopup.then(function(res) {
+          if(res) {
+            $log.debug('You are sure');
+            angular.element(document.querySelector("#tabMyprofile")).addClass("active");
+            angular.element(document.querySelector("#tabUpload")).removeClass("active");
+            angular.element(document.querySelector("#tabCamera")).removeClass("active");
+            angular.element(document.querySelector("#tabSearch")).removeClass("active");
+            angular.element(document.querySelector("#tabHome")).removeClass("active");
+            $location.path('app/login');
+
+          } else {
+            $log.debug('You are not sure');
+          }
+        });
+    };
+//    $localstorage.set('FromPage','app/EditUploadedPicDetails');
+    $scope.MyID=$localstorage.get('sessionMyID');
+    $scope.imageID = $localstorage.get('sessionImageID');
+    if(!$scope.MyID)
+    {
+        $scope.loginPopup();
+//        angular.element(document.querySelector("#tabHome")).removeClass("active");
+    }
+    else if(!$scope.imageID)
+    {
+        $location.path('app/MyProfile/posts');
+    }
+    else
+    {
     $scope.loading = true;
 //        $localstorage.set('zoomImagePage',false);
     $scope.loadingWheel = function() {
@@ -18,7 +58,7 @@
         });
         alertPopup.then(function(res) {
             $scope.fileUpload = "";
-            $location.path('app/MyProfile');
+            $location.path('app/MyProfile/posts');
         });
     };
     $scope.errorPopup = function() {
@@ -148,4 +188,5 @@
 	};    
         epc.updatePostDetail();
     };
+    }
 }]);

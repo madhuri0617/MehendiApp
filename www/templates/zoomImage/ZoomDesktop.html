@@ -11,7 +11,7 @@ img {
 </style>
 </head>
 <body>
-<div style="background-color: black;height:100%;width:100%;overflow: auto;">
+<div style="background-color: black;height:100%;width:100%;overflow: auto;"  ng-hide="!imagetoZoom">
     <div class="frame" style="margin:0px;">
     <span class="helper"></span>
 <img id="img" src="" style="vertical-align: middle;" ng-init="initZoom()" ng-style="imgStyle" 
@@ -21,4 +21,5 @@ ng-mouse-wheel-down="zoomDown()"style="min-height: 600px;min-width: 600px"/>
 </div>
 </body>
 </html>
+
 

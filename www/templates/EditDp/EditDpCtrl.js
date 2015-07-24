@@ -1,6 +1,41 @@
     angular.module('starter.controllers')
-    .controller('EditDpCtrl', ['$http','$scope','$rootScope','EditDpService','$location','$state','$cordovaCamera','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function EditDpCtrl($http,$scope,$rootScope,EditDpService,$location,$state,$cordovaCamera,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) 
+.controller('EditDpCtrl', ['$http','$scope','$rootScope','EditDpService','$location','$state','$cordovaCamera','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function EditDpCtrl($http,$scope,$rootScope,EditDpService,$location,$state,$cordovaCamera,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) 
    {
+       $scope.loginPopup = function() {
+        var alertPopup = $ionicPopup.alert({
+          title: 'Login',
+          //template: 'Are you sure you want to delete this Post?',
+          templateUrl:'PopUps/LoginPopUp.html',
+          cssClass: '', // String, The custom CSS class name
+          cancelText: '', // String (default: 'Cancel'). The text of the Cancel button.
+          cancelType: '',//'button button-small button-default', // String (default: 'button-default'). The type of the Cancel button.
+          okText: '', // String (default: 'OK'). The text of the OK button.
+          okType: ' button-upload' // String (default: 'button-positive'). The type of the OK button.
+        });
+        alertPopup.then(function(res) {
+          if(res) {
+            $log.debug('You are sure');
+            angular.element(document.querySelector("#tabMyprofile")).addClass("active");
+            angular.element(document.querySelector("#tabUpload")).removeClass("active");
+            angular.element(document.querySelector("#tabCamera")).removeClass("active");
+            angular.element(document.querySelector("#tabSearch")).removeClass("active");
+            angular.element(document.querySelector("#tabHome")).removeClass("active");
+            $location.path('app/login');
+
+          } else {
+            $log.debug('You are not sure');
+          }
+        });
+    };
+//    $localstorage.set('FromPage','app/MyProfile/posts');
+    $scope.MyID=$localstorage.get('sessionMyID');
+    if(!$scope.MyID)
+    {
+        $scope.loginPopup();
+//        angular.element(document.querySelector("#tabHome")).removeClass("active");
+    }
+    else
+    {
        //change dp:
 //       $localstorage.set('zoomImagePage',false);
         $scope.fileUpload = $localstorage.get('currentPath');
@@ -174,7 +209,8 @@
                 $scope.msg="You have to Select image";
                 $scope.errorPopup($scope.msg);
             }
-        };              
+        };
+    }
 }]);
 
 

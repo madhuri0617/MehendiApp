@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.mehendiapp844815" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.systenics.mehndistar" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>MehndiSTAR</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Mehndi for yesterday's memory, today's love, tommorow's dream.
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="info@systenics.com" href="http://www.systenics.com">
+      Systenics Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>

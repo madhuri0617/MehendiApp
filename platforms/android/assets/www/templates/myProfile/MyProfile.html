@@ -5,28 +5,27 @@
         </button>
         <h1 class="title">My Profile</h1>
     </ion-nav-buttons>
-    <div ng-controller="MyProfileCtrl" class="MyDetails list">
+    <div ng-controller="MyProfileCtrl" class="MyDetails list"  ng-hide="!MyID">
         <div class="item item-avatar" id="MyProfileHeader">
             <img ng-src="{{mpc.OwnInfo.DPPath}}" alt=""  ng-click="openModal(1)" style="cursor:pointer"/>
             <h2 style="cursor:pointer">{{mpc.OwnInfo.userName}}</h2>
         </div>
     </div>
-    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable ">
+    <div id="PostLikeTabs" class="tabs-striped tabs-top tabs-background-stable "  ng-hide="!MyID">
         <div  class="tabs">
       <a class="tab-item"
          ng-class="{'active':IsPostTabActive}"
-         ng-click="IsPostTabActive=true;IsLikeTabActive=false; mpc.getOwnPost();"
-         data-ng-init="IsPostTabActive=true;IsLikeTabActive=false;">
+         ng-click="mpc.getDesignsOwnPosts();">
         Posts
       </a>
       <a class="tab-item"
          ng-class="{'active':IsLikeTabActive}"
-         ng-click="IsLikeTabActive=true;IsPostTabActive=false; mpc.getOwnLike();">
+         ng-click="mpc.getDesignsOwnLikes();">
         Likes
       </a>
     </div>
     </div>
-    <ion-content class="MyDetailsBody padding">
+    <ion-content class="MyDetailsBody padding"  ng-hide="!MyID">
         <!--desktop-->
         <div class="row" style=" overflow:auto;" ng-if="(mobile == 'false')">
             <div class="col col-50 leftDiv">
@@ -38,7 +37,7 @@
                             <small>Posted {{ posts.uploadDate}}</small>
                             <!--<p> {{posts.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                        <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{posts.userName}}</h2>
                             <small>Posted {{ posts.uploadDate}}</small>
@@ -84,7 +83,7 @@
                             <small>Posted {{ posts.uploadDate}}</small>
                             <!--<p> {{posts.imageId}}</p>-->
                         </a>
-                        <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                        <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                             <img ng-src="{{posts.DPPath}}" alt=""/>
                             <h2  class="fontcolor">{{posts.userName}}</h2>
                             <small>Posted {{ posts.uploadDate}}</small>
@@ -138,7 +137,7 @@
                         <small>Posted {{ posts.uploadDate}}</small>
                         <!--<p> {{posts.imageId}}</p>-->
                     </a>
-                    <a href="#/app/MyProfile" ng-if="mpc.MyId===posts.uid">
+                    <a href="#/app/MyProfile/posts" ng-if="mpc.MyId===posts.uid">
                         <img ng-src="{{posts.DPPath}}" alt=""/>
                         <h2  class="fontcolor">{{posts.userName}}</h2>
                         <small>Posted {{ posts.uploadDate}}</small>

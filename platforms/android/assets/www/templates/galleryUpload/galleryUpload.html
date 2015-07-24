@@ -5,7 +5,7 @@
         </button>
            <h1 class="title">Gallery Upload</h1>
       </ion-nav-buttons>
-  <ion-content class="padding">
+      <ion-content class="padding" ng-hide="!MyID">
       <form name="form.form" id="uploadForm" style="text-align: center;">
         <div  id="uploaddesigndiv" class="list card">
             <div class="item">
@@ -38,10 +38,10 @@
             <div class="chat-box"></div>
         </div>
       </form>
-      <div class="" ng-class="{space: mobile=='true'}"></div>
-                  <div ng-if="(mobile == 'false')">
-                <div style="padding: 1%;"></div>
-            </div>
+        <div class="" ng-class="{space: mobile=='true'}"></div>
+        <div ng-if="(mobile == 'false')">
+            <div style="padding: 1%;"></div>
+        </div>
 
 </ion-content>
 

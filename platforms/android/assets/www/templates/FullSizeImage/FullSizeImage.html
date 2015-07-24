@@ -17,7 +17,7 @@
             <h2>{{fsc.ImgDetails.userName}}</h2>
             <small>Posted {{ fsc.ImgDetails.uploadDate}}</small>
         </a>
-        <a href="#/app/MyProfile" ng-if="fsc.MyId===fsc.ImgDetails.uid">
+        <a href="#/app/MyProfile/posts" ng-if="fsc.MyId===fsc.ImgDetails.uid">
             <img ng-src="{{fsc.ImgDetails.DPPath}}" alt=""/>
             <h2  class="fontcolor">{{fsc.ImgDetails.userName}}</h2>
             <small>Posted {{ fsc.ImgDetails.uploadDate}}</small>
@@ -68,7 +68,7 @@
                     <br>
                     <p style="">{{Post.comment}}</p>
                 </a>
-            <a href="#/app/MyProfile" ng-if="fsc.MyId===Post.uid">    
+            <a href="#/app/MyProfile/posts" ng-if="fsc.MyId===Post.uid">    
                     <img ng-src="{{Post.UserInfo.DPPath}}" alt=""/>
                     <h2 style="float:left;">{{Post.UserInfo.userName}}</h2>
                     <small style="float:right;">{{Post.uploadDate}}</small>
@@ -80,16 +80,16 @@
             <img src="img/no-comments.png" alt="no-comments"/>
             <p>No Comments yet...</p>
         </div>
-            <div class="item item-input-inset">
+            <div class="item item-input-inset" id="commentDiv">
                 
-                <label class="item-input-wrapper">
+                <label class="item-input-wrapper" id="lblComment">
                    
                   <input type="text" placeholder="Write Comment.." size="30" ng-model="fsc.comment" focus-me="commentClickChk">
                 </label>
-                <button class="button button-small" ng-click="fsc.postComment()">
+                <button class="button button-small" ng-click="fsc.postComment()" id="btnComment">
                   Post Comment  
                 </button>
-              </div>
+            </div>
         </div>
             </div>
     </ion-content>

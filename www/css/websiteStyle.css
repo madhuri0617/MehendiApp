@@ -1041,13 +1041,16 @@ img[alt="aboutuslogo"]
 {
       border: 1px solid rgb(237, 126, 126) !important
 }
-/****************************privacyPolicy*****************************/
-#privacyPolicy p, #TermsPolicy p{
+
+
+/****************************privacyPolicy and termsAndConditions*****************************/
+#privacyPolicy p, #termsPolicy p{
     font-size: 15px;
 }
-#privacyPolicy, #TermsPolicy{
+#privacyPolicy, #termsPolicy{
     margin-bottom: 40px;
 }
+
 /********************************* break point*****************************************/
 @media screen and (max-width:698px)
 {
@@ -1071,12 +1074,14 @@ img[alt="logo"]
 }
 
 @media screen and (max-width:568px){
+     
     .col-50{
         min-width: 100%;
     }
     .col-offset-25{
         margin-left: 0%;
     }
+   
     #commentDiv{
         width: 100%
     }

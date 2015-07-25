@@ -1,6 +1,15 @@
 angular.module('starter.controllers', ['ionic'])
 .controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log) {   
+    
     $log.debug("inside controller");
+//google analytics
+    if(typeof analytics !== undefined) { analytics.trackView("Awesome Controller"); }
+ 
+    $scope.initEvent = function() {
+        if(typeof analytics !== undefined) { analytics.trackEvent("Category", "Action", "Label", 25); }
+    }
+
+
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
     $scope.categoryFromURL = $stateParams.category;

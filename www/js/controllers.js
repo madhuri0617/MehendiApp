@@ -285,6 +285,8 @@ angular.module('starter.controllers', ['ionic'])
     $scope.logout = function () {
         OpenFB.logout();
         $localstorage.remove('sessionMyID');
+        $localstorage.remove('sessionMyName');
+        $localstorage.remove('sessionMyemail');
         $rootScope.sessionMyID=null;
         $scope.MyId='';
         $localstorage.set('IsLoggedIn',false);
@@ -418,7 +420,7 @@ angular.module('starter.controllers', ['ionic'])
 })
 
 //controller for FACEBOOK LOGIN..
-.controller('LoginCtrl', function ($ionicPopup,$http,$scope, $location, OpenFB,$rootScope,$localstorage) {
+.controller('LoginCtrl', function ($ionicPopup,$http,$scope, $location, OpenFB,$rootScope,$localstorage,$log) {
     $scope.me={};
     if($localstorage.get('sessionMyID'))
     {
@@ -478,9 +480,14 @@ angular.module('starter.controllers', ['ionic'])
                           //  alert('id= '+user.id+' name= '+user.name+' email= '+user.email+' gender= '+user.gender+' age= '+user.age);
                     $http.post('http://api.mehndistar.com/login',$scope.me).success(function(response)
                     {
-                        $scope.Myid=response._id;                            
+                        $scope.Myid=response._id;
+                        $scope.userName = response.userName;
+                        $scope.email = response.email;
+                        $log.debug(response);                      
                         $rootScope.sessionMyID=$scope.Myid;
                         $localstorage.set('sessionMyID',$scope.Myid);
+                        $localstorage.set('sessionMyName',$scope.userName);
+                        $localstorage.set('sessionMyemail',$scope.email);
                         $localstorage.set('IsLoggedIn',true);
                         $location.path($localstorage.get('FromPage'));
                     }).error(function(){

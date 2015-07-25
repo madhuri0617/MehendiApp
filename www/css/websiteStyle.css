@@ -1004,7 +1004,43 @@ img[alt="aboutuslogo"]
     margin-top: -10%;
     width:80%;
 }
-
+/************************** feedback ***********************************/
+#feedback input.Error , #feedback textarea.Error
+{
+    border:1px solid red;
+}
+#feedback
+{
+    margin-top:10%;
+    text-align: center;
+}
+#feedback h2{
+       color:gray;
+}
+#feedback input:first-child
+{
+    /*margin-top: 1%;*/
+}
+#feedback input ,#feedback textarea
+{
+    /*margin: 2%;*/
+    padding:1%;
+    border:1px solid #d3d3d3;
+    /*width:50%;*/
+}
+#feedback .item.item-input
+{
+    padding: 0px;
+    margin: 15px;
+}
+#feedback button
+{
+    margin-bottom: 10px;
+}
+.ng-submitted .ng-invalid
+{
+      border: 1px solid rgb(237, 126, 126) !important
+}
 /****************************privacyPolicy*****************************/
 #privacyPolicy p, #TermsPolicy p{
     font-size: 15px;
@@ -1037,7 +1073,10 @@ img[alt="logo"]
 @media screen and (max-width:568px){
     .col-50{
         min-width: 100%;
-    } 
+    }
+    .col-offset-25{
+        margin-left: 0%;
+    }
     #commentDiv{
         width: 100%
     }

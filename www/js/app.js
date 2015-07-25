@@ -11,7 +11,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
 //    OpenFB.init('896457927079961','https://www.facebook.com/connect/login_success.html');
 //   OpenFB.init('896457927079961','http://192.168.2.138:8100/oauthcallback.html');
     OpenFB.init('896457927079961','http://mehndistar.com/oauthcallback.html');
-    $ionicPlatform.ready(function() {   
+    $ionicPlatform.ready(function() {  
+//        alert("hii");
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
@@ -95,8 +96,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
 /*===================================== redireciton =============================== */
 app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$logProvider) {
     $ionicConfigProvider.views.transition('none');
-    $logProvider.debugEnabled(false);
-//    $logProvider.debugEnabled(true);
+//    $logProvider.debugEnabled(false);
+    $logProvider.debugEnabled(true);
     $stateProvider
     .state('app', {
         url: "/app",
@@ -111,6 +112,16 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
           'menuContent': {
                 templateUrl: "templates/search/search.html",
                 controller: "SearchDesignsController"
+            }
+        }
+    })
+    .state('app.Feedback', {
+        url: "/Feedback",
+        cache:false,
+        views: {
+          'menuContent': {
+                templateUrl: "templates/Feedback/Feedback.html",
+                controller: "FeedbackCtrl"
             }
         }
     })

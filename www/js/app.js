@@ -3,8 +3,8 @@
 //var baseURL = 'http://158.69.96.25:8181';
 var baseURL = 'http://api.mehndistar.com';
 var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.controllers','ngCordova','appFilereader','autocomplete','Services','ngStorage','ionic.utils'])
-.run(['$rootScope', '$ionicPlatform','OpenFB','$localstorage','$ionicPopup','$log',function($rootScope, $ionicPlatform,OpenFB,$localstorage,$ionicPopup,$log) {    
-    $rootScope.sessionMyID=$localstorage.get('sessionMyID');
+.run(['$rootScope', '$ionicPlatform','OpenFB','$localstorage','$ionicPopup','$log','$scope',function($rootScope, $ionicPlatform,OpenFB,$localstorage,$ionicPopup,$log,$scope) {    
+    $scope.sessionMyID=$localstorage.get('sessionMyID');
     $log.debug("$rootScope.sessionMyID",$rootScope.sessionMyID);
     $rootScope.IsLoggedIn=$localstorage.get('IsLoggedIn');
     $log.debug("$rootScope.IsLoggedIn",$rootScope.IsLoggedIn);
@@ -49,6 +49,29 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
                 break;
             }
         });
+        
+        //code for google analytics.
+         $scope.isMobile=$localstorage.get('mobile');
+        alert("mobile ::"+$scope.isMobile);
+        if($scope.isMobile=='true'){
+            if(typeof analytics !== undefined) {
+                analytics.startTrackerWithId("UA-65574899-1");
+            } else {
+                console.log("Google Analytics Unavailable");
+            }
+
+                       
+        }
+        else{
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65574899-2', 'auto');
+  ga('send', 'pageview');
+        }
+        
     });
     $ionicPlatform.registerBackButtonAction(function (event) {
         if($localstorage.get('FromPage')==="app/home"){

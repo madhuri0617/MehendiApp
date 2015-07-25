@@ -1005,6 +1005,13 @@ img[alt="aboutuslogo"]
     width:80%;
 }
 
+/****************************privacyPolicy*****************************/
+#privacyPolicy p, #TermsPolicy p{
+    font-size: 15px;
+}
+#privacyPolicy, #TermsPolicy{
+    margin-bottom: 40px;
+}
 /********************************* break point*****************************************/
 @media screen and (max-width:698px)
 {

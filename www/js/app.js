@@ -262,6 +262,24 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
                 templateUrl: "templates/aboutUs.html"
             }
         }
+    })
+    .state('app.privacyPolicy', {
+        cache:false,
+        url: "/privacyPolicy",
+        views: {
+          'menuContent': {
+                templateUrl: "templates/privacyPolicy.html"
+            }
+        }
+    })
+    .state('app.termsAndConditions', {
+        cache:false,
+        url: "/termsAndConditions",
+        views: {
+          'menuContent': {
+                templateUrl: "templates/termsAndConditions.html"
+            }
+        }
     });
   // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/home/Common/popular');

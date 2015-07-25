@@ -42,7 +42,7 @@ angular.module('starter.controllers')
         };
 })
 
-.controller('ZoomDesktopController',['$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($rootScope,$localstorage,$scope,$log)
+.controller('ZoomDesktopController',['$location','$ionicPopup','$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($location,$ionicPopup,$rootScope,$localstorage,$scope,$log)
 {
     $scope.imagetoZoom = $localstorage.get('imageToZoom');
     if(!$scope.imagetoZoom)
@@ -51,6 +51,16 @@ angular.module('starter.controllers')
     }
     else
     {
+        if(navigator.userAgent.match(/Firefox/i)){
+            var alertPopup = $ionicPopup.alert({
+                    title: "Zoom",
+                    content: "Use Ctrl+Mouse Wheel to zoom on firefox",
+                    okType: ' button-upload' 
+                });
+                alertPopup.then(function(result) {         
+    //                    ionic.Platform.exitApp();          
+            });
+        }
         $rootScope.zoomImagePage = true;
         $localstorage.set('FromPage','app/zoomImage');
     //  $localstorage.set('zoomImagePage',true)

@@ -11,7 +11,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
 //    OpenFB.init('896457927079961','https://www.facebook.com/connect/login_success.html');
 //   OpenFB.init('896457927079961','http://192.168.2.138:8100/oauthcallback.html');
     OpenFB.init('896457927079961','http://mehndistar.com/oauthcallback.html');
-    $ionicPlatform.ready(function() {   
+    $ionicPlatform.ready(function() {  
+//        alert("hii");
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
@@ -49,14 +50,37 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
                 break;
             }
         });
+        
+//        code for google analytics.
+         $rootScope.MehndiSTARapk=$localstorage.get('MehndiSTARapk');
+        if($rootScope.MehndiSTARapk ==='true'){          
+            if(typeof analytics !== undefined) {
+                analytics.startTrackerWithId("UA-65574899-1");
+                 $log.debug(analytics);
+                 $log.debug("analytics worked for mobile..");
+            } else {
+                 $log.debug("Google Analytics Unavailable");
+            }
+                       
+        }
+        else{
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  $log.debug("analytics worked for browser..");
+  ga('create', 'UA-65574899-2', 'auto');
+  ga('send', 'pageview');
+        }
+//        
     });
     $ionicPlatform.registerBackButtonAction(function (event) {
-        if($localstorage.get('FromPage')==="app/home"){
+        if($localstorage.get('FromPage')==="app/home" ||  $localstorage.get('IsLoggedIn')==='true'){
             if($localstorage.get('sessionMyID'))
             {
                 var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to Exit? You will be logged out from MehndiSTAR',
+                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {
@@ -75,7 +99,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             {
                  var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to Exit?',
+                    template: 'Are you sure you want to exit?',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {
@@ -111,6 +135,16 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
           'menuContent': {
                 templateUrl: "templates/search/search.html",
                 controller: "SearchDesignsController"
+            }
+        }
+    })
+    .state('app.Feedback', {
+        url: "/Feedback",
+        cache:false,
+        views: {
+          'menuContent': {
+                templateUrl: "templates/Feedback/Feedback.html",
+                controller: "FeedbackCtrl"
             }
         }
     })
@@ -259,7 +293,26 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
         url: "/aboutUs",
         views: {
           'menuContent': {
-                templateUrl: "templates/aboutUs.html"
+                templateUrl: "templates/aboutUS/aboutUs.html",
+                controller: 'aboutUsCtrl'
+            }
+        }
+    })
+    .state('app.privacyPolicy', {
+        cache:false,
+        url: "/privacyPolicy",
+        views: {
+          'menuContent': {
+                templateUrl: "templates/privacyPolicy.html"
+            }
+        }
+    })
+    .state('app.termsAndConditions', {
+        cache:false,
+        url: "/termsAndConditions",
+        views: {
+          'menuContent': {
+                templateUrl: "templates/termsAndConditions.html"
             }
         }
     });

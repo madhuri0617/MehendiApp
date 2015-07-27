@@ -107,7 +107,7 @@
                 <p>No Posts of {{tagFromURL}}</p>
             </div>
         </div>
-        <div  ng-if="(mobile == 'true')">
+        <div  ng-if="(mobile == 'true')" style="margin:0px auto;">
             <div class="list card desktop" ng-repeat="Post in Posts" ng-if="(loading === false && !Post.message)">
                 <div class="headerformat item item-avatar">
                     <a href  ng-click="getuid('{{Post.uploader._id}}')" ng-if="MyId!==Post.uploader._id">

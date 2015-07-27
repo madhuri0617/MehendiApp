@@ -17,6 +17,16 @@ angular.module('starter.controllers')
     .controller('FullSizeImgCtrl', ['OpenFB','$http','$scope','$rootScope','FullImgService','$ionicPopup','$location','$cordovaSocialSharing','$ionicLoading','$localstorage','$stateParams','CommonServiceDate','commentsService','$ionicScrollDelegate','$log', function(OpenFB,$http,$scope,$rootScope,FullImgService,$ionicPopup,$location,$cordovaSocialSharing,$ionicLoading,$localstorage,$stateParams,CommonServiceDate,commentsService,$ionicScrollDelegate,$log)
     {      
         $log.debug("inside full size controller");
+        $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("apk on FullSizeImgCtrl..");
+            $scope.$on('$ionicView.beforeEnter', function() {
+                $log.debug("analytics worked for mobile on FullSizeImgCtrl..");
+                analytics.trackView('FullSize Image');
+            });
+        }
         $scope.loading = true;
         $scope.fullsizeimageId = $stateParams.imageid ;
         $rootScope.zoomImagePage = false;
@@ -83,6 +93,10 @@ angular.module('starter.controllers')
                 fsc.likeClr();
             },
             function (error) {
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
                 $log.debug("Error comments", error);
             });
 
@@ -141,6 +155,10 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
+                        $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                        $scope.errorPopup($scope.msg);
+                        $scope.loading = false;
+                        $ionicLoading.hide();
                         $log.debug("error in unlike", error);
                     });                
                 }
@@ -155,6 +173,10 @@ angular.module('starter.controllers')
                         $ionicLoading.hide();
                     },
                     function (error) {
+                        $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                        $scope.errorPopup($scope.msg);
+                        $scope.loading = false;
+                        $ionicLoading.hide();
                         $log.debug("error in like", error);
                     });
                 }    
@@ -261,6 +283,10 @@ angular.module('starter.controllers')
             $log.debug("$scope.msg",$scope.msg);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error comments", error);
          });
         
@@ -291,6 +317,10 @@ angular.module('starter.controllers')
                 $log.debug("comments", fsc.PostsResult);
             },
             function (error) {
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
                 $log.debug("Error comments", error);
              });
 	};       
@@ -329,6 +359,10 @@ angular.module('starter.controllers')
                         fsc.comment = "";
                     },
                     function (error) {
+                        $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                        $scope.errorPopup($scope.msg);
+                        $scope.loading = false;
+                        $ionicLoading.hide();
                         $log.debug("Error comments", error);
                     });
                 }

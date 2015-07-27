@@ -4,10 +4,20 @@ angular.module('starter.controllers')
     $rootScope.zoomImagePage = false;
     $scope.UserIDFromURL = $stateParams.uid;
     $scope.PostsLikesFromURL = $stateParams.PostsLikes;
-    console.log($scope.PostsLikesFromURL);
+    $log.debug($scope.PostsLikesFromURL);
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on userProfileCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on userProfileCtrl..");
+            analytics.trackView('User Profile');
+        });
+    }
 //        $localstorage.set('zoomImagePage',false);
 //       $rootScope.zoomImagePage = $localstorage.get('zoomImagePage');
-                 $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
+    $log.debug("$rootScope.zoomImagePage"+$rootScope.zoomImagePage);
     $scope.loadingWheel = function() {
         $ionicLoading.show({
             template: '<ion-spinner icon="circles"/>'
@@ -33,6 +43,13 @@ angular.module('starter.controllers')
             return index++ % 2 === 1;
         };
     };
+    $scope.errorPopup = function(msg) {
+        $ionicPopup.alert({
+          title: 'Error',
+          template: msg,
+          okType: ' button-upload' 
+        });
+    };
     var uc = this;
     uc.MyId = $localstorage.get('sessionMyID');
     $log.debug("MyId in userProfile controller: "+uc.MyId);
@@ -52,6 +69,10 @@ angular.module('starter.controllers')
             $log.debug('uc.Profile',uc.Profile);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error in getUserInfo Service", error);
         });
     };
@@ -119,6 +140,10 @@ angular.module('starter.controllers')
             $log.debug('uc.Posts posts',uc.Posts,uc.Posts.length);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error in getUserPost Service", error);
         });               
     };
@@ -163,6 +188,10 @@ angular.module('starter.controllers')
                 $log.debug('uc.Posts likes',uc.Posts,uc.Posts.length);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error in getUserLike Service", error);
         });               
     };     
@@ -234,6 +263,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("error in unlike", error);
                 });                    
             }
@@ -247,6 +280,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("error in like", error);
                 });                   
             }  

@@ -17,10 +17,27 @@ angular.module('starter.controllers')
     };
     return DesignRetriever;
 })
- .controller('SearchDesignsController', function($location,$filter,$ionicLoading,$scope, DesignRetriever,searchService,$ionicScrollDelegate,$rootScope,$localstorage,FullImgService,CommonServiceDate,$log){
+ .controller('SearchDesignsController', function($ionicPopup,$location,$filter,$ionicLoading,$scope, DesignRetriever,searchService,$ionicScrollDelegate,$rootScope,$localstorage,FullImgService,CommonServiceDate,$log){
 //$scope.loading = true;
     $scope.empty=false;
     $scope.MyId = $localstorage.get('sessionMyID');
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on SearchCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on SearchCtrl..");
+            analytics.trackView('Search');
+        });
+    }
+    $scope.errorPopup = function(msg) {
+        $ionicPopup.alert({
+          title: 'Error',
+          template: msg,
+          okType: ' button-upload' 
+        });
+    };
     $log.debug("MyId in search controller: "+$scope.MyId);
     var tagsAvailable = [{name:"Hand Design"}, {name:"Feet Design"},
             {name:"Indian"},{name:"Pakistani"},{name:"Moghlai"},{name:"Arabic"},
@@ -106,6 +123,10 @@ angular.module('starter.controllers')
             $log.debug("searched : ", $scope.searchPosts);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error in search", error);
         });     
     };
@@ -144,6 +165,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                  },
                  function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                      $log.debug("error in unlike", error);
                   });
             }
@@ -157,6 +182,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("error in like", error);
                  });
             }  

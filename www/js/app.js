@@ -3,8 +3,8 @@
 //var baseURL = 'http://158.69.96.25:8181';
 var baseURL = 'http://api.mehndistar.com';
 var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.controllers','ngCordova','appFilereader','autocomplete','Services','ngStorage','ionic.utils'])
-.run(['$rootScope', '$ionicPlatform','OpenFB','$localstorage','$ionicPopup','$log','$scope',function($rootScope, $ionicPlatform,OpenFB,$localstorage,$ionicPopup,$log,$scope) {    
-    $scope.sessionMyID=$localstorage.get('sessionMyID');
+.run(['$rootScope', '$ionicPlatform','OpenFB','$localstorage','$ionicPopup','$log',function($rootScope, $ionicPlatform,OpenFB,$localstorage,$ionicPopup,$log) {    
+    $rootScope.sessionMyID=$localstorage.get('sessionMyID');
     $log.debug("$rootScope.sessionMyID",$rootScope.sessionMyID);
     $rootScope.IsLoggedIn=$localstorage.get('IsLoggedIn');
     $log.debug("$rootScope.IsLoggedIn",$rootScope.IsLoggedIn);
@@ -51,16 +51,16 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             }
         });
         
-        //code for google analytics.
-         $scope.isMobile=$localstorage.get('mobile');
-        alert("mobile ::"+$scope.isMobile);
-        if($scope.isMobile=='true'){
+//        code for google analytics.
+         $rootScope.MehndiSTARapk=$localstorage.get('MehndiSTARapk');
+        if($rootScope.MehndiSTARapk ==='true'){          
             if(typeof analytics !== undefined) {
                 analytics.startTrackerWithId("UA-65574899-1");
+                 $log.debug(analytics);
+                 $log.debug("analytics worked for mobile..");
             } else {
-                console.log("Google Analytics Unavailable");
+                 $log.debug("Google Analytics Unavailable");
             }
-
                        
         }
         else{
@@ -68,19 +68,19 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+  $log.debug("analytics worked for browser..");
   ga('create', 'UA-65574899-2', 'auto');
   ga('send', 'pageview');
         }
-        
+//        
     });
     $ionicPlatform.registerBackButtonAction(function (event) {
-        if($localstorage.get('FromPage')==="app/home"){
+        if($localstorage.get('FromPage')==="app/home" ||  $localstorage.get('IsLoggedIn')==='true'){
             if($localstorage.get('sessionMyID'))
             {
                 var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to Exit? You will be logged out from MehndiSTAR',
+                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {
@@ -99,7 +99,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             {
                  var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to Exit?',
+                    template: 'Are you sure you want to exit?',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {
@@ -119,8 +119,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
 /*===================================== redireciton =============================== */
 app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$logProvider) {
     $ionicConfigProvider.views.transition('none');
-//    $logProvider.debugEnabled(false);
-    $logProvider.debugEnabled(true);
+    $logProvider.debugEnabled(false);
+//    $logProvider.debugEnabled(true);
     $stateProvider
     .state('app', {
         url: "/app",
@@ -293,7 +293,8 @@ app.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$log
         url: "/aboutUs",
         views: {
           'menuContent': {
-                templateUrl: "templates/aboutUs.html"
+                templateUrl: "templates/aboutUS/aboutUs.html",
+                controller: 'aboutUsCtrl'
             }
         }
     })

@@ -1,6 +1,16 @@
     angular.module('starter.controllers')
 .controller('EditDpCtrl', ['$http','$scope','$rootScope','EditDpService','$location','$state','$cordovaCamera','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function EditDpCtrl($http,$scope,$rootScope,EditDpService,$location,$state,$cordovaCamera,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) 
    {
+        $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("apk on EditDPCtrl..");
+            $scope.$on('$ionicView.beforeEnter', function() {
+                $log.debug("analytics worked for mobile on EditDPCtrl..");
+                analytics.trackView('Edit Profile Photo');
+            });
+        }
        $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',
@@ -85,8 +95,8 @@
                     $('#Selectedimage').attr('src', "data:image/jpeg;base64,"+imageData);
                     $scope.fileUpload = "data:image/jpeg;base64,"+imageData;
             }, function (err) {
-                var msg = "An error occured: " + err;
-                $scope.errorPopup(msg);
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
             });
         };      
         $scope.uploadCamera = function () {         
@@ -94,6 +104,8 @@
             {
                     $scope.msg="You have to Capture Picture";
                     $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
             }
             else
             {
@@ -119,6 +131,10 @@
                 //$location.path('app/MyProfile');
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("Error uploadImage", error);
                  });
             }
@@ -148,6 +164,10 @@
                     //$('#Selectedimage').hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("Error uploadImage", error);
                 });
             }        

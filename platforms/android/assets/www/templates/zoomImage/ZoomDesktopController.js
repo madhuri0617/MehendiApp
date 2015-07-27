@@ -45,6 +45,16 @@ angular.module('starter.controllers')
 .controller('ZoomDesktopController',['$location','$ionicPopup','$rootScope','$localstorage','$scope','$log',function ZoomDesktopController($location,$ionicPopup,$rootScope,$localstorage,$scope,$log)
 {
     $scope.imagetoZoom = $localstorage.get('imageToZoom');
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on zoomDesktopCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on zoomDesktopCtrl..");
+            analytics.trackView('zoomDesktop');
+        });
+    }
     if(!$scope.imagetoZoom)
     {
         $location.path('app/home/Common/popular');

@@ -1,12 +1,30 @@
 angular.module('starter.controllers', ['ionic'])
-.controller('AppCtrl',function($scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log) {   
+.controller('AppCtrl',function($state,$scope,$rootScope,OpenFB,$location,$stateParams,CommonServiceDate,homeService,$ionicPopup,$ionicScrollDelegate,$ionicLoading,$localstorage,FullImgService,$log,$timeout) {   
+    
     $log.debug("inside controller");
+    $scope.mobile = localStorage.getItem("mobile");
+//    console.log($state.current.name);
+//    google analytics
+    $timeout(callAtTimeout, 10000);
+    function callAtTimeout() 
+    {
+        $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("Timeout occurred");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("analytics worked for mobile..");
+            if(typeof analytics !== undefined) { analytics.trackView("SideMenus or Home");
+                        $log.debug("analytics on app controller");
+            }
+        }
+    }
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
     $scope.categoryFromURL = $stateParams.category;
     $log.debug($scope.categoryFromURL);
     $scope.blank="";
-    $scope.mobile = localStorage.getItem("mobile");
+
     $scope.loading = true;
     
     $scope.loadingWheel = function() {
@@ -125,6 +143,10 @@ angular.module('starter.controllers', ['ionic'])
             $log.debug("popular", $scope.Posts,$scope.Posts.length);
         },
         function (error) {
+           $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+           $scope.errorPopup($scope.msg);
+           $scope.loading = false;
+           $ionicLoading.hide();
             $log.debug("Error popular", error);
          });
     };
@@ -252,7 +274,11 @@ angular.module('starter.controllers', ['ionic'])
                 $log.debug("$scope.Posts",$scope.Posts,$scope.Posts.length);
         },
         function (error) {
-                $log.debug("Error recent", error);
+           $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+           $scope.errorPopup($scope.msg);
+           $scope.loading = false;
+           $ionicLoading.hide();
+            $log.debug("Error recent", error);
         });
     };
     if($scope.categoryFromURL === 'popular')
@@ -261,7 +287,7 @@ angular.module('starter.controllers', ['ionic'])
         $scope.IsPopularTabActive = true;
         $scope.IsRecentTabActive = false;  
     }
-    else
+    else if($scope.categoryFromURL === 'recent')
     {
         $scope.getRecent($scope.tagFromURL);
         $scope.IsRecentTabActive = true;
@@ -285,12 +311,50 @@ angular.module('starter.controllers', ['ionic'])
     $scope.logout = function () {
         OpenFB.logout();
         $localstorage.remove('sessionMyID');
+        $localstorage.remove('sessionMyName');
+        $localstorage.remove('sessionMyemail');
         $rootScope.sessionMyID=null;
         $scope.MyId='';
         $localstorage.set('IsLoggedIn',false);
         $location.path('app/home');
         $scope.getPopular($scope.tagFromURL);
     };
+    $scope.exit = function() {
+        if($localstorage.get('sessionMyID'))
+            {
+                var confirmPopup = $ionicPopup.confirm({
+                    title: 'Exit',
+                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR',
+                    okType: ' button-upload'
+                });
+                confirmPopup.then(function(res) {
+                    if(res) {
+                          OpenFB.logout();
+                          $localstorage.remove('sessionMyID');
+                          $rootScope.sessionMyID=null;
+                          $localstorage.set('IsLoggedIn',false);
+                          ionic.Platform.exitApp();
+                    } else {
+      //                alert('Stay here');
+                    }
+                });
+            }
+            else
+            {
+                 var confirmPopup = $ionicPopup.confirm({
+                    title: 'Exit',
+                    template: 'Are you sure you want to exit?',
+                    okType: ' button-upload'
+                });
+                confirmPopup.then(function(res) {
+                    if(res) {
+                        ionic.Platform.exitApp();
+                    } else {
+      //                alert('Stay here');
+                    }
+                });
+            }
+    }
     $scope.revokePermissions = function () {
         OpenFB.revokePermissions().then(
             function () {
@@ -299,6 +363,8 @@ angular.module('starter.controllers', ['ionic'])
             function () {
                 var msg = 'Revoke permissions failed';
                 $scope.errorPopup(msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
             });
     };
     $scope.ClickedLikedHome = function (post)
@@ -329,7 +395,11 @@ angular.module('starter.controllers', ['ionic'])
 //                    $ionicLoading.hide();
                 },
                 function (error) {
-                                $log.debug("error in unlike", error);
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
+                    $log.debug("error in unlike", error);
                  });                    
             }
             else
@@ -347,7 +417,11 @@ angular.module('starter.controllers', ['ionic'])
 //                    $ionicLoading.hide();
                 },
                 function (error) {
-                        $log.debug("error in like", error);
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
+                    $log.debug("error in like", error);
                 });
             }  
            }
@@ -418,8 +492,18 @@ angular.module('starter.controllers', ['ionic'])
 })
 
 //controller for FACEBOOK LOGIN..
-.controller('LoginCtrl', function ($ionicPopup,$http,$scope, $location, OpenFB,$rootScope,$localstorage) {
+.controller('LoginCtrl', function ($ionicPopup,$http,$scope, $location, OpenFB,$rootScope,$localstorage,$log,$ionicLoading) {
     $scope.me={};
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("apk on loginCtrl..");
+            $scope.$on('$ionicView.beforeEnter', function() {
+                $log.debug("analytics worked for mobile on loginCtrl..");
+                analytics.trackView('Login');
+            });
+        }
     if($localstorage.get('sessionMyID'))
     {
         $localstorage.set('IsLoggedIn','true');
@@ -478,13 +562,21 @@ angular.module('starter.controllers', ['ionic'])
                           //  alert('id= '+user.id+' name= '+user.name+' email= '+user.email+' gender= '+user.gender+' age= '+user.age);
                     $http.post('http://api.mehndistar.com/login',$scope.me).success(function(response)
                     {
-                        $scope.Myid=response._id;                            
+                        $scope.Myid=response._id;
+                        $scope.userName = response.userName;
+                        $scope.email = response.email;
+                        $log.debug(response);                      
                         $rootScope.sessionMyID=$scope.Myid;
                         $localstorage.set('sessionMyID',$scope.Myid);
+                        $localstorage.set('sessionMyName',$scope.userName);
+                        $localstorage.set('sessionMyemail',$scope.email);
                         $localstorage.set('IsLoggedIn',true);
                         $location.path($localstorage.get('FromPage'));
                     }).error(function(){
-    //                                   alert('inside error');
+                           $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                           $scope.errorPopup($scope.msg);
+                           $scope.loading = false;
+                           $ionicLoading.hide();
                         });
                 });
             },
@@ -553,6 +645,10 @@ angular.module('starter.controllers', ['ionic'])
          // Success!
            //alert("Posted successfully on whatsApp");
        }, function(err) {
+           $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+           $scope.errorPopup($scope.msg);
+           $scope.loading = false;
+           $ionicLoading.hide();
          // An error occurred. Show a message to the user
        });
     };

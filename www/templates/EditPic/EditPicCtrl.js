@@ -1,5 +1,15 @@
  angular.module('starter.controllers')
 .controller('EditPicCtrl', ['$http','$scope','$rootScope','$location','EditUploadedPicService','$ionicLoading','$ionicScrollDelegate','$ionicPopup','$localstorage','$log', function EditPicCtrl($http,$scope,$rootScope,$location,EditUploadedPicService,$ionicLoading,$ionicScrollDelegate,$ionicPopup,$localstorage,$log) {  
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on EditPicCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on EditPicCtrl..");
+            analytics.trackView('Edit Pic');
+        });
+    }
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',
@@ -61,10 +71,10 @@
             $location.path('app/MyProfile/posts');
         });
     };
-    $scope.errorPopup = function() {
+    $scope.errorPopup = function(msg) {
       $ionicPopup.alert({
             title: 'Error',
-            template: 'You have to Capture picture',
+            template: msg,
             okType: ' button-upload' 
         });
     };
@@ -139,6 +149,10 @@
             $log.debug('des:',epc.newDes);
             },
             function (error) {
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
                 $log.debug("Error in getPostDetail", error);
             });
     };       
@@ -183,6 +197,10 @@
                     
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("Error in updatePostDetail", error);
                  });	
 	};    

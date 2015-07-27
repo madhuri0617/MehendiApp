@@ -1,5 +1,15 @@
 angular.module('starter.controllers')
 .controller('GalleryUploadCtrl', ['$http','$scope','$rootScope','galleryUploadService','$location','$state','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','cameraUploadService','$log',  function ($http,$scope,$rootScope,galleryUploadService,$location,$state,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,cameraUploadService,$log){
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on galleryUploadCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on galleryUploadCtrl..");
+            analytics.trackView('Gallery Upload');
+        });
+    }
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',
@@ -156,9 +166,11 @@ angular.module('starter.controllers')
                         }
                     },
                     function (error) {
-                            $log.debug(error);
+                            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                            $scope.errorPopup($scope.msg);
                             $scope.loading = false;
                             $ionicLoading.hide();
+                            $log.debug(error);
                     });
                 }
                 else

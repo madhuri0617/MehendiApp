@@ -1,5 +1,22 @@
 angular.module('starter.controllers')
 .controller('MyProfileDetailsCtrl', ['$stateParams','$localstorage','$scope','$rootScope','$http','$location','MyProfileService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','FullImgService','CommonServiceDate','$log', function MyProfileDetailsCtrl($stateParams,$localstorage,$scope,$rootScope,$http,$location,MyProfileService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,FullImgService,CommonServiceDate,$log) {
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("apk on MyProfileDetailsCtrl..");
+            $scope.$on('$ionicView.beforeEnter', function() {
+                $log.debug("analytics worked for mobile on MyProfileDetailsCtrl..");
+                analytics.trackView('My Profile');
+            });
+        }
+    $scope.errorPopup = function(msg) {
+        $ionicPopup.alert({
+          title: 'Error',
+          template: msg,
+          okType: ' button-upload' 
+        });
+    };
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',
@@ -94,6 +111,10 @@ angular.module('starter.controllers')
                 $log.debug('mydetails:',mpc.OwnInfo);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
             $log.debug("Error in getOwnInfo Service", error);
         });
     };
@@ -175,6 +196,10 @@ angular.module('starter.controllers')
                 $log.debug('mpc.Posts posts',mpc.Posts,mpc.Posts.length);
             },
             function (error) {
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
                $log.debug("Error in getOwnPost Service", error);
             });
     };
@@ -220,6 +245,10 @@ angular.module('starter.controllers')
             $log.debug('mpc.Posts likes',mpc.Posts,mpc.Posts.length);
         },
         function (error) {
+            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+            $scope.errorPopup($scope.msg);
+            $scope.loading = false;
+            $ionicLoading.hide();
            $log.debug("Error in getOwnLikes Service", error);
         });
     };
@@ -282,6 +311,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("error in unlike", error);
                  });
             }
@@ -295,6 +328,10 @@ angular.module('starter.controllers')
                     $ionicLoading.hide();
                 },
                 function (error) {
+                    $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                    $scope.errorPopup($scope.msg);
+                    $scope.loading = false;
+                    $ionicLoading.hide();
                     $log.debug("error in like", error);
                  });
 

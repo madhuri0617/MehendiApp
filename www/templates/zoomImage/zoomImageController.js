@@ -2,6 +2,16 @@ angular.module('starter.controllers')
 .controller('zoomImageController',['$location','$rootScope','$localstorage','$scope','$log',function zoomImageController($location,$rootScope,$localstorage,$scope,$log)
 {
     $scope.imagetoZoom = $localstorage.get('imageToZoom');
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+    $log.debug("apk: "+$scope.apk);
+    if($scope.apk === 'true')
+    {
+        $log.debug("apk on zoomImageCtrl..");
+        $scope.$on('$ionicView.beforeEnter', function() {
+            $log.debug("analytics worked for mobile on zoomImageCtrl..");
+            analytics.trackView('ZoomImage');
+        });
+    }
     if(!$scope.imagetoZoom)
     {
         $location.path('app/home/Common/popular');

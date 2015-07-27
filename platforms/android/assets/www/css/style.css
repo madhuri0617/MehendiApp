@@ -960,6 +960,52 @@ img[alt="aboutuslogo"]
     margin-top: -10%;
     width:80%;
 }
+/************************** feedback ***********************************/
+#feedback input.Error , #feedback textarea.Error
+{
+    border:1px solid red;
+}
+#feedback
+{
+    margin-top:2%;
+    text-align: center;
+}
+#feedback h2{
+       color:gray;
+}
+#feedback input:first-child
+{
+    /*margin-top: 1%;*/
+}
+#feedback input ,#feedback textarea
+{
+    /*margin: 2%;*/
+    padding:1%;
+    border:1px solid #d3d3d3;
+    /*width:50%;*/
+}
+#feedback .item.item-input
+{
+    padding: 0px;
+    margin: 15px;
+}
+#feedback button
+{
+    margin-bottom: 10px;
+}
+.ng-submitted .ng-invalid
+{
+      border: 1px solid rgb(237, 126, 126) !important
+}
+
+
+/****************************privacyPolicy and termsAndConditions*****************************/
+#privacyPolicy p, #termsPolicy p{
+    font-size: 15px;
+}
+#privacyPolicy, #termsPolicy{
+    margin-bottom: 40px;
+}
 
 /********************************* break point*****************************************/
 @media screen and (max-width:698px)

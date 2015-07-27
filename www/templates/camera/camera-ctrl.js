@@ -1,6 +1,15 @@
 angular.module('starter.controllers')
 .controller('CameraCtrl', ['$location','$cordovaCamera', '$scope','$rootScope','cameraUploadService','$ionicScrollDelegate','$ionicLoading','$ionicPopup','$localstorage','$log', function CameraCtr($location,$cordovaCamera, $scope,$rootScope,cameraUploadService,$ionicScrollDelegate,$ionicLoading,$ionicPopup,$localstorage,$log) {
-    
+    $scope.apk = localStorage.getItem("MehndiSTARapk");
+        $log.debug("apk: "+$scope.apk);
+        if($scope.apk === 'true')
+        {
+            $log.debug("apk on CameraCtrl..");
+            $scope.$on('$ionicView.beforeEnter', function() {
+                $log.debug("analytics worked for mobile on CameraCtrl..");
+                analytics.trackView('Camera');
+            });
+        }
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',
@@ -123,8 +132,8 @@ angular.module('starter.controllers')
 //            alert(imageData);
             $scope.fileUpload = "data:image/jpeg;base64," + imageData;
         }, function (err) {
-            var msg = "An error occured: " + err;
-            $scope.errorPopup(msg);
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
         });
     };  
     $scope.tagList=[{name:"Common",check:true,disable:true}];       
@@ -183,6 +192,10 @@ angular.module('starter.controllers')
                 }
             },
             function (error) {
+                $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
+                $scope.errorPopup($scope.msg);
+                $scope.loading = false;
+                $ionicLoading.hide();
                 $log.debug("Error uploadImage", error);
              });
         }

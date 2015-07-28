@@ -18,6 +18,10 @@ angular.module('starter.controllers', ['ionic'])
                         $log.debug("analytics on app controller");
             }
         }
+        else{
+                    $log.debug("Home screen");
+            ga('send', 'screenview', {'screenName': 'Home'});
+        }
     }
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
@@ -504,6 +508,10 @@ angular.module('starter.controllers', ['ionic'])
                 analytics.trackView('Login');
             });
         }
+        else{
+                $log.debug("login screen");
+            ga('send', 'screenview', {'screenName': 'Login'});
+        }
     if($localstorage.get('sessionMyID'))
     {
         $localstorage.set('IsLoggedIn','true');
@@ -632,7 +640,7 @@ angular.module('starter.controllers', ['ionic'])
               })
               .error(function(data) {
 //                        $scope.errorPopup(data.error.message);
-                  $scope.errorPopup("Your tokan has expired! You need to relogin to MehendiSTAR to share this design on Facebook");
+                  $scope.errorPopup("Your token has expired! You need to relogin to MehndiSTAR to share this design on Facebook.");
                   $scope.loading = false;
                   $ionicLoading.hide();
               });

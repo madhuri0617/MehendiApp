@@ -27,6 +27,10 @@ angular.module('starter.controllers')
                 analytics.trackView('FullSize Image');
             });
         }
+        else{
+            $log.debug("fullsize screen");
+            ga('send', 'screenview', {'screenName': 'fullsize'});
+        }
         $scope.loading = true;
         $scope.fullsizeimageId = $stateParams.imageid ;
         $rootScope.zoomImagePage = false;
@@ -229,7 +233,7 @@ angular.module('starter.controllers')
                     })
                     .error(function(data) {
 //                        $scope.errorPopup(data.error.message);
-                        $scope.errorPopup("Your tokan has expired! You need to relogin to MehendiSTAR to share this design on Facebook");
+                        $scope.errorPopup("Your token has expired! You need to relogin to MehndiSTAR to share this design on Facebook.");
                         $scope.loading = false;
                         $ionicLoading.hide();
                     });

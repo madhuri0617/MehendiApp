@@ -247,7 +247,7 @@ img[alt="logincollage"]
 {
     /*margin-bottom: 5px;*/
     width:90%;
-    height:100%;
+    /*height:100%;*/
     -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
   -o-filter: blur(1px);

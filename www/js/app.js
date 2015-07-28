@@ -24,7 +24,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             if(navigator.connection.type === Connection.NONE) {
                 var alertPopup = $ionicPopup.alert({
                     title: "Internet Disconnected",
-                    content: "No Internet Connection is found on your device.",
+                    content: "No internet connection is found on your device.",
                     okType: ' button-upload' 
                 });
                 alertPopup.then(function(result) {         
@@ -33,8 +33,8 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             }
             if(navigator.connection.type === Connection.CELL_2G) {
                 var alertPopup = $ionicPopup.alert({
-                    title: "Internet Disconnected",
-                    content: "Internet Speed is slow on your device.",
+                    title: "Slow Internet",
+                    content: "Internet speed is slow on your device.",
                     okType: ' button-upload' 
                 });
                 alertPopup.then(function(result) {         
@@ -70,13 +70,13 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   $log.debug("analytics worked for browser..");
   ga('create', 'UA-65574899-2', 'auto');
-  ga('set', {
-  'appName': 'mehndiSTAR'
-});
+//  ga('set', {
+//  'appName': 'mehndiSTAR'
+//});
   $log.debug("homeApp");
   
   ga('send', 'screenview', {'screenName': 'HomeAPP'});
-  //ga('send', 'pageview');
+  ga('send', 'pageview');
         }
 //        
     });
@@ -86,7 +86,7 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
             {
                 var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR',
+                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR.',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {

@@ -10,10 +10,13 @@ angular.module('starter.controllers')
                 analytics.trackView('My Profile');
             });
         }
-//        else{
-//            $log.debug("MyProfile screen");
-//            ga('send', 'screenview', {'screenName': 'MyProfile'});
-//        }
+        else{
+            $log.debug("MyProfile screen");
+            ga('send', 'pageview', {
+                'page': '/MyProfile',
+                'title': 'MyProfile'
+            });
+        }
     $scope.errorPopup = function(msg) {
         $ionicPopup.alert({
           title: 'Error',

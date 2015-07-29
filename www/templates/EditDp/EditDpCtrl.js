@@ -11,10 +11,13 @@
                 analytics.trackView('Edit Profile Photo');
             });
         }
-//        else{
-//            $log.debug("EditDp screen");
-//            ga('send', 'screenview', {'screenName': 'EditDp'});
-//        }
+        else{
+            $log.debug("EditDp screen");
+           ga('send', 'pageview', {
+                'page': '/EditDP',
+                'title': 'EditDP'
+              });
+        }
        $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',

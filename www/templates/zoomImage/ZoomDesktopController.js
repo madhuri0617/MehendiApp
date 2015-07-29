@@ -56,10 +56,13 @@ angular.module('starter.controllers')
             analytics.trackView('zoomDesktop');
         });
     }
-//    else{
-//            $log.debug("ZoomDesktop screen");
-//            ga('send', 'screenview', {'screenName': 'ZoomDesktop'});
-//        }
+    else{
+            $log.debug("ZoomDesktop screen");
+            ga('send', 'pageview', {
+                'page': '/ZoomDesktop',
+                'title': 'ZoomDesktop'
+            });
+        }
     if(!$scope.imagetoZoom)
     {
         $location.path('app/home/Common/popular');

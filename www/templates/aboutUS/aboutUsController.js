@@ -15,10 +15,13 @@ angular.module('starter.controllers')
                     analytics.trackView('AboutUs');
                 });
             }
-//            else{
-//                $log.debug("AboutUS screen");
-//                ga('send', 'screenview', {'screenName': 'AboutUS'});
-//             }
+            else{
+                $log.debug("AboutUS screen");
+            ga('send', 'pageview', {
+                'page': '/AboutUS',
+                'title': 'AboutUS'
+            });
+             }
 }]);
 
 

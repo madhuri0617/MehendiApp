@@ -10,10 +10,13 @@
             analytics.trackView('EditPicDetails');
         });
     }
-//    else{
-//            $log.debug("EditPic screen");
-//            ga('send', 'screenview', {'screenName': 'EditPic'});
-//        }
+    else{
+            $log.debug("EditPic screen");
+            ga('send', 'pageview', {
+                'page': '/EditPic',
+                'title': 'EditPic'
+            });
+        }
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',

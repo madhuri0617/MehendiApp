@@ -71,13 +71,14 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   $log.debug("analytics worked for browser..");
   ga('create', 'UA-65574899-2', 'auto');
-//  ga('set', {
-//  'appName': 'mehndiSTAR'
-//});
   $log.debug("homeApp");
   
-  ga('send', 'screenview', {'screenName': 'HomeAPP'});
-  ga('send', 'pageview');
+  //ga('send', 'screenview', {'screenName': 'HomeAPP'});
+  //ga('send', 'pageview');
+  ga('send', 'pageview', {
+  'page': '/App',
+  'title': 'App'
+});
         }
 //        
     });

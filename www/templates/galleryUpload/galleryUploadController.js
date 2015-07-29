@@ -10,10 +10,13 @@ angular.module('starter.controllers')
             analytics.trackView('GalleryUpload');
         });
     }
-//    else{
-//            $log.debug("GalleryUpload screen");
-//            ga('send', 'screenview', {'screenName': 'GalleryUpload'});
-//        }
+    else{
+            $log.debug("GalleryUpload screen");
+            ga('send', 'pageview', {
+                'page': '/GalleryUpload',
+                'title': 'GalleryUpload'
+            });
+        }
     $scope.loginPopup = function() {
         var alertPopup = $ionicPopup.alert({
           title: 'Login',

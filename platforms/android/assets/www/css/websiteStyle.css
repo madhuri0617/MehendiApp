@@ -447,6 +447,7 @@ p.searchHeader{
     margin-left:5px;
     margin-top: 5px;
     padding: 5px 12px;
+    cursor: pointer;
 }
 #PopupBtn a{
     text-decoration: none;

@@ -163,7 +163,7 @@ angular.module('starter.controllers')
                     //mpc.Posts = response.data;
                 if(response.data[0].message)
                 {
-                    $scope.noDataPopup("Posts",response.data[0].message);
+                    $scope.noDataPopup("Posts","No posts found.");
                     $scope.postLikesAvailable = false;
                 }
                 else
@@ -215,7 +215,7 @@ angular.module('starter.controllers')
             $log.debug(response.data);
             if(response.data[0].message)
             {
-                $scope.noDataPopup("Likes",response.data[0].message);
+                $scope.noDataPopup("Likes","No likes found.");
                 $scope.postLikesAvailable = false;
             }
             else

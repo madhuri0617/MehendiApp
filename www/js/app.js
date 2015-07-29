@@ -22,14 +22,15 @@ var app = angular.module('starter', ['ngAnimate','ionic','openfb','starter.contr
         }
         if(window.Connection) {
             if(navigator.connection.type === Connection.NONE) {
-                var alertPopup = $ionicPopup.alert({
-                    title: "Internet Disconnected",
-                    content: "No internet connection is found on your device.",
-                    okType: ' button-upload' 
-                });
-                alertPopup.then(function(result) {         
-                        ionic.Platform.exitApp();          
-                });
+                $localstorage.set('internet','false');
+//                var alertPopup = $ionicPopup.alert({
+//                    title: "Internet Disconnected",
+//                    content: "No internet connection is found on your device.",
+//                    okType: ' button-upload' 
+//                });
+//                alertPopup.then(function(result) {         
+//                        ionic.Platform.exitApp();          
+//                });
             }
             if(navigator.connection.type === Connection.CELL_2G) {
                 var alertPopup = $ionicPopup.alert({

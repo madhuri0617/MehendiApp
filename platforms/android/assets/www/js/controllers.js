@@ -18,10 +18,10 @@ angular.module('starter.controllers', ['ionic'])
                         $log.debug("analytics on app controller");
             }
         }
-        else{
-                    $log.debug("Home screen");
-            ga('send', 'screenview', {'screenName': 'Home'});
-        }
+//        else{
+//                    $log.debug("Home screen");
+//            ga('send', 'screenview', {'screenName': 'Home'});
+//        }
     }
     $rootScope.zoomImagePage = false;
     $scope.tagFromURL = $stateParams.tagNm ;
@@ -82,6 +82,17 @@ angular.module('starter.controllers', ['ionic'])
         okType: ' button-upload'
       });
     };
+    $scope.internetConnectionPopUp = function()
+    {
+        var alertPopup = $ionicPopup.alert({
+                    title: "Internet Disconnected",
+                    content: "No internet connection is found on your device.",
+                    okType: ' button-upload' 
+                });
+                alertPopup.then(function(result) {         
+                        ionic.Platform.exitApp();          
+                });
+    }
     $scope.errorPopup = function(msg) {
         $ionicPopup.alert({
           title: 'Error',
@@ -147,11 +158,19 @@ angular.module('starter.controllers', ['ionic'])
             $log.debug("popular", $scope.Posts,$scope.Posts.length);
         },
         function (error) {
+            if($localstorage.get('internet')=== 'false')
+           {
+//               alert("internet" + $localstorage.get('internet'));
+               $scope.internetConnectionPopUp();
+           }
+           else
+           {
            $scope.msg = "Oops! Something went wrong. Our team will look into this issue.";
-           $scope.errorPopup($scope.msg);
+           $scope.errorPopup($scope.msg);       
            $scope.loading = false;
            $ionicLoading.hide();
             $log.debug("Error popular", error);
+            }
          });
     };
 
@@ -287,9 +306,12 @@ angular.module('starter.controllers', ['ionic'])
     };
     if($scope.categoryFromURL === 'popular')
     {
+//        if($localstorage.get('internet')==='false')
+//        {
         $scope.getPopular($scope.tagFromURL);
         $scope.IsPopularTabActive = true;
         $scope.IsRecentTabActive = false;  
+//        }
     }
     else if($scope.categoryFromURL === 'recent')
     {
@@ -328,7 +350,7 @@ angular.module('starter.controllers', ['ionic'])
             {
                 var confirmPopup = $ionicPopup.confirm({
                     title: 'Exit',
-                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR',
+                    template: 'Are you sure you want to exit? You will be logged out from MehndiSTAR.',
                     okType: ' button-upload'
                 });
                 confirmPopup.then(function(res) {
@@ -365,7 +387,7 @@ angular.module('starter.controllers', ['ionic'])
               //  $state.go('app.login');
             },
             function () {
-                var msg = 'Revoke permissions failed';
+                var msg = 'Revoke permissions failed.';
                 $scope.errorPopup(msg);
                 $scope.loading = false;
                 $ionicLoading.hide();
@@ -508,10 +530,10 @@ angular.module('starter.controllers', ['ionic'])
                 analytics.trackView('Login');
             });
         }
-        else{
-                $log.debug("login screen");
-            ga('send', 'screenview', {'screenName': 'Login'});
-        }
+//        else{
+//                $log.debug("login screen");
+//            ga('send', 'screenview', {'screenName': 'Login'});
+//        }
     if($localstorage.get('sessionMyID'))
     {
         $localstorage.set('IsLoggedIn','true');
@@ -591,7 +613,7 @@ angular.module('starter.controllers', ['ionic'])
             function () {
 //                    $rootScope.IsLoggedIn=false;
                 $localstorage.set('IsLoggedIn','false');
-                var msg = 'Facebook login failed';
+                var msg = 'Facebook login failed.';
                 $scope.errorPopup(msg);
             });
     };
@@ -608,7 +630,7 @@ angular.module('starter.controllers', ['ionic'])
         $scope.sharePopup = function() {
             $ionicPopup.alert({
               title: 'Success',
-              template: 'This item has been shared on facebook',
+              template: 'This post has been shared on your Facebook page.',
               okType: ' button-upload'
         });
     };
@@ -640,7 +662,7 @@ angular.module('starter.controllers', ['ionic'])
               })
               .error(function(data) {
 //                        $scope.errorPopup(data.error.message);
-                  $scope.errorPopup("Your token has expired! You need to relogin to MehndiSTAR to share this design on Facebook.");
+                  $scope.errorPopup("Your token has expired! You need to re-login to MehndiSTAR to share this post on Facebook.");
                   $scope.loading = false;
                   $ionicLoading.hide();
               });

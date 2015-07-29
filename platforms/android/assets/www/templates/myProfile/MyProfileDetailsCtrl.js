@@ -7,13 +7,16 @@ angular.module('starter.controllers')
             $log.debug("apk on MyProfileDetailsCtrl..");
             $scope.$on('$ionicView.beforeEnter', function() {
                 $log.debug("analytics worked for mobile on MyProfileDetailsCtrl..");
-                analytics.trackView('My Profile');
+                analytics.trackView('MyProfile');
             });
         }
-//        else{
-//            $log.debug("MyProfile screen");
-//            ga('send', 'screenview', {'screenName': 'MyProfile'});
-//        }
+        else{
+            $log.debug("MyProfile screen");
+            ga('send', 'pageview', {
+                'page': '/MyProfile',
+                'title': 'MyProfile'
+            });
+        }
     $scope.errorPopup = function(msg) {
         $ionicPopup.alert({
           title: 'Error',

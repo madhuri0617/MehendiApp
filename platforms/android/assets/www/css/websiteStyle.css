@@ -364,7 +364,7 @@ img[alt="logincollage"]
     height: 100%;
     border-radius: 50%;
     padding: 0px;
-    float:left;
+    /*float:left;*/
     //left:15px;
     //top:10px;
 }
@@ -1050,6 +1050,10 @@ img[alt="aboutuslogo"]
 }
 #privacyPolicy, #termsPolicy{
     margin-bottom: 40px;
+}
+#privacyPolicy p , #privacyPolicy h3 , #termsPolicy p,#termsPolicy h3
+{
+    color:#898383;
 }
 /*.desktopView
 {

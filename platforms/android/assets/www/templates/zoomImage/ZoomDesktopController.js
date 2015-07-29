@@ -53,13 +53,16 @@ angular.module('starter.controllers')
         $log.debug("apk on zoomDesktopCtrl..");
         $scope.$on('$ionicView.beforeEnter', function() {
             $log.debug("analytics worked for mobile on zoomDesktopCtrl..");
-            analytics.trackView('zoomDesktop');
+            analytics.trackView('PostDetails_ZoomImage');
         });
     }
-//    else{
-//            $log.debug("ZoomDesktop screen");
-//            ga('send', 'screenview', {'screenName': 'ZoomDesktop'});
-//        }
+    else{
+            $log.debug("ZoomDesktop screen");
+            ga('send', 'pageview', {
+                'page': '/ZoomDesktop',
+                'title': 'ZoomDesktop'
+            });
+        }
     if(!$scope.imagetoZoom)
     {
         $location.path('app/home/Common/popular');

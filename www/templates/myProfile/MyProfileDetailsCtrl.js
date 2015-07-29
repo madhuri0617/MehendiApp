@@ -7,7 +7,7 @@ angular.module('starter.controllers')
             $log.debug("apk on MyProfileDetailsCtrl..");
             $scope.$on('$ionicView.beforeEnter', function() {
                 $log.debug("analytics worked for mobile on MyProfileDetailsCtrl..");
-                analytics.trackView('My Profile');
+                analytics.trackView('MyProfile');
             });
         }
 //        else{

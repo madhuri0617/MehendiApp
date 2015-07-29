@@ -8,7 +8,7 @@
             $log.debug("apk on EditDPCtrl..");
             $scope.$on('$ionicView.beforeEnter', function() {
                 $log.debug("analytics worked for mobile on EditDPCtrl..");
-                analytics.trackView('Edit Profile Photo');
+                analytics.trackView('EditProfilePhoto');
             });
         }
 //        else{

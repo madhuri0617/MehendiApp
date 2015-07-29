@@ -12,7 +12,7 @@ angular.module('starter.controllers')
         $log.debug("apk on userProfileCtrl..");
         $scope.$on('$ionicView.beforeEnter', function() {
             $log.debug("analytics worked for mobile on userProfileCtrl..");
-            analytics.trackView('User Profile');
+            analytics.trackView('UserProfile');
         });
     }
 //    else{

@@ -24,7 +24,7 @@ angular.module('starter.controllers')
             $log.debug("apk on FullSizeImgCtrl..");
             $scope.$on('$ionicView.beforeEnter', function() {
                 $log.debug("analytics worked for mobile on FullSizeImgCtrl..");
-                analytics.trackView('FullSize Image');
+                analytics.trackView('PostDetails');
             });
         }
 //        else{

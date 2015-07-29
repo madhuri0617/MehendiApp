@@ -10,7 +10,7 @@ angular.module('starter.controllers')
         $log.debug("apk on zoomImageCtrl..");
         $scope.$on('$ionicView.beforeEnter', function() {
             $log.debug("analytics worked for mobile on zoomImageCtrl..");
-            analytics.trackView('ZoomImage');
+            analytics.trackView('PostDetails_ZoomImage');
         });
     }
 //    else{

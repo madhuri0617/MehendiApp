@@ -11,9 +11,10 @@
             var css = '<link rel="stylesheet" href="css/websiteStyle.css" type="text/css" css="cssLink" id="cssLink" />';
             document.write(css);
             document.addEventListener("deviceready", function() {
+                alert("dev ready..");
                 navigator.splashscreen.hide();
                           },false );
-              localStorage.setItem('MehndiSTARapk', false);
+              localStorage.setItem('MehndiSTARapk', true);
               if(localStorage.getItem('MehndiSTARapk') === 'true')
               {
                 if(navigator.userAgent.match(/android/i)){
@@ -62,7 +63,7 @@
         <!--<script src="lib/ionic/js/angular/angular.min.js" type="text/javascript"></script>-->
         <!-- cordova script (this will be a 404 during development) -->
         
-        <!--<script src="cordova.js" type="text/javascript" ></script>-->
+        <script src="cordova.js" type="text/javascript" ></script>
 
         <script src="js/getSetRemove.js" type="text/javascript"></script>
         <script src="js/ngStorage.min.js" type="text/javascript"></script>

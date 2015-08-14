@@ -415,7 +415,7 @@ angular.module('starter.controllers', ['ionic'])
         $rootScope.sessionMyID=null;
         $scope.MyId='';
         $localstorage.set('IsLoggedIn',false);
-        $location.path('app/home/common/popular');
+        $location.path('app/home/common/recent');
 //        $scope.tagFromURL = "common";
 //        $scope.getPopular($scope.tagFromURL);
     };

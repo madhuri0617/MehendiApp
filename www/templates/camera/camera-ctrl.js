@@ -78,6 +78,7 @@ angular.module('starter.controllers')
         });
         alertPopup.then(function(res) {
             $scope.fileUpload = "";
+            $location.path("app/home/Common/recent");
         });
     };
     $scope.errorPopup = function(msg) {

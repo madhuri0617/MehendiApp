@@ -38,8 +38,11 @@ angular.module('starter.controllers', ['ionic'])
         });
     };
     function setTabClass() {
-       angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
-       angular.element(document.querySelector("#tabHome")).addClass("active");
+       angular.element(document.querySelector("#tabUpload")).removeClass("active");
+        angular.element(document.querySelector("#tabCamera")).removeClass("active");
+        angular.element(document.querySelector("#tabSearch")).removeClass("active");
+        angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
+        angular.element(document.querySelector("#tabHome")).addClass("active");
     };
     setTabClass();
     $localstorage.set('CurrentPage',$state.current.name);
@@ -337,6 +340,11 @@ angular.module('starter.controllers', ['ionic'])
         };
         $scope.populartab = false;
         $scope.loadingWheel();
+        angular.element(document.querySelector("#tabUpload")).removeClass("active");
+        angular.element(document.querySelector("#tabCamera")).removeClass("active");
+        angular.element(document.querySelector("#tabSearch")).removeClass("active");
+        angular.element(document.querySelector("#tabMyprofile")).removeClass("active");
+        angular.element(document.querySelector("#tabHome")).addClass("active");
 //        $location.path("app/home/"+tagNm + "/" + category);
         $scope.recent = {
                 beg : 0,																// begining of response set used for scroll down
